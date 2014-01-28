@@ -18,6 +18,7 @@
 <link href="./dist/css/bootstrap.min.css" rel="stylesheet">
 <link href="./dist/css/animate.css" rel="stylesheet">
 <link href="./dist/css/style.css" rel="stylesheet">
+<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 <!--[if lt IE 9]><script src="./docs-assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
 <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!--[if lt IE 9]>
@@ -75,7 +76,7 @@
           <a href="./login">Login</a>
         </li>
         <li>
-          <button type="button" href="#signup-form" class="btn btn-danger navbar-btn" data-toggle="modal" data-target="#signup-form">Get Started</button>
+          <button type="button" href="#signup-form" class="btn btn-danger navbar-btn hidden-xs" data-toggle="modal" data-target="#signup-form">Get Started</button>
         </li>
       </ul>
     </nav>
@@ -85,21 +86,46 @@
     <!-- Page content of course! -->
     <main id="content" role="main">
   <div class="hero">
-    <div class="jumbotron paas text-center">
+    <div class="jumbotron paas">
     	<div class="container animated fadeInDown">
-        <br><br><br><br><br>
-  	    <h2>Deploy Applications, Not Servers</h2>
-  		    <p class="lead">Enterprise Cloud Management Designed And Built For Developers</p>
-  		    <p>
-  		      <button type="button" class="btn btn-danger btn-lg" href="#signup-form" data-toggle="modal" data-target="#signup-form">Create Free Account</button>
-  		    </p>
-          <h5 class="text-muted">No credit card required • No commitment</h5>
+        <br><br>
+        <div id="home-signup" class="col-md-5">
+          <div class="sign-up-box">
+            <h2 class="jumbo-paas">Deploy Applications Not Servers</h2>
+            <p class="lead">ElasticBox is Enterprise Cloud Management Designed And Built For Developers</p>
+            <button type="button" class="btn btn-danger btn-block btn-lg btn-home hidden-xs" id="github-signup" href="" data-toggle="modal" data-target="#signup-form">
+              <i class="fa fa-github" id="jumbo-github-icon"></i>
+              <span class="title">Sign Up Using Github</span>
+            </button>
+            <span class="divider hidden-xs">Or</span>
+              <input class="input-lg home-signup-form" placeholder="your@email.com"></input>
+              <button class="btn btn-primary btn-lg btn-home home-submit">Get Started</button>
+              <h5 class="text-muted text-center">No credit card required • No commitment</h5>
+          </div>
+        </div>    
       </div>
-      <br><br><br><br><br>
+      <br><br>
     </div>
   </div>
 
   <br><br><br><br>
+  <div class="jumbotron block-customers">
+    <h4 class="text-center text-muted block-customers-lead">Enterprises Doing Amazing Things With ElasticBox</h4>
+    <div class="container">
+      <div class="col-md-3 text-center">
+        <img class="customer-block-img" src="https://dl.dropboxusercontent.com/u/11221717/netflix_logo_only_231%402x.png"></img>
+      </div>
+      <div class="col-md-3 text-center">
+        <img class="customer-block-img" src="https://dl.dropboxusercontent.com/u/11221717/netflix_logo_only_231%402x.png"></img>
+      </div>
+      <div class="col-md-3 text-center">
+        <img class="customer-block-img" src="https://dl.dropboxusercontent.com/u/11221717/netflix_logo_only_231%402x.png"></img>
+      </div>
+      <div class="col-md-3 text-center">
+        <img class="customer-block-img" src="https://dl.dropboxusercontent.com/u/11221717/netflix_logo_only_231%402x.png"></img>
+      </div>  
+    </div>
+  </div>
 
   <div class="container">
   	<div class="row">
@@ -144,7 +170,7 @@
   <br><br><br><br>
 
   <div class="container">
-		<div class="row padding-4x">
+		<div class="row">
 			<div class="col-md-10 col-md-offset-1 well text-center padding-2x">
         <h2 class="text-center">It's no secret. Managing the cloud isn't easy.</h2>
 				<div class="col-md-3 challenges">
@@ -175,7 +201,7 @@
             <p>Finding it hard to maintain a centralized cloud strategy in your organization?.</p>
           </div>
 				</div>
-        <a href="./"><h4>Learn More About Cloud Lifecycle Management</h4></a>
+        <a href="./"><h4 class="">Learn More About Cloud Lifecycle Management</h4></a>
 			</div>
 		</div>
 	</div>
@@ -250,38 +276,36 @@
     <row>
       <div class="col-md-2">
         <ul class="footer-links">
-          <h4>Product</h4>
-          <li><a href="./2.3.2/" track="">Link 1</a></li>
-          <li><a href="" track="">Link 2</a></li>
-          <li><a href="./" track="">Link 3</a></li>
-          <li><a href="./" track="">Link 3</a></li>
+          <h4>ElasticBox</h4>
+          <li><a href="./2.3.2/" track="">How It Works</a></li>
+          <li><a href="" track="">Why ElasticBox</a></li>
+          <li><a href="./" track="">Getting Started</a></li>
         </ul>
       </div>
       <div class="col-md-2">
         <ul class="footer-links">
-          <h4>Features</h4>
-          <li><a href="./2.3.2/" track="">Link 1</a></li>
-          <li><a href="" track="">Link 2</a></li>
-          <li><a href="./" track="">Link 3</a></li>
-          <li><a href="./" track="">Link 3</a></li>
+          <h4>Enterprise</h4>
+          <li><a href="./enterprise" track="">Features</a></li>
+          <li><a href="pricing" track="">Pricing</a></li>
+          <li><a href="./" track="">Case Studies</a></li>
+          <li><a href="./blog/enterprise" track="">Resources</a></li>
         </ul>
       </div>
       <div class="col-md-2">
         <ul class="footer-links">
-          <h4>About</h4>
-          <li><a href="./2.3.2/" track="">Link 1</a></li>
-          <li><a href="" track="">Link 2</a></li>
-          <li><a href="./" track="">Link 3</a></li>
-          <li><a href="./" track="">Link 3</a></li>
+          <h4>Support</h4>
+          <li><a href="support.elasticbox.com" track="">Documentation</a></li>
+          <li><a href="mailto:support@elasticbox.com" track="">support@elasticbox.com</a></li>
+          <li><a href="./" track="">ElasticBox Status</a></li>
+          <li><a href="./" track="">Terms of Service</a></li>
         </ul>
       </div>
           <div class="col-md-2">
         <ul class="footer-links">
           <h4>About</h4>
-          <li><a href="./2.3.2/" track="">Link 1</a></li>
-          <li><a href="" track="">Link 2</a></li>
-          <li><a href="./" track="">Link 3</a></li>
-          <li><a href="./" track="">Link 3</a></li>
+          <li><a href="./about" track="">About the Company</a></li>
+          <li><a href="./careers" track="">Careers</a></li>
+          <li><a href="./blog" track="">Blog</a></li>
         </ul>
       </div>
       <div class="col-md-4">
@@ -309,7 +333,7 @@
     <div class="row footer-cta">
       <div class="col-md-12 text-center">
         <h4 class="lead">It's free, it's fast. Get the power you need for cloud application lifecycle management.</h4>
-        <button class="btn btn-info btn-lg" href="#signup-form" data-toggle="modal" data-target="#signup-form">Create Free Account</button>
+        <button class="btn btn-primary btn-lg" href="#signup-form" data-toggle="modal" data-target="#signup-form">Create Free Account</button>
       </div>
     </div>
   </div>  
@@ -376,21 +400,10 @@
           <label for="exampleInputPassword1">What password would you like to use?</label>
           <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter Password">
         </div>
-          <div class="form-group">
-            <label for="exampleInputPassword1">What is your role at your organization?</label>
-            <select class="form-control">
-              <option>CIO</option>
-              <option>CTO</option>
-              <option>Developer</option>
-              <option>IT</option>
-              <option>DevOps</option>
-            </select>
-          </div>
       </form>
 
       <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+        <button type="button" class="btn btn-primary">Submit</button>
       </div>
 
     </div><!-- /.modal-content -->

@@ -55,14 +55,153 @@ h2 {
   color: #FFF;
 }
 
-/* == JUMBOTRON ================== */
+/* == JUMBOTRON HOME ============= */
+
+#home-signup {
+  float: right;
+  width: 450px;
+  padding: 0 20px 0 20px;
+}
+
+#home-signup .btn-lg {
+  padding-top: 2px;
+}
+
+.sign-up-box {
+  width: 400px;
+}
 
 .jumbotron h2 {
   font-size: 40px;
 }
 
+.btn-home {
+  height: 47px;
+  border-radius: 6px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.home-submit {
+  width: 38%;  
+}
+
+
+.title {
+  line-height: 47px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.divider {
+  font-size: 16px;
+  margin: 5px 0;
+  overflow: hidden;
+  text-align: center;
+  display: block;
+  font-weight: bold;
+  width: 100%;
+}
+
+.divider:before {
+  right: 1em;
+  margin-left: -50%;
+}
+
+.divider:after {
+  left: 1em;
+  margin-right: -50%;
+}
+
+.divider:before, .divider:after {
+  background-color: #333;
+  content: "";
+  display: inline-block;
+  height: 1px;
+  position: relative;
+  vertical-align: middle;
+  width: 50%;
+}
+
+.home-signup-form {
+  display: inline-block;
+  width: 230px;
+  margin-right: 10px;
+  padding: 0 10px;
+  height: 47px;
+  line-height: 47px;
+  font-size: 18px;
+  border-radius: 6px;
+}
+
 .paas {
   background-image: url('https://dl.dropboxusercontent.com/u/11221717/png.png');
+}
+
+.jumbo-paas {
+  font-weight: 600;
+}
+
+#jumbo-github-icon {
+  font-size: 37px;
+  position: absolute;
+  left: 16px;
+  display: inline-block;
+  background-size: 40px 40px;
+  height: 45px;
+  width: 55px;
+  border-right: 1px solid #FFF;
+}
+
+#github-sign {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.block-customers {
+  margin-top: -110px;
+  background-color: #CFCFCF;
+}
+
+.block-customers-lead {
+  margin-top: -20px;
+  padding-bottom: 20px;
+}
+
+.customer-block-img {
+  padding: 10px;
+  max-width: 150px;
+  min-width: 75px;
+}
+
+@media (max-width: 768px) {
+
+  .jumbotron h2 {
+    font-size: 30px;
+  }
+
+  #home-signup {
+    float: none;
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .sign-up-box {
+    width: 100%;
+  }
+
+  .home-signup-form {
+    width: 100%;
+  }
+
+  .home-submit {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .block-customers {
+    display: none;
+  }
 }
 
 /* == PAGE BREAK SIGN UP ================== */
@@ -146,7 +285,7 @@ h2 {
 }
 .footer-links li {
 	list-style: none;
-  padding: 0 2px;
+  padding: 5px 2px 0 0;
 }
 .footer-links li:first-child {
   padding-left: 0;
@@ -232,7 +371,7 @@ h2 {
 
 
 .cloud-provider {
-  width: 300px;
+  width: 250px;
 }
 
 .cloud-ends {
@@ -251,6 +390,135 @@ h2 {
   padding-top: 10px;
   padding-bottom: 30px;
 }
+
+.floaty {
+  position: relative;
+  left: 17%;
+}
+
+.floaty-inner {
+  display: block;
+  position: absolute;
+  -webkit-animation: animfloaty 2s infinite;
+  -moz-animation: animfloaty 2s infinite;
+  -o-animation: animfloaty 2s infinite;
+  animation: animfloaty 2s infinite;
+}
+
+.col-lg-4 .floaty-1 .floaty-inner {
+  -webkit-animation-duration: 2.5s;
+  -moz-animation-duration: 2.5s;
+  -o-animation-duration: 2.5s;
+  animation-duration: 2.5s;
+}
+
+.col-lg-4 .floaty-2 .floaty-inner {
+  -webkit-animation-duration: 2.25s;
+  -moz-animation-duration: 2.25s;
+  -o-animation-duration: 2.25s;
+  animation-duration: 2.25s;
+}
+
+.col-lg-4 .floaty-3 .floaty-inner {
+  -webkit-animation-duration: 1.75s;
+  -moz-animation-duration: 1.75s;
+  -o-animation-duration: 1.75s;
+  animation-duration: 1.75s;
+}
+
+.col-lg-4 .floaty-4 .floaty-inner {
+  -webkit-animation-duration: 1.5s;
+  -moz-animation-duration: 1.5s;
+  -o-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+}
+
+.col-lg-4 .floaty-5 .floaty-inner {
+  -webkit-animation-duration: 1.25s;
+  -moz-animation-duration: 1.25s;
+  -o-animation-duration: 1.25s;
+  animation-duration: 1.25s;
+}
+
+@-webkit-keyframes animfloaty {
+  0% {
+    left: 0;
+  }
+  25% {
+    top: 3px;
+  }
+  50% {
+    left: 3px;
+  }
+  75% {
+    top: 0;
+  }
+  100% {
+    left: 0;
+  }
+}
+@-moz-keyframes animfloaty {
+  0% {
+    left: 0;
+  }
+  25% {
+    top: 3px;
+  }
+  50% {
+    left: 3px;
+  }
+  75% {
+    top: 0;
+  }
+  100% {
+    left: 0;
+  }
+}
+@-o-keyframes animfloaty {
+  0% {
+    left: 0;
+  }
+  25% {
+    top: 3px;
+  }
+  50% {
+    left: 3px;
+  }
+  75% {
+    top: 0;
+  }
+  100% {
+    left: 0;
+  }
+}
+@keyframes animfloaty {
+  0% {
+    left: 0;
+  }
+  25% {
+    top: 3px;
+  }
+  50% {
+    left: 3px;
+  }
+  75% {
+    top: 0;
+  }
+  100% {
+    left: 0;
+  }
+}
+
+.clouds-section {
+  height: ;
+}
+
+
+.box-review {
+  margin-bottom: -20px;
+}
+
+/*== PRICING =========================*/
 
 .pricing-cta {
   padding-top: 70px;
@@ -305,6 +573,10 @@ h2 {
   padding-bottom: 80px;
 }
 
+.leadership-title {
+  margin-left: -15px;
+}
+
 p.clear-leadership-social {
   margin-top: 50px;
 }
@@ -312,6 +584,23 @@ p.clear-leadership-social {
 .investors {
   margin-bottom: -20px;
 }
+
+
+/*== CAREERS ============================*/
+
+.glyphicon-careers {
+  margin-top: 32px;
+}
+
+#table-positions {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px 4px 4px 4px;
+  box-shadow: none;
+  padding-bottom: 0px;
+  margin-bottom: 40px;
+}
+
 
 /*== SIGN UP FORM =======================*/
 
