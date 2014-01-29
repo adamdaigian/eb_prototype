@@ -204,6 +204,10 @@ h2 {
   }
 }
 
+.box-feature {
+  padding: 10px 0 15px 0;
+}
+
 /* == PAGE BREAK SIGN UP ================== */
 
 .inline {
