@@ -142,15 +142,24 @@ h2 {
   font-weight: 600;
 }
 
-#jumbo-github-icon {
-  font-size: 37px;
+.github-block {
   position: absolute;
-  left: 16px;
-  display: inline-block;
-  background-size: 40px 40px;
-  height: 45px;
-  width: 55px;
+  margin-top: -2px;
+  left: 0;
+  width: 15%;
+  height: 46px;
+  padding: 5px;
   border-right: 1px solid #FFF;
+}
+
+#small-github-icon {
+  font-size: 25px;
+  display: inline-block;
+}
+
+#jumbo-github-icon {
+  padding-left: 22px;
+  font-size: 37px;
 }
 
 #github-sign {
@@ -560,8 +569,12 @@ h2 {
   padding-left: 25px;
 }
 
-.datasheet {
+.data-sheet-block {
   margin-top: -30px;
+}
+
+#download-data-sheet-form {
+  display: none;
 }
 
 .netflix {
@@ -615,14 +628,16 @@ p.clear-leadership-social {
 }
 
 
-/*== SIGN UP FORM =======================*/
-
-#signup-form {
-  top: 80px;
-  margin: auto;
-  width: 490px;
-}
+/*== FORMS =======================*/
 
 .modal-dialog {
   width: 490px;
+}
+
+.required-form {
+  color: #d43f3a;
+}
+
+.modal-footer {
+  padding: 19px 0 20px 0;
 }

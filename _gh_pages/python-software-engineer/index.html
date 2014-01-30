@@ -19,6 +19,7 @@
 <link href="../dist/css/animate.css" rel="stylesheet">
 <link href="../dist/css/style.css" rel="stylesheet">
 <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+<script src="../dist/js/app.js"></script>
 <!--[if lt IE 9]><script src="../docs-assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
 <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!--[if lt IE 9]>
@@ -76,7 +77,7 @@
           <a href="../login">Login</a>
         </li>
         <li class="active">
-          <button type="button" href="#signup-form" class="btn btn-danger navbar-btn hidden-xs" data-toggle="modal" data-target="#signup-form">Get Started</button>
+          <button type="button" href="#sign-up-modal" class="btn btn-danger navbar-btn hidden-xs" data-toggle="modal" data-target="#sign-up-modal">Get Started</button>
         </li>
       </ul>
     </nav>
@@ -261,7 +262,7 @@
     <div class="row footer-cta">
       <div class="col-md-12 text-center">
         <h4 class="lead">It's free, it's fast. Get the power you need for cloud application lifecycle management.</h4>
-        <button class="btn btn-primary btn-lg" href="#signup-form" data-toggle="modal" data-target="#signup-form">Create Free Account</button>
+        <button class="btn btn-primary btn-lg" href="#sign-up-modal" data-toggle="modal" data-target="#sign-up-modal">Create Free Account</button>
       </div>
     </div>
   </div>  
@@ -301,49 +302,53 @@
 
 
     <script type="javascript">
-  $('#signup-form').modal('show')
+  $('#sign-up-modal').modal('show')
 </script>
 
-<div id="signup-form" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="#signup-form" aria-hidden="true">
+<div id="sign-up-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="#sign-up-modal" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
 
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-        <h3 class="modal-title text-center" id="myModalLabel">Don't wait. Try the free Developer Edition now.</h3>
+        <h3 class="modal-title text-center" id="myModalLabel">Try the free Developer Edition now.</h3>
+        <h4 class="text-center">Deploy an application and get a free ElasticBox t-shirt</h4>
       </div>
       <div class="modal-body">
-        <h4 class="text-center">Deploy an application and get a free ElasticBox t-shirt</h4>
-
-      <form role="form">
-        <div class="form-group">
-          <label for="exampleInputEmail1">What's your name?</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" placeholder="First & Last Name">
-        </div>
-        <div class="form-group">
-          <label for="exampleInputPassword1">What's your email address?</label>
-          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter Password">
-        </div>
-        <div class="form-group">
-          <label for="exampleInputPassword1">What password would you like to use?</label>
-          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter Password">
-        </div>
-      </form>
+        <button type="button" class="btn btn-primary btn-block" id="github-signup" href="">
+          <i class="fa fa-github" id="small-github-icon"></i>
+          <span class="">Sign Up Using Github</span>
+        </button>
+        <span class="divider hidden-xs">Or</span>
+        <form role="form">
+          <div class="form-group">
+            <label class="text-muted" or="exampleInputEmail1">What's your name?</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="First & Last Name">
+          </div>
+          <div class="form-group">
+            <label class="text-muted" for="exampleInputPassword1">What's your email address?</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter Email">
+          </div>
+          <div class="form-group">
+            <label class="text-muted" for="exampleInputPassword1">What password would you like to use?</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter Password">
+          </div>
+        </form>
 
       <div class="modal-footer">
-        <button type="button" class="btn btn-primary">Submit</button>
+        <button type="button" class="btn btn-block btn-primary">Submit</button>
       </div>
 
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
 
-     <!-- Bootstrap core JavaScript
+
+  </body>
+</html>
+ <!-- Bootstrap core JavaScript
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script src="../dist/js/bootstrap.js"></script>
 <script src="https://platform.linkedin.com/in.js" type="text/javascript">api_key: nv48emv5hh8q</script>
-
-  </body>
-</html>

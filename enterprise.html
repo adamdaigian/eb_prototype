@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: enterprise
 title: Enterprise
 slug: enterprise
 lead: "ElasticBox is enterprise-grade Cloud Application Lifecycle Managment. IT management of resources. cloud application strategy, deployment speed and reducing IT and developer friction."
@@ -89,13 +89,22 @@ base_url: "../"
       </div>
     </div>
   </div>
-  <div class="jumbotron data-sheet">
+  <div class="jumbotron data-sheet-block">
     <div class="container">
       <h2 class="text-center">Go Fast. Without Breaking Things.</h2> 
       <div class="row">
         <div class="col-md-8 col-md-offset-2 text-center">
-          <h4 class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam non dui quis purus convallis molestie at ac elit. Proin hendrerit dictum tellus, eu rhoncus metus.</h4>
-          <button class="btn btn-info btn-lg">Download Datasheet</button>
+          <h4 class="lead">Using ElasticBox's secure platform for hybrid cloud lifecycle management that strenghtens IT foundations while unifying Developers, DevOps and Management.</h4>
+          <button type="button" class="btn btn-info btn-lg" id="download-data-sheet">Download Datasheet</button>
+          <form class="form-inline" role="form" id="download-data-sheet-form">
+            <div class="form-group">
+              <input type="email" class="form-control input-lg" id="exampleInputEmail2" placeholder="Enter email">
+            </div>
+            <button type="submit" class="btn btn-default btn-lg">Download</button>
+          </form>
+          <script type="javascript">
+              $('#download-data-sheet').click( alert 'wow' )
+          </script>
         </div>
       </div>
     </div>
@@ -183,49 +192,15 @@ base_url: "../"
   </div>
   <br><br><br><br>
   <div class="container">
-    <div class="col-md-4 col-md-offset-1 well">
-      <h2 class="text-center">Request Product Demo</h2>
-      <hr>
-      <form role="form">
-        <div class="form-group">
-          <label for="exampleInputEmail1">What's your name?</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" placeholder="First & Last Name">
-        </div>
-        <div class="form-group">
-          <label for="exampleInputPassword1">What's your email address?</label>
-          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter Password">
-        </div>
-        <div class="form-group">
-          <label for="exampleInputPassword1">How Many Developer Are In your Organzation?</label>
-          <select class="form-control">
-            <option>1-10</option>
-            <option>10-20</option>
-            <option>30-50</option>
-            <option>50+</option>
-            <option>200+</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <label for="exampleInputPassword1">What is your role at your organization?</label>
-          <select class="form-control">
-            <option>CIO</option>
-            <option>CTO</option>
-            <option>Developer</option>
-            <option>IT</option>
-            <option>DevOps</option>
-          </select>
-        </div>
-      </form>
-      <button class="btn btn-block btn-danger">Next</button>
-    </div>
+    {% include enterprise-contact-form.html %}
     <div class="col-md-6 col-md-offset-1 text-center padding-4x">
       <h2>Have Questions?</h2>
-      <button class="btn btn-success btn-lg">Send Us An Email</button>
+      <button href="mailto:sales@elasticbox.com" class="btn btn-success btn-lg">Send Us An Email</button>
       <h4>Give Us A Call</h4>
       <h4>888-888-8888</h4>
       <h4>Or</h4>
       <h4>888-888-8888</h4>
     </div>
   </div>
-  <br><br><br><br>  
+  <br><br><br><br>
 </main>
