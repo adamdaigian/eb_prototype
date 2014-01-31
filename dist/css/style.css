@@ -47,6 +47,10 @@ h2 {
   font-size: 8em;
 }
 
+.glyphicon-12x {
+  font-size: 12em;
+}
+
 .small {
   font-size: 100%;
 }
@@ -55,10 +59,15 @@ h2 {
   color: #FFF;
 }
 
-/* == JUMBOTRON HOME ============= */
+.glyphicon-chevron-down {
+  margin-top: 20px;
+  font-size: 34px;
+  color: #eee;
+}
+
+/* == HOME ======================= */
 
 #home-signup {
-  float: right;
   width: 450px;
   padding: 0 20px 0 20px;
 }
@@ -169,7 +178,7 @@ h2 {
 
 .block-customers {
   margin-top: -110px;
-  background-color: #CFCFCF;
+  height: 171px;
 }
 
 .block-customers-lead {
@@ -181,6 +190,10 @@ h2 {
   padding: 10px;
   max-width: 150px;
   min-width: 75px;
+}
+
+.not-convinced-block {
+  height: 347px;
 }
 
 @media (max-width: 768px) {
@@ -215,6 +228,18 @@ h2 {
 
 .box-feature {
   padding: 10px 0 15px 0;
+}
+
+/*== SCROLL SECTION ========================*/
+
+.scroll-content {
+  margin-top: 100px;
+  width: 450px;
+  padding: 0 20px 0 20px;
+}
+
+.glyphicon-scroll {
+  font-size: 18em;
 }
 
 /* == PAGE BREAK SIGN UP ================== */
@@ -613,6 +638,27 @@ p.clear-leadership-social {
 
 
 /*== CAREERS ============================*/
+
+.career-block {
+  height: 350px;
+  color: #FFF;
+  background: url('https://dl.dropboxusercontent.com/u/11221717/jumbotron-customers.jpg') center;
+  background-size: cover;
+}
+
+.career-block-header {
+  margin-top: 80px;
+}
+
+.career-block-link {
+  color: #FFF;
+  text-decoration: none;
+}
+
+.career-block-link:hover {
+  color: #FFF;
+  text-decoration: none;
+}
 
 .glyphicon-careers {
   margin-top: 32px;
