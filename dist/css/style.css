@@ -196,6 +196,28 @@ h2 {
   height: 347px;
 }
 
+.elasticbox-special-block {
+  padding: 0 20px 0 20px;
+}
+
+.elasticbox-special-block h2 {
+  font-size: 20px;
+}
+
+.elasticbox-special-img {
+  width: 280px;
+}
+
+.home-casestudy-block {
+  margin-bottom: -120px;
+}
+
+.home-casestudy-block .lead {
+  font-size: 16px;
+}
+
+
+
 @media (max-width: 768px) {
 
   .jumbotron h2 {
@@ -394,6 +416,11 @@ h2 {
   background-color: #2D2D2D;
 }
 
+.challenges p {
+  font-size: 14px;
+  font-weight: 200;
+}
+
 /*== FEATURES ==================*/
 
 .deploy h1 {
@@ -563,6 +590,19 @@ h2 {
   padding-bottom: 70px;
 }
 
+.pricing-callout {
+  padding: 40px;
+}
+
+.pricing-callout p {
+  font-size: 16px;
+  font-weight: 200;
+}
+
+.pricing-callout button {
+  margin-top: 20px;
+}
+
 .row .feature-list {
   margin-right: 15px;
 }
@@ -575,6 +615,27 @@ h2 {
 
 .feature-list li {
   list-style-type: none;
+}
+
+.feature-list h2 {
+  font-weight: 500;
+}
+
+.feature-list h4 {
+  font-weight: 300;
+}
+
+.table-pricing th:first-child, td:first-child {
+  width: 400px;
+}
+
+.enterprise-feature-highlight .lead {
+  font-size: 16px;
+}
+
+.feature-specific-list li {
+  font-size: 16px;
+  font-weight: 200;
 }
 
 /*== ENTERPRISE SECTION ===============*/
@@ -622,6 +683,10 @@ h2 {
 .history {
   padding-top: 50px;
   padding-bottom: 80px;
+}
+
+.history-block .lead {
+  font-size: 19px;
 }
 
 .leadership-title {
@@ -676,8 +741,9 @@ p.clear-leadership-social {
 
 /*== FORMS =======================*/
 
+
 .modal-dialog {
-  width: 490px;
+  width: 450px;
 }
 
 .required-form {
@@ -685,5 +751,13 @@ p.clear-leadership-social {
 }
 
 .modal-footer {
-  padding: 19px 0 20px 0;
+  padding: 10px 0 20px 0;
+}
+
+.signup-form {
+  background-color: #202020;
+}
+
+.signup-form .modal-header {
+  color: #999;
 }
