@@ -8,6 +8,10 @@ h2 {
   font-weight: 300;
 }
 
+h2 {
+  font-size: 40px;
+}
+
 .padding-1x {
   padding-top: 1em;
   padding-bottom: 1em; 
@@ -63,6 +67,46 @@ h2 {
   margin-top: 20px;
   font-size: 34px;
   color: #eee;
+}
+
+/*== GLOBAL MEDIA QUERIES ==================*/
+
+@media (max-width: 767px) {
+
+  h1, h2 {
+    font-size: 30px;
+  }
+
+  .img-responsive {
+    display: inline-block;
+  }
+
+}
+
+@media (min-width: 768px) {
+
+}
+
+@media (max-width: 991px) {
+
+}
+
+@media (min-width: 992px) {
+}
+
+@media (max-width: 1199px) {
+
+}
+
+@media (min-width: 1200px) {
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
 }
 
 /* == HOME ======================= */
@@ -197,7 +241,7 @@ h2 {
 }
 
 .elasticbox-special-block {
-  padding: 0 20px 0 20px;
+  padding: 40px 20px 0 20px;
 }
 
 .elasticbox-special-block h2 {
@@ -208,15 +252,34 @@ h2 {
   width: 280px;
 }
 
-.home-casestudy-block {
-  margin-bottom: -120px;
+.challenges-title {
+
 }
 
-.home-casestudy-block .lead {
-  font-size: 16px;
+.challenges-header {
+
 }
 
+.challenges-link {
 
+}
+
+.box-feature {
+  padding: 10px 0 15px 0;
+}
+
+.box-overview-img {
+  margin-top: 30px;
+  margin-left: -50px;
+}
+
+.box-overview {
+  margin-bottom: -40px;
+}
+
+.box-overview h2 {
+  font-size: 30px;
+}
 
 @media (max-width: 768px) {
 
@@ -248,16 +311,20 @@ h2 {
   }
 }
 
-.box-feature {
-  padding: 10px 0 15px 0;
-}
-
 /*== SCROLL SECTION ========================*/
 
-.scroll-content {
-  margin-top: 100px;
-  width: 450px;
-  padding: 0 20px 0 20px;
+@media (min-width: 767px) {
+  .scroll-content {
+    margin-top: 100px;
+    width: 450px;
+    padding: 0 20px 0 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .scroll-content {
+    max-width: 450px;
+  }
 }
 
 .glyphicon-scroll {
@@ -424,14 +491,18 @@ h2 {
 /*== FEATURES ==================*/
 
 .deploy h1 {
-  font-size: 64px;
+  font-size: 54px;
   margin-left: 17px;
 }
 
 .icons-deploy {
-  height: 58px;
-  width: 58px;
-  margin-top: 29px;
+  height: 48px;
+  width: 48px;
+  margin-top: 28px;
+}
+
+.deploy-lead {
+  font-size: 19px;
 }
 
 
@@ -579,8 +650,22 @@ h2 {
 }
 
 
-.box-review {
+.box-block {
   margin-bottom: -20px;
+}
+
+@media (max-width: 992px) {
+
+  .deploy h1 {
+  font-size: 28px;
+  margin-left: 17px;
+  }
+
+  .icons-deploy {
+    height: 28px;
+    width: 28px;
+    margin-top: 22px;
+  }
 }
 
 /*== PRICING =========================*/
@@ -744,14 +829,15 @@ p.clear-leadership-social {
 
 .modal-dialog {
   width: 450px;
+  padding-top: 100px;
 }
 
 .required-form {
   color: #d43f3a;
 }
 
-.modal-footer {
-  padding: 10px 0 20px 0;
+.signup-form .modal-footer {
+  padding: 20px 0 0px 0;
 }
 
 .signup-form {
