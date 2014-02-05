@@ -35,6 +35,14 @@ h2 {
 	color: #d43f3a;
 }
 
+.sub{
+  color: #627990;
+}
+
+.light {
+  color: #FFF;
+}
+
 .glyphicon-2x {
   font-size: 2em;
 }
@@ -67,6 +75,24 @@ h2 {
   margin-top: 20px;
   font-size: 34px;
   color: #eee;
+}
+
+.pre-scroll-block > .glyphicon-chevron-down {
+  margin-top: 34px;
+}
+
+/*== BUTTONS ===============================*/
+
+.btn, .btn-lg {
+  border-radius: 3px;
+}
+
+.btn-danger {
+  background-color: #d6543c;
+}
+
+.btn-primary {
+  background-color: #007EFF; 
 }
 
 /*== GLOBAL MEDIA QUERIES ==================*/
@@ -109,7 +135,13 @@ h2 {
 
 }
 
-/* == HOME ======================= */
+/*== NAVBAR ==========================*/
+
+.navbar-default .navbar-nav>li>a {
+  color: #007EFF;
+}
+
+/*== HOME ======================= */
 
 #home-signup {
   width: 450px;
@@ -120,8 +152,12 @@ h2 {
   padding-top: 2px;
 }
 
-.sign-up-box {
-  width: 400px;
+.sign-up-container {
+  max-width: 400px;
+}
+
+.sign-up-action {
+  margin-top: 20px;
 }
 
 .jumbotron h2 {
@@ -130,7 +166,6 @@ h2 {
 
 .btn-home {
   height: 47px;
-  border-radius: 6px;
   font-size: 18px;
   font-weight: 600;
 }
@@ -188,12 +223,24 @@ h2 {
 }
 
 .paas {
-  background-image: url('https://dl.dropboxusercontent.com/u/11221717/png.png');
+  background-color: #2e4052;
+  background-image: url('https://dl.dropboxusercontent.com/u/11221717/png_1.png');
 }
 
 .jumbo-paas {
-  font-weight: 600;
+  color: #fff;
+  font-weight: 300
+  line-height: 1.5;
 }
+
+.jumbo-paas-sub {
+  font-size: 19px;
+  color: #627990;
+  margin-bottom: 20px;
+  font-weight: 900;
+  line-height: 1.5;
+}
+
 
 .github-block {
   position: absolute;
@@ -220,9 +267,9 @@ h2 {
   font-size: 18px;
 }
 
-.block-customers {
+.pre-scroll-block {
   margin-top: -110px;
-  height: 171px;
+  height: 170px;
 }
 
 .block-customers-lead {
@@ -238,6 +285,11 @@ h2 {
 
 .not-convinced-block {
   height: 347px;
+  background-color: #2e4052;
+}
+
+.glyphicon-not-convinced {
+  color: #2e4052;
 }
 
 .elasticbox-special-block {
@@ -253,11 +305,13 @@ h2 {
 }
 
 .challenges-title {
-
+  margin-top: -10px;
+  margin-bottom: 30px;
 }
 
 .challenges-header {
-
+  margin-top: -10px;
+  margin-bottom: 25px;
 }
 
 .challenges-link {
@@ -293,10 +347,6 @@ h2 {
     max-width: 400px;
   }
 
-  .sign-up-box {
-    width: 100%;
-  }
-
   .home-signup-form {
     width: 100%;
   }
@@ -313,9 +363,13 @@ h2 {
 
 /*== SCROLL SECTION ========================*/
 
+.scroll-break {
+  background-color: #EEE;
+}
+
 @media (min-width: 767px) {
   .scroll-content {
-    margin-top: 100px;
+    margin-top: 70px;
     width: 450px;
     padding: 0 20px 0 20px;
   }
@@ -358,7 +412,7 @@ h2 {
   padding-top: 40px;
   padding-bottom: 50px;
   color: #FFF;
- 	background-color: #d43f3a;
+ 	background-color: #2e4052;
 }
 
 .footer-cta {
@@ -405,10 +459,10 @@ h2 {
 }
 
 .footer-links h4 {
-	color: #222;
+	color: #FFF;
 }
 .footer-links a {
-	color: #FFF;
+	color: #627990;
 }
 .footer-links li {
 	list-style: none;
@@ -515,7 +569,7 @@ h2 {
 }
 
 .boxes {
-  background-color: #171717;
+  background-color: #FFF;
   margin-top: 40px;
   padding-top: 26px;
   padding-bottom: 70px;
@@ -714,7 +768,15 @@ h2 {
   width: 400px;
 }
 
-.enterprise-feature-highlight .lead {
+.feature-highlight-block-first {
+  margin-top: 140px;
+}
+
+.feature-highlight-block {
+  margin-top: 80px;
+}
+
+.feature-highlight-block .lead {
   font-size: 16px;
 }
 
@@ -782,8 +844,20 @@ p.clear-leadership-social {
   margin-top: 50px;
 }
 
+.social-icons {
+  padding: 0 5px 0 5px;
+}
+
 .investors {
   margin-bottom: -20px;
+}
+
+.nexus {
+  margin-top: 60px;
+}
+
+.intel {
+  max-height: 200px;
 }
 
 
