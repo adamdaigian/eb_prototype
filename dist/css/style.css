@@ -96,6 +96,7 @@ hr {
 
 .btn-danger {
   background-color: #6e4ea9;
+  border: 1px solid #6e4ea9;
 }
 
 .btn-primary {
