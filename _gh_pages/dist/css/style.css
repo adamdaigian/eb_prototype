@@ -12,6 +12,13 @@ h2 {
   font-size: 40px;
 }
 
+hr {
+  width: 87%;
+  margin-left: 43px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
 .padding-1x {
   padding-top: 1em;
   padding-bottom: 1em; 
@@ -70,6 +77,10 @@ h2 {
 .white {
   color: #FFF;
 }
+
+/*.jumbotron {
+  background-color: #bec5cc;
+}*/
 
 /*== FONTS =================================*/
 
@@ -139,10 +150,15 @@ input, .input-lg {
 
 .navbar-default {
   background-color: #FFF;
+  opacity: .97;
 }
 
 .navbar-default .navbar-nav>li>a {
   color: #007EFF;
+}
+
+.navbar-brand {
+  padding-right: 40px;
 }
 
 /*== HOME ======================= */
@@ -238,33 +254,36 @@ input, .input-lg {
   margin: 0 auto;
   max-width: 70%;
   font-family: 'Roboto', sans-serif;
-  font-size: 19px;
+  font-size: 22px;
   color: #627990;
   margin-bottom: 20px;
   font-weight: 900;
   line-height: 1.7;
 }
 
-.pre-scroll-block {
+.scroll-block {
   background-color: #bec5cc;
-  margin-top: -110px;
-  height: 120px;
 }
 
-.pre-scroll-block > h2 {
+.scroll-hero {
+  margin-top: -110px;
+  height: 148px;
+}
+
+.scroll-block > h2 {
   color: #FFF;
-  margin-top: -8px;
+  vertical-align: middle;
   font-size: 34px;
   font-weight: 100;
 }
 
 .glyphicon-chevron-down {
-  margin-top: 27px;
+  margin-top: 22px;
   font-size: 34px;
   color: #eee;
 }
 
-.pre-scroll-block > .glyphicon-chevron-down {
+.scroll-block > .glyphicon-chevron-down {
   margin-top: 18px;
   color: #bec5cc;
 }
@@ -289,16 +308,24 @@ input, .input-lg {
   color: #2e4052;
 }
 
-.elasticbox-special-block {
+.eb-special-block {
   padding: 40px 20px 0 20px;
+  text-align: left;
 }
 
-.elasticbox-special-block h2 {
-  font-size: 20px;
+.eb-special-block h2 {
+  font-size: 40px;
 }
 
-.elasticbox-special-img {
-  width: 280px;
+.eb-special-block > p.lead {
+  font-size: 19px;
+}
+
+.challenges-block {
+  margin-top: 60px;
+  background-color: #2e4052;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 .challenges-title {
@@ -307,16 +334,48 @@ input, .input-lg {
 }
 
 .challenges-header {
-  margin-top: -10px;
+  margin-top: 5px;
   margin-bottom: 25px;
+  font-size: 24px;
+  color: #627990;
+  margin-bottom: 20px;
+  font-weight: 500;
+  line-height: 1.7;
 }
 
 .challenges-link {
 
 }
 
+.challenges {
+  padding: 10px;
+  color: #FFF;
+}
+
+.challenges-inner {
+  padding: 30px;
+  border: 1px solid #fff;
+  border-radius: 3px;
+/*  background-color: #2D2D2D;*/
+}
+
+.challenges p {
+  font-size: 14px;
+  font-weight: 200;
+}
+
 .box-feature {
   padding: 10px 0 15px 0;
+}
+
+.box-overview-block {
+  margin-bottom: -15px;
+  padding-bottom: 100px;
+}
+
+h2.box-overview-lead {
+  position: relative;
+  left: 15px;
 }
 
 .box-overview-img {
@@ -521,21 +580,6 @@ input, .input-lg {
   .bs-social-buttons li:first-child {
     padding-left: 0;
   }
-}
-
-.challenges {
-  padding: 10px;
-  color: #FFF;
-}
-
-.challenges-inner {
-  padding: 30px;
-  background-color: #2D2D2D;
-}
-
-.challenges p {
-  font-size: 14px;
-  font-weight: 200;
 }
 
 /*== FEATURES ==================*/
@@ -848,7 +892,7 @@ p.clear-leadership-social {
   margin-top: 50px;
 }
 
-.social-icons {
+.leadership-social > a >img {
   padding: 0 5px 0 5px;
 }
 
@@ -919,7 +963,7 @@ p.clear-leadership-social {
 }
 
 .signup-form {
-  background-color: #202020;
+  background-color: #2e4052;
 }
 
 .signup-form .modal-header {
