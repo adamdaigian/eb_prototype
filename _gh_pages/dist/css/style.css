@@ -71,17 +71,13 @@ h2 {
   color: #FFF;
 }
 
-.glyphicon-chevron-down {
-  margin-top: 20px;
-  font-size: 34px;
-  color: #eee;
-}
+/*== FONTS =================================*/
 
-.pre-scroll-block > .glyphicon-chevron-down {
-  margin-top: 34px;
-}
+@import url(http://fonts.googleapis.com/css?family=Alegreya+Sans+SC|Noto+Sans|Alegreya+Sans|Roboto:400,900,700,100,300|Oxygen|Play|Merriweather+Sans|Alef);
 
-/*== BUTTONS ===============================*/
+
+
+/*== BUTTONS & INPUTS ===============================*/
 
 .btn, .btn-lg {
   border-radius: 3px;
@@ -93,6 +89,10 @@ h2 {
 
 .btn-primary {
   background-color: #007EFF; 
+}
+
+input, .input-lg {
+  border-radius: 3px;
 }
 
 /*== GLOBAL MEDIA QUERIES ==================*/
@@ -137,6 +137,10 @@ h2 {
 
 /*== NAVBAR ==========================*/
 
+.navbar-default {
+  background-color: #FFF;
+}
+
 .navbar-default .navbar-nav>li>a {
   color: #007EFF;
 }
@@ -153,7 +157,10 @@ h2 {
 }
 
 .sign-up-container {
-  max-width: 400px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin: 0 auto;
+  max-width: 330px;
 }
 
 .sign-up-action {
@@ -164,16 +171,20 @@ h2 {
   font-size: 40px;
 }
 
-.btn-home {
+.btn-home, .input-home {
+  width: 100%;
   height: 47px;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 500;
 }
 
-.home-submit {
-  width: 38%;  
+.input-home[placeholder]{
+  text-align: center;
 }
 
+.btn-home {
+  margin-top: 20px;
+}
 
 .title {
   line-height: 47px;
@@ -211,65 +222,51 @@ h2 {
   width: 50%;
 }
 
-.home-signup-form {
-  display: inline-block;
-  width: 230px;
-  margin-right: 10px;
-  padding: 0 10px;
-  height: 47px;
-  line-height: 47px;
-  font-size: 18px;
-  border-radius: 6px;
-}
-
 .paas {
   background-color: #2e4052;
   background-image: url('https://dl.dropboxusercontent.com/u/11221717/png_1.png');
 }
 
 .jumbo-paas {
+  font-family: 'Roboto', sans-serif;
   color: #fff;
-  font-weight: 300
+  font-weight: 700
   line-height: 1.5;
 }
 
 .jumbo-paas-sub {
+  margin: 0 auto;
+  max-width: 70%;
+  font-family: 'Roboto', sans-serif;
   font-size: 19px;
   color: #627990;
   margin-bottom: 20px;
   font-weight: 900;
-  line-height: 1.5;
-}
-
-
-.github-block {
-  position: absolute;
-  margin-top: -2px;
-  left: 0;
-  width: 15%;
-  height: 46px;
-  padding: 5px;
-  border-right: 1px solid #FFF;
-}
-
-#small-github-icon {
-  font-size: 25px;
-  display: inline-block;
-}
-
-#jumbo-github-icon {
-  padding-left: 22px;
-  font-size: 37px;
-}
-
-#github-sign {
-  font-weight: 600;
-  font-size: 18px;
+  line-height: 1.7;
 }
 
 .pre-scroll-block {
+  background-color: #bec5cc;
   margin-top: -110px;
-  height: 170px;
+  height: 120px;
+}
+
+.pre-scroll-block > h2 {
+  color: #FFF;
+  margin-top: -8px;
+  font-size: 34px;
+  font-weight: 100;
+}
+
+.glyphicon-chevron-down {
+  margin-top: 27px;
+  font-size: 34px;
+  color: #eee;
+}
+
+.pre-scroll-block > .glyphicon-chevron-down {
+  margin-top: 18px;
+  color: #bec5cc;
 }
 
 .block-customers-lead {
@@ -341,14 +338,8 @@ h2 {
     font-size: 30px;
   }
 
-  #home-signup {
-    float: none;
-    width: 100%;
-    max-width: 400px;
-  }
-
-  .home-signup-form {
-    width: 100%;
+  .jumbo-paas-sub {
+    max-width: 90%;
   }
 
   .home-submit {
@@ -385,6 +376,10 @@ h2 {
   font-size: 18em;
 }
 
+.scroll-header {
+  color: #d6543c;
+}
+
 /* == PAGE BREAK SIGN UP ================== */
 
 .inline {
@@ -400,8 +395,9 @@ h2 {
 }
 
 .inline-account {
+  color: #fff;
   margin-top: -40px;
-  background-color:#a6a6a6;
+  background-color:#bec5cc;
 }
 
 /* == FOOTER ==================== */
@@ -730,7 +726,15 @@ h2 {
 }
 
 .pricing-callout {
-  padding: 40px;
+  padding: 10px 40px 40px;
+}
+
+.pricing-callout-developer {
+  max-height: 384px;
+}
+
+.pricing-developer-cta {
+  margin-top: 50px;
 }
 
 .pricing-callout p {
@@ -921,3 +925,5 @@ p.clear-leadership-social {
 .signup-form .modal-header {
   color: #999;
 }
+
+
