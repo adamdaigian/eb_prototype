@@ -9,7 +9,11 @@ h2 {
 }
 
 h2 {
-  font-size: 40px;
+  font-size: 32px;
+}
+
+.highlight-block h2 {
+  font-size: 29px;
 }
 
 hr {
@@ -17,6 +21,18 @@ hr {
   margin-left: 43px;
   margin-top: 30px;
   margin-bottom: 30px;
+}
+
+a.more {
+  font-size: 16px;
+  font-weight: 500;
+  color: #007EFF;
+  text-decoration: none;
+}
+
+a:hover.more {
+  color: #0060bf;
+  text-decoration: none;
 }
 
 .padding-1x {
@@ -84,7 +100,11 @@ hr {
 
 /*== FONTS =================================*/
 
-@import url(http://fonts.googleapis.com/css?family=Alegreya+Sans+SC|Noto+Sans|Alegreya+Sans|Roboto:400,900,700,100,300|Oxygen|Play|Merriweather+Sans|Alef);
+@import url(http://fonts.googleapis.com/css?family=Alegreya+Sans|Roboto|Monda);
+
+h1, h2, h3 {
+  font-family: 'Roboto', sans-serif;
+}
 
 
 
@@ -105,7 +125,13 @@ hr {
 }
 
 .btn-primary {
-  background-color: #007EFF; 
+  background-color: #007EFF;
+  border-color: #007EFF; 
+}
+
+.btn-primary:hover{
+  background-color: #0075EC;
+  border-color: #0075EC;
 }
 
 input, .input-lg {
@@ -154,6 +180,10 @@ input, .input-lg {
 
 /*== NAVBAR ==========================*/
 
+.navbar-brand {
+  height: 58px;
+}
+
 .navbar-default {
   background-color: #FFF;
   opacity: .97;
@@ -167,16 +197,17 @@ input, .input-lg {
   padding-right: 40px;
 }
 
+.navbar-btn {
+  margin-top: 13px;
+  margin-bottom: 8px;
+}
+
+.navbar-nav>li>a {
+  padding-top: 20px;
+  padding-bottom: 15px;
+}
+
 /*== HOME ======================= */
-
-#home-signup {
-  width: 450px;
-  padding: 0 20px 0 20px;
-}
-
-#home-signup .btn-lg {
-  padding-top: 2px;
-}
 
 .sign-up-container {
   padding-top: 40px;
@@ -190,7 +221,7 @@ input, .input-lg {
 }
 
 .jumbotron h2 {
-  font-size: 40px;
+  font-size: 30px;
 }
 
 .btn-home, .input-home {
@@ -250,7 +281,6 @@ input, .input-lg {
 }
 
 .jumbo-paas {
-  font-family: 'Roboto', sans-serif;
   color: #fff;
   font-weight: 700
   line-height: 1.5;
@@ -284,7 +314,7 @@ input, .input-lg {
 }
 
 .glyphicon-chevron-down {
-  margin-top: 22px;
+  margin-top: 33px;
   font-size: 34px;
   color: #eee;
 }
@@ -320,17 +350,18 @@ input, .input-lg {
   margin-bottom: -30px;
 }
 
-.eb-special-block {
-  padding: 40px 20px 0 20px;
-  text-align: left;
+.highlight-block {
+/*  padding: 40px 20px 0 20px;*/
+
 }
 
-.eb-special-block h2 {
-  font-size: 40px;
+.highlight-block > h2 {
+  font-size: 28px;
 }
 
-.eb-special-block > p.lead {
-  font-size: 19px;
+.highlight-block > p.lead {
+  font-size: 16px;
+  line-height: 1.6;
 }
 
 .challenges-block {
@@ -448,7 +479,7 @@ h2.box-overview-lead {
 }
 
 .scroll-header {
-  color: #d6543c;
+  color: #9a68cd;
 }
 
 /* == PAGE BREAK SIGN UP ================== */
