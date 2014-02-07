@@ -95,8 +95,13 @@ hr {
 }
 
 .btn-danger {
-  background-color: #6e4ea9;
-  border: 1px solid #6e4ea9;
+  background-color: #9a68cd;
+  border-color: #9a68cd;
+}
+
+.btn-danger:hover {
+  background-color: #9263C2;
+  border-color: #9263C2;
 }
 
 .btn-primary {
@@ -309,6 +314,12 @@ input, .input-lg {
   color: #2e4052;
 }
 
+.jumbotron-home-special {
+  background-color: #f0f2f5;
+  margin-top: -30px;
+  margin-bottom: -30px;
+}
+
 .eb-special-block {
   padding: 40px 20px 0 20px;
   text-align: left;
@@ -415,7 +426,7 @@ h2.box-overview-lead {
 /*== SCROLL SECTION ========================*/
 
 .scroll-break {
-  background-color: #EEE;
+  background-color: #f0f2f5;
 }
 
 @media (min-width: 767px) {
