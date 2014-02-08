@@ -3,19 +3,6 @@ html {
 	height: 100%;
 }
 
-h1,
-h2 {
-  font-weight: 300;
-}
-
-h2 {
-  font-size: 32px;
-}
-
-.highlight-block h2 {
-  font-size: 29px;
-}
-
 hr {
   width: 87%;
   margin-left: 43px;
@@ -94,16 +81,35 @@ a:hover.more {
   color: #FFF;
 }
 
-/*.jumbotron {
-  background-color: #bec5cc;
-}*/
+.jumbotron {
+  background-color: #f0f2f5;
+}
 
 /*== FONTS =================================*/
 
-@import url(http://fonts.googleapis.com/css?family=Alegreya+Sans|Roboto|Monda);
-
 h1, h2, h3 {
   font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+p, div, span, h4, .btn {
+  font-family: 'Lato', sans-serif; 
+}
+
+p, div, span, h4, .lead {
+  font-weight: 300;
+}
+
+.btn {
+  font-weight: 700;
+}
+
+.highlight-block h2 {
+  font-size: 29px;
 }
 
 
@@ -115,23 +121,57 @@ h1, h2, h3 {
 }
 
 .btn-danger {
-  background-color: #9a68cd;
-  border-color: #9a68cd;
+  background-color: #a36eda;
+  border-color: #a36eda;
 }
 
 .btn-danger:hover {
-  background-color: #9263C2;
-  border-color: #9263C2;
+  background-color: #b67bf2;
+  border-color: #b67bf2;
+}
+
+.btn-danger:focus,
+.btn-danger:active,
+.btn-danger.active,
+.open .dropdown-toggle.btn-danger{
+  background-color: #8d5fbe; 
+  border-color: #8d5fbe;
 }
 
 .btn-primary {
-  background-color: #007EFF;
-  border-color: #007EFF; 
+  background-color: #007eff;
+  border-color: #007eff; 
 }
 
 .btn-primary:hover{
-  background-color: #0075EC;
-  border-color: #0075EC;
+  background-color: #2e95fe;
+  border-color: #2e95fe;
+}
+
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary{
+  background-color: #0070e0;
+  border-color: #0070e0;
+}
+
+.btn-social {
+  background-color: #627990;
+  border-color: #627990;
+}
+
+.btn-social:hover{
+  background-color: #6d869f;
+  border-color: #6d869f;
+}
+
+.btn-social:focus,
+.btn-social:active,
+.btn-social.active,
+.open .dropdown-toggle.btn-social{
+  background-color: #596e82;
+  border-color: #596e82;
 }
 
 input, .input-lg {
@@ -191,6 +231,11 @@ input, .input-lg {
 
 .navbar-default .navbar-nav>li>a {
   color: #007EFF;
+  font-weight: 500;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+  color: #4aa4ff;
 }
 
 .navbar-brand {
@@ -218,10 +263,6 @@ input, .input-lg {
 
 .sign-up-action {
   margin-top: 20px;
-}
-
-.jumbotron h2 {
-  font-size: 30px;
 }
 
 .btn-home, .input-home {
@@ -276,14 +317,14 @@ input, .input-lg {
 }
 
 .paas {
-  background-color: #2e4052;
+  background-color: #2d3e5f;
   background-image: url('https://dl.dropboxusercontent.com/u/11221717/png_1.png');
 }
 
 .jumbo-paas {
+  font-size: 34px;
   color: #fff;
-  font-weight: 700
-  line-height: 1.5;
+  line-height: 1.6;
 }
 
 .jumbo-paas-sub {
@@ -557,17 +598,35 @@ h2.box-overview-lead {
 }
 
 .footer-links h4 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
 	color: #FFF;
 }
-.footer-links a {
-	color: #627990;
-}
+
 .footer-links li {
-	list-style: none;
-  padding: 5px 2px 0 0;
+  list-style: none;
+  padding: 12px 2px 0 0;
 }
-.footer-links li:first-child {
-  padding-left: 0;
+
+.footer-links a {
+	color: #5d748a;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.footer-links a:hover {
+  color: #007efe;
+  text-decoration: none;
+}
+
+.footer-links ul.social-buttons button {
+  margin-left: -40px;
+  color: #fff;
+}
+
+.footer-links .social-buttons i {
+  padding-right: 5px;
 }
 
 @media (min-width: 768px) {
@@ -579,49 +638,6 @@ h2.box-overview-lead {
   }
   .elasticbox-legal ul li{
   	display: block;
-  }
-}
-
-/*
- * Social buttons
- *
- * Twitter and GitHub social action buttons (for homepage and footer).
- */
-
-.bs-social {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  text-align: center;
-}
-.bs-social-buttons {
-  display: inline-block;
-  margin-bottom: 0;
-  padding-left: 0;
-  list-style: none;
-}
-.bs-social-buttons li {
-  display: inline-block;
-  line-height: 1;
-  padding: 5px 8px;
-}
-.bs-social-buttons .twitter-follow-button {
-  width: 225px !important;
-}
-.bs-social-buttons .twitter-share-button {
-  width: 98px !important;
-}
-/* Style the GitHub buttons via CSS instead of inline attributes */
-.github-btn {
-  border: 0;
-  overflow: hidden;
-}
-
-@media (min-width: 768px) {
-  .bs-social {
-    text-align: left;
-  }
-  .bs-social-buttons li:first-child {
-    padding-left: 0;
   }
 }
 
