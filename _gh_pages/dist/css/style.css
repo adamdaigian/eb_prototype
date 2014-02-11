@@ -333,8 +333,12 @@ input, .input-lg {
 }
 
 .paas {
+  top: 0;
+  right: 0;
+  left: 0;
   background-color: #2d3e5f;
-  background-image: url('https://dl.dropboxusercontent.com/u/11221717/png_1.png');
+  background-image: url('https://dl.dropboxusercontent.com/u/11221717/home-hero-background.jpg');
+  background-size: cover;
 }
 
 .jumbo-paas {
@@ -521,6 +525,21 @@ h2.box-overview-lead {
   background-color: #f0f2f5;
 }
 
+.img-selection {
+  margin-left: -56px;
+  display: block;
+  height: auto;
+  max-width: 120%;
+}
+
+.img-rocket {
+  margin-left: -86px;
+  display: block;
+  height: auto;
+  max-width: 120%;
+  margin-bottom: -113px;
+}
+
 @media (min-width: 767px) {
   .scroll-content {
     margin-top: 70px;
@@ -533,6 +552,10 @@ h2.box-overview-lead {
   .scroll-content {
     max-width: 450px;
   }
+}
+
+.scroll-step-3 {
+  margin-top: 180px;
 }
 
 .glyphicon-scroll {
