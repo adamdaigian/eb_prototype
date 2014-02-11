@@ -364,7 +364,7 @@ input, .input-lg {
 }
 
 .glyphicon-chevron-down {
-  margin-top: 33px;
+  margin-top: 15px;
   font-size: 34px;
   color: #eee;
 }
@@ -562,14 +562,13 @@ h2.box-overview-lead {
 	width: 100%;
 	height: auto;
   padding-top: 40px;
-  padding-bottom: 50px;
+  padding-bottom: 15px;
   color: #FFF;
  	background-color: #2e4052;
 }
 
 .footer-cta {
-	margin-top: 190px;
-	padding-bottom: 70px;
+  padding: 40px 0 60px 0;
 }
 
 .bs-footer .elasticbox-legal {
@@ -633,6 +632,16 @@ h2.box-overview-lead {
   text-decoration: none;
 }
 
+.footer-brand {
+  padding-left: 20px;
+}
+
+.footer-legal {
+  color: #1b2936;
+  float: right;
+  font-weight: 500;
+}
+
 .footer-links ul.social-buttons button {
 /*  margin-left: -40px;*/
   color: #fff;
@@ -648,16 +657,6 @@ h2.box-overview-lead {
   margin-left: 15px;
 }
 
-/*.icons-deploy {
-  height: 48px;
-  width: 48px;
-  margin-top: 28px;
-}
-
-.deploy-lead {
-  font-size: 19px;
-}
-*/
 .browser {
   height: 350px;
   width: 100%;
