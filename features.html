@@ -10,12 +10,18 @@ base_url: "../"
 	<div class="jumbotron">
    	<div class="container">
    		<div class="row padding-4x">
-   			<div class="col-lg-7 col-lg-offset-1">
-   				<h2 class="">ElasticBox To The Rescue.</h2>
-   				<h3 class="lead">Welcome to a simplified, modular, service-based application development process, where fully configured application components are encapsulated and made available as a service.</h3>
-   			</div>
-   			<div class="col-md-4 text-center padding-1x">
-   				<span class="glyphicon glyphicon-th glyphicon-8x"></span>
+   				<h2 class="text-center">ElasticBox To The Rescue. Reinventing Your Workflow.</h2>
+   			<div class="col-lg-10 col-lg-offset-1 hero-screenshot-block">
+          <div class="hero-screenshot">
+            <div class="indicators-hero">
+                <span class="circle"></span>
+                <span class="circle"></span>
+                <span class="circle"></span>
+              </div>
+            <div class="hero-screenshot-inner">
+              <div class="hero-screenshot-placeholder"></div>
+            </div>
+          </div>  
    			</div>
    		</div>
    	</div>
@@ -24,7 +30,8 @@ base_url: "../"
   <div class="jumbotron inline-account">
   	<div class="container">
   		<div class="row">
-  			<div class="col-md-4">
+        <div class="col-lg-10 col-lg-offset-1"><h3 class="lead text-center">Welcome to a simplified, modular, service-based application development process, where fully configured application components are encapsulated and made available as a service.</h3></div>
+  			<!-- <div class="col-md-4">
   				<h3>Create A Free Account</h3>
   				<h4>Deploy an application in under 5 minutes</h4>
   			</div>
@@ -36,7 +43,7 @@ base_url: "../"
   			</div>
   			<div class="col-md-2">
   				<button class="btn btn-primary btn-lg btn-block input-cta">Get Started</button>
-  			</div>	
+  			</div>	 -->
   		</div>
     </div>
   </div>
@@ -45,46 +52,61 @@ base_url: "../"
       <div class="col-lg-10 col-lg-offset-1">
         <h1>Start Deploying Applications Right Away.</h1>
         <h4 class="col-lg-8 lead">Configure and deploy applications using CM tools like <a class="more" href="">Docker</a>, <a class="more" href="">Chef</a>, and <a class="more">Puppet</a> or standard scripting languages like Bash and PowerShell.</h4>
-        <hr></hr>
-        <div class="col-lg-4"></div>
-        <div class="col-lg-8">
-          <div class="browser">
-            <div class="indicators">
-              <span class="circle"></span>
-              <span class="circle"></span>
-              <span class="circle"></span>
-            </div>
-            <div class="scripts">
-              <ul class="list-inline">
-                <li class="btn btn-sm btn-social btn-scripts">Docker</li>
-                <li class="btn btn-sm btn-social btn-scripts">Chef</li>
-                <li class="btn btn-sm btn-social btn-scripts">Puppet</li>
-                <li class="btn btn-sm btn-social btn-scripts">Bash</li>
-              </ul>
-            </div>
-            <div class="browser-editor">
-              <code>
-                $ heroku create sushi
-                <br>
-                Creating sushi... done
-                <br>
-                http://sushi.herokuapp.com/ | git@heroku.com:sushi.git
-                <br>
-                $ git push heroku master
-                <br>
-                ----> Heroku receiving push
-                <br>
-                ----> Rails app detected
-                <br>
-                ----> Compiled slug size is 8.0MB
-                <br>
-                http://sushi.herokuapp.com deployed to Heroku
-              </code>
+        <hr>
+        <div class="row">
+          <div class="col-lg-4"></div>
+          <div class="col-lg-8">
+            <div class="browser">
+              <div class="indicators">
+                <span class="circle"></span>
+                <span class="circle"></span>
+                <span class="circle"></span>
+              </div>
+              <div class="scripts">
+                <ul class="list-inline">
+                  <li class="btn btn-sm btn-social btn-scripts active">Docker</li>
+                  <li class="btn btn-sm btn-social btn-scripts">Chef</li>
+                  <li class="btn btn-sm btn-social btn-scripts">Puppet</li>
+                  <li class="btn btn-sm btn-social btn-scripts">Bash</li>
+                </ul>
+              </div>
+              <div class="browser-editor">
+                <code>
+                  $ from ubuntu:12.10
+                  <br>
+                  $ run apt-get update
+                  <br>
+                  $ run DEBIAN_FRONTEND=noninteractive apt-get install -q -y python
+                  <br>
+                  $ run DEBIAN_FRONTEND=noninteractive apt-get install -q -y python-pip
+                  <br>
+                  $ run pip install django
+                  <br>
+                  run DEBIAN_FRONTEND=noninteractive apt-get install -q -y curl
+                  <br>
+                  run curl -L https://github.com/shykes/helloflask/archive/master.tar.gz | tar -xzv
+                  <br>
+                  http://sushi.herokuapp.com deployed to Heroku
+                </code>
+              </div>
             </div>
           </div>
-        </div>
+        </div>  
       </div>
   	</div>
+  </div>
+  <div class="jumbotron box-overview-block">
+    <div class="container">
+      <h2 class="col-lg-offset-1 box-overview-lead">What are Boxes and why are they awesome?</h2>
+      <div class="col-lg-6 col-lg-offset-1 col-sm-6">
+        <h2>Create, reuse, and repurpose.</h2>
+        <p class="lead">Teams can assemble and launch n-tier applications by mixing and matching boxes. Launching applications from boxes gives you consistency and agility. Versioning means you can innovate without breaking things.</p>
+        <a class="more" href="{{ page.base_url }}features/#box-block-link">LEARN MORE</a>
+      </div>
+      <div class="col-lg-5 col-sm-6">
+        <img class="img-responsive box-overview-img" src="http://www.elasticbox.com/images/features3.png"></img>
+      </div>
+    </div>
   </div>
   <div class="jumbotron clouds-section">
   	<div class="container">
@@ -144,8 +166,8 @@ base_url: "../"
           <li>Frictionless development tool.</li>
           <li>Effective asset and dependency management.</li>
           <li>Keep infrastructure fluid and manageable.</li>
-          <li>Comparable audit and deployment logs.</li>
-          <li>Increase deployment velocity by configuring and installing on the fly.</li>
+          <li>Audit and compare multiple deployment logs.</li>
+          <li>Increase deployment velocity by configuring<br> and installing on the fly.</li>
         </ul>
       </div>
       <div class="col-md-6 col-md-offset-1">
@@ -161,8 +183,8 @@ base_url: "../"
           <li>Share service and provider resources.</li>
           <li>Collaborate through sharing contained infrastructure.</li>
           <li>Replicate infrastracture and apps across environments.</li>
-          <li>Control access and control over application and infrastructure components.</li>
           <li>Incentivise sharing, agility and innovation.</li>
+          <li>Control access and control over application and infrastructure components.</li>
         </ul>
       </div>
       <div class="col-md-6 col-md-offset-1">
