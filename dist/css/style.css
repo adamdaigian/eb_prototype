@@ -50,7 +50,7 @@ a:hover.more {
 }
 
 .yes {
-	color: #00af90;
+	color: #007eff;
 }
 
 .no {
@@ -97,6 +97,10 @@ a:hover.more {
   background-color: #f0f2f5;
 }
 
+.jumbotron.slate {
+  background-color: #2c3c5c;
+}
+
 /*== FONTS =================================*/
 
 h1, h2, h3 {
@@ -112,8 +116,9 @@ p, div, span, h4, .btn {
   font-family: 'Open Sans', sans-serif; 
 }
 
-p, div, span, h4, .lead {
-  font-weight: 300;
+p, h4, .lead {
+  font-weight: 400;
+  color: #6f7f8f;
 }
 
 .btn {
@@ -195,6 +200,10 @@ input, .input-lg {
   border-radius: 3px;
 }
 
+.i {
+  color: #fff;
+}
+
 /*== GLOBAL MEDIA QUERIES ==================*/
 
 @media (max-width: 767px) {
@@ -247,8 +256,8 @@ input, .input-lg {
 }
 
 .navbar-default .navbar-nav>li>a {
-  color: #007EFF;
-  font-weight: 500;
+  color: #5d748a;
+  font-weight: 600;
 }
 
 .navbar-default .navbar-nav>li>a:hover {
@@ -303,6 +312,7 @@ input, .input-lg {
 }
 
 .divider {
+  color: #627990;
   font-size: 16px;
   margin: 5px 0;
   overflow: hidden;
@@ -323,7 +333,7 @@ input, .input-lg {
 }
 
 .divider:before, .divider:after {
-  background-color: #333;
+  background-color: #3C4C5A;
   content: "";
   display: inline-block;
   height: 1px;
@@ -342,20 +352,29 @@ input, .input-lg {
 }
 
 .jumbo-paas {
-  font-size: 34px;
+  font-size: 32px;
   color: #fff;
   line-height: 1.6;
 }
 
 .jumbo-paas-sub {
   margin: 0 auto;
-  max-width: 70%;
+  max-width: 80%;
   font-family: 'Roboto', sans-serif;
   font-size: 22px;
   color: #627990;
   margin-bottom: 20px;
-  font-weight: 900;
+  font-weight: 400;
   line-height: 1.7;
+}
+
+.jumbo-enterprise-sub {
+  font-family: 'Roboto', sans-serif;
+  font-size: 22px;
+  color: #627990;
+  margin-bottom: 20px;
+  font-weight: 400;
+  line-height: 1.6;
 }
 
 .scroll-block {
@@ -398,11 +417,11 @@ input, .input-lg {
 
 .not-convinced-block {
   height: 347px;
-  background-color: #2e4052;
+  background-color: #2c3c5c;
 }
 
 .glyphicon-not-convinced {
-  color: #2e4052;
+  color: #2c3c5c;
 }
 
 .jumbotron-home-special {
@@ -430,10 +449,16 @@ input, .input-lg {
 }
 
 .challenges-block {
+  background-color: #1ab2e8;
+  margin-top: -40px;
+}
+
+.challenges-block > h3, p {
+  color: #2e4052;
+}
+
+.challenges-row {
   margin-top: 60px;
-  background-color: #2e4052;
-  padding-left: 40px;
-  padding-right: 40px;
 }
 
 .challenges-title {
@@ -441,18 +466,16 @@ input, .input-lg {
   margin-bottom: 30px;
 }
 
-.challenges-header {
-  margin-top: 5px;
-  margin-bottom: 25px;
-  font-size: 24px;
-  color: #627990;
-  margin-bottom: 20px;
-  font-weight: 500;
-  line-height: 1.7;
+.jumbo-challenges {
+  padding-top: 70px;
+  font-size: 32px;
+  color: #fff;
+  line-height: 1.6;
 }
 
-.challenges-link {
-
+.challenges-header {
+  color: #5d748a;
+  line-height: 1.7;
 }
 
 .challenges {
@@ -462,14 +485,11 @@ input, .input-lg {
 
 .challenges-inner {
   padding: 30px;
-  border: 1px solid #fff;
-  border-radius: 3px;
-/*  background-color: #2D2D2D;*/
 }
 
 .challenges p {
-  font-size: 14px;
-  font-weight: 200;
+  font-size: 18px;
+  font-weight: 400;
 }
 
 .box-feature {
@@ -537,7 +557,7 @@ h2.box-overview-lead {
   display: block;
   height: auto;
   max-width: 120%;
-  margin-bottom: -113px;
+  margin-bottom: -112px;
 }
 
 @media (min-width: 767px) {
@@ -582,7 +602,6 @@ h2.box-overview-lead {
 
 .inline-account {
   color: #fff;
-  margin-top: -40px;
   background-color:#bec5cc;
   position: relative;
   z-index: 10;
@@ -596,7 +615,10 @@ h2.box-overview-lead {
   padding-top: 40px;
   padding-bottom: 15px;
   color: #FFF;
- 	background-color: #2e4052;
+ 	background-color: #2c3c5c;
+  background-image: url('https://dl.dropboxusercontent.com/u/11221717/background-small-mesh.png');
+  background-position: center bottom;
+  background-repeat: no-repeat;
 }
 
 .footer-cta {
@@ -980,7 +1002,7 @@ code {
 .feature-list div.inline .glyphicon {
   position: relative;
   margin-right: 30px;
-  left: 4%;
+  left: 10px;
 }
 
 .feature-list li {
@@ -1023,6 +1045,10 @@ code {
   height:300px;
   background: url('https://dl.dropboxusercontent.com/u/11221717/jumbotron-customers.jpg') center;
   background-size: cover;
+}
+
+.row-personas {
+  padding-top: 120px;
 }
 
 .feature-included {
