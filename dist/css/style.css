@@ -196,6 +196,27 @@ p, h4, .lead {
   color: #FFF;
 }
 
+.btn-challenges {
+  background-color: #345371;
+  border-color: #345371;
+  color: #fff;
+}
+
+.btn-challenges:hover{
+  background-color: #3f6589;
+  border-color: #3f6589;
+  color: #fff;
+}
+
+.btn-challenges:focus,
+.btn-challenges:active,
+.btn-challenges.active,
+.open .dropdown-toggle.btn-challenges{
+  background-color: #2a425a;
+  border-color: #2a425a;
+  color: #FFF;
+}
+
 input, .input-lg {
   border-radius: 3px;
 }
@@ -348,7 +369,9 @@ input, .input-lg {
   left: 0;
   background-color: #2d3e5f;
   background-image: url('https://dl.dropboxusercontent.com/u/11221717/home-hero-background.jpg');
-  background-size: cover;
+  background-position: center bottom;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
 }
 
 .jumbo-paas {
@@ -368,12 +391,19 @@ input, .input-lg {
   line-height: 1.7;
 }
 
+.jumbo-enterprise {
+  font-size: 37px;
+  color: #fff;
+  line-height: 1.6;
+}
+
 .jumbo-enterprise-sub {
+  width: 90%;
   font-family: 'Roboto', sans-serif;
-  font-size: 22px;
+  font-size: 26px;
   color: #627990;
   margin-bottom: 20px;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 1.6;
 }
 
@@ -449,7 +479,7 @@ input, .input-lg {
 }
 
 .challenges-block {
-  background-color: #1ab2e8;
+  background-color: #a46eda;
   margin-top: -40px;
 }
 
@@ -466,6 +496,10 @@ input, .input-lg {
   margin-bottom: 30px;
 }
 
+.icon-challenges {
+  margin: 0 auto;
+}
+
 .jumbo-challenges {
   padding-top: 70px;
   font-size: 32px;
@@ -474,13 +508,17 @@ input, .input-lg {
 }
 
 .challenges-header {
-  color: #5d748a;
+  color: #2c3c5c;
   line-height: 1.7;
 }
 
 .challenges {
   padding: 10px;
   color: #FFF;
+}
+
+.btn-challenges {
+  margin-top: 60px;
 }
 
 .challenges-inner {
@@ -490,6 +528,10 @@ input, .input-lg {
 .challenges p {
   font-size: 18px;
   font-weight: 400;
+}
+
+.enterprise-features {
+  margin-top: -30px;
 }
 
 .box-feature {
@@ -1003,6 +1045,7 @@ code {
   position: relative;
   margin-right: 30px;
   left: 10px;
+  font-size: 18px;
 }
 
 .feature-list li {
@@ -1010,49 +1053,62 @@ code {
 }
 
 .feature-list h2 {
-  font-weight: 500;
+  font-weight: 400;
+  color: #a36eda;
 }
 
 .feature-list h4 {
-  font-weight: 300;
+  font-weight: 400;
+  font-size: 18px;
 }
 
 .table-pricing th:first-child, td:first-child {
   width: 400px;
 }
 
-.feature-highlight-block-first {
+.feature-highlight-first {
   margin-top: 140px;
 }
 
-.feature-highlight-block {
+.feature-highlight {
   margin-top: 80px;
 }
 
-.feature-highlight-block .lead {
+.feature-highlight .lead {
   font-size: 16px;
 }
 
-.feature-specific-list li {
-  font-size: 16px;
-  font-weight: 200;
+.feature-highlight-list li {
+  font-size: 19px;
+  font-weight: 300;
 }
 
 /*== ENTERPRISE SECTION ===============*/
 
-.customers {
-  color: #FFF;
-  height:300px;
-  background: url('https://dl.dropboxusercontent.com/u/11221717/jumbotron-customers.jpg') center;
+.enterprise-background {
+  height: 790px;
+  background-image: url('https://dl.dropboxusercontent.com/u/11221717/enterprise-background.png');
+  background-position: bottom center;
   background-size: cover;
 }
 
+.personas-background {
+  margin-top: 140px;
+  height: 290px;
+  width: 101%;
+  margin-left: -26px;
+  background-image: url('https://dl.dropboxusercontent.com/u/11221717/dev-ops-it-management.png');
+  background-position: bottom center;
+  background-size: cover; 
+}
+
 .row-personas {
-  padding-top: 120px;
+  padding-top: 480px;
+  padding-bottom: 100px;
 }
 
 .feature-included {
-  margin-top: 11px;
+  margin-top: 9px;
 }
 
 .feature-specific-list {
@@ -1078,8 +1134,12 @@ code {
   border: 4px solid #FFF;
 }
 
-.kail-quote {
-  color: #FFF;
+.enterprise-signup-block {
+  background-color: #e2e6ed;
+}
+
+.enterprise-contact-lead {
+  color: #9a68cd;
 }
 
 /*== ABOUT ===============================*/
@@ -1164,7 +1224,7 @@ p.clear-leadership-social {
 }
 
 .required-form {
-  color: #d43f3a;
+  color: #007eff;
 }
 
 .signup-form .modal-footer {
@@ -1178,5 +1238,34 @@ p.clear-leadership-social {
 .signup-form .modal-header {
   color: #999;
 }
+
+.enterprise-contact-form {
+  background-color: #fff;
+  padding: 20px;
+}
+
+#enterprise-contact-btn {
+  margin-top: 7px;
+  width: 200px;
+}
+
+.enterprise-contact-form-header {
+  padding: 1px;
+  background-color: #9a68cd;
+}
+
+.enterprise-contact-form-header > h2 {
+  color: #fff;
+  font-weight: 300;
+  font-size: 35px;
+  padding-bottom: 5px;
+}
+
+.form-control {
+  background-color: #f0f2f5;
+  border: 1px solid #f0f2f5;
+}
+
+
 
 
