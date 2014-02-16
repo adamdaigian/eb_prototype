@@ -19,7 +19,7 @@
 <link href="./dist/css/animate.css" rel="stylesheet">
 <link href="./dist/css/style.css" rel="stylesheet">
 <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-<link href='http://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Ubuntu|Inconsolata|Open+Sans:300,400,600.700,800' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Ubuntu|Monda:400,700|Inconsolata|Open+Sans:300,400,600.700,800' rel='stylesheet' type='text/css'>
 <script src="./dist/js/app.js"></script>
 <!--[if lt IE 9]><script src="./docs-assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
 <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -75,10 +75,10 @@
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li>
-          <a href="./login">Login</a>
+          <a class="hidden-sm hidden-xs" href="./login">Login</a>
         </li>
         <li>
-          <button type="button" href="#sign-up-modal" class="btn btn-danger navbar-btn hidden-xs" data-toggle="modal" data-target="#sign-up-modal">SIGN UP</button>
+          <button type="button" href="#sign-up-modal" class="btn btn-danger navbar-btn" data-toggle="modal" data-target="#sign-up-modal">SIGN UP</button>
         </li>
       </ul>
     </nav>
@@ -89,10 +89,9 @@
     <main id="content" role="main">
   <div class="jumbotron paas">
   	<div class="container">
-      <br><br>
-      <div class="col-lg-8 col-lg-offset-2 text-center">
+      <div class="col-lg-12 text-center">
         <h2 class="jumbo-paas">Develop, Deploy and Manage Apps on any Cloud.</h2>
-        <h4 class="lead jumbo-paas-sub">Designed And Built For Developers. Try The Free Edition.</h4>
+        <h3 class="jumbo-paas-sub">Designed And Built For Developers. Try The Free Edition.</h3>
         <div class="sign-up-container">
           <button type="button" class="btn btn-primary btn-block btn-lg btn-home hidden-xs" href=""><span class="fa fa-github"></span>   SIGN UP WITH GITHUB</button>
           <span class="divider hidden-xs">Or</span>
@@ -151,12 +150,12 @@
 
   <div class="jumbotron not-convinced-block">
     <div class="container text-center">
-      <h2 class="jumbo-paas">Boom. Application Deployed.</h2>
-      <h3 class="jumbo-paas-sub">DevOps At Your Fingertips.</h3>
+      <h2 class="jumbo-not-convinced">Boom. Application Deployed.</h2>
+      <h3 class="jumbo-paas-sub hidden-xs">DevOps At Your Fingertips.</h3>
       <button type="button" class="btn btn-danger btn-lg" href="#sign-up-modal" data-toggle="modal" data-target="#sign-up-modal">TRY FOR YOURSELF</button>
-      <h4 class="lead sub">Still not convinced?</h4>
-      <h5 class="sub">See More</h5>
-      <span class="glyphicon glyphicon-chevron-down glyphicon-not-convinced"></span>
+      <h4 class="lead sub hidden-xs">Still not convinced?</h4>
+      <h5 class="sub hidden-xs">See More</h5>
+      <span class="glyphicon glyphicon-chevron-down glyphicon-not-convinced hidden-xs"></span>
 
     </div>
   </div>
@@ -167,13 +166,13 @@
       <h4 class="col-md-8 col-md-offset-2 lead text-center">A central platform built for enterprise developers. Everything you need in one place to manage your cloud applications and infrastructure.</h4>
 
       <div class="row padding-4x">
-        <div class="col-lg-4 col-lg-offset-1 col-sm-6 highlight-block padding-2x text-center">
+        <div class="col-lg-4 col-lg-offset-1 col-sm-6 feature-highlight padding-2x text-center">
           <img class="img-responsive" src="https://dl.dropboxusercontent.com/u/11221717/Screenshot%202014-02-06%2018.33.52.png"></img>
-          <h2 class="r">Developer Focused</h2>
+          <h2 class="">Developer Focused</h2>
           <p class="lead">Purpose built to manage all your app configurations, variables and dependancies. Use ElasticBox to maintain your CM tools (Chef, Docker, Puppet) or standard scripting language scripts (bash, PowerShell).</p>
           <a class="more" href="./features/#life-cycle-editor">LEARN MORE</a>
         </div>
-        <div style="margin-top:40px;" class="col-lg-4 col-lg-offset-2 col-sm-6 highlight-block padding-2x text-center">
+        <div style="margin-top:40px;" class="col-lg-4 col-lg-offset-2 col-sm-6 feature-highlight padding-2x text-center">
           <img class="img-responsive" src="https://dl.dropboxusercontent.com/u/11221717/Screenshot%202014-02-06%2018.34.00.png"></img>
           <h2>Collaborate With Ease</h2>
           <p class="lead">Work with teams or individual developers by adding users to your workspaces or sharing applications and components as boxes. Detailed collaboration and permission options means you can work together, securely.</p>
@@ -182,14 +181,6 @@
       </div>
     </div>
   </div>  
-
-  <div class="container padding-4x">
-    <div class="col-lg-10 col-lg-offset-1 text-center">
-      <h3 class="">See What The Future For Virtual Application Development Looks Like.</h3>
-      <p class="lead">ElasticBox can address your specific enterprise developer use cases to streamline your development and deployment. Now you can move faster, all with more confidence and control.</p>
-      <p><button href="./enterprise" type="button" class="btn btn-primary btn-lg text-center">LEARN MORE</button></p>
-    </div>  
-  </div>
 </main>
 
 
