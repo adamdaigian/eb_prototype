@@ -755,27 +755,50 @@ h2.box-overview-lead {
 
 /*== FEATURES ==================*/
 
+.hero-walkthrough {
+  background-color: #7694be;
+}
+
+.jumbotron.hero-walkthrough h2 {
+  color: #fff;
+}
+
+.jumbotron.hero-walkthrough h3 {
+  color: #4a5370;
+}
 
 .hero-screenshot-block {
-  padding-top: 40px;
+  padding: 40px;
 }
 
 .hero-screenshot {
   position: relative;
   width: 100%;
-  height: 340px;
-  padding-top: 20px;
-  margin-bottom: -124px;
-  border: 2px solid #63798f;
-  background-color: #e0ebf4;
-  border-radius: 6px;
+  height: 500px;
+  padding: 40px;
+  border: 2px solid #496579;
+  background-color: #a9c1db;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom: none;
+}
+
+.hero-screenshot-base {
+  margin-top: -40px;
+  height: 60px;
+  width: 90%;
+  left: 5%;
+  background-color: #92b2cf;
+  border: 2px solid #496579;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
 }
 
 .hero-screenshot-inner {
   height: 100%;
   width: 100%;
   background-color: #fff;
-  border-top: 2px solid #63798f;
+  border: 2px solid #496579;
 }
 
 .hero-screenshot-placeholder {
@@ -790,7 +813,7 @@ h2.box-overview-lead {
 .browser {
   height: 350px;
   width: 100%;
-  padding-top: 60px;
+  padding-top: 50px;
   border: 2px solid #63798f;
   background-color: #e0ebf4;
   border-radius: 3px;
@@ -803,6 +826,7 @@ h2.box-overview-lead {
   width: 100%;
   border-top: 2px solid #63798f;
   background-color: #fff;
+  overflow: scroll;x
 }
 
 .indicators-hero {
@@ -1100,17 +1124,18 @@ h2.feature-title {
   top: -2px;
 }
 
+
 /*== ENTERPRISE SECTION ===============*/
 
 .enterprise-background {
   background-image: url('https://dl.dropboxusercontent.com/u/11221717/enterprise-background.png');
-  background-position: bottom center;
+  background-position: bottom center;tt
   background-size: cover;
 }
 
 .personas-background {
   margin-top: 140px;
-  height: auto;
+  height: 240px;
   width: 100%;
   margin-left: -26px;
   background-image: url('https://dl.dropboxusercontent.com/u/11221717/dev-ops-it-management.png');
@@ -1123,17 +1148,12 @@ h2.feature-title {
   padding-bottom: 100px;
 }
 
-.feature-list.row-personas li {
+ul.persona-list li {
+/*  padding-left: 10px;*/
   list-style: none;
-  text-indent: 0px;
+  text-indent: -12px;
   margin-left: 0px;
 }
-
-.feature-list.row-personas li:before {
-  content: none;
-}
-
-
 
 .feature-included {
   margin-top: 9px;
