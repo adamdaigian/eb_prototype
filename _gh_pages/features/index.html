@@ -89,9 +89,9 @@
     <main id="content" role="main">
 	<div class="jumbotron hero-walkthrough">
    	<div class="container">
-   		<div class="row padding-4x">
-   				<h2 class="text-center">ElasticBox To The Rescue. Reinventing Your Workflow.</h2>
-          <h3 class="lead col-lg-8 col-lg-offset-2 text-center">Welcome to a simplified, modular, service-based application development process, where fully configured application components are available as a service.</h3>
+   		<div class="row">
+   				<h2 class="features-hero text-center">ElasticBox To The Rescue. Reinventing Your Workflow.</h2>
+          <h3 class="features-sub lead col-lg-8 col-lg-offset-2 text-center">Welcome to a simplified, modular, service-based application development process, where fully configured application components are available as a service.</h3>
    			<div class="col-lg-10 col-lg-offset-1 hero-screenshot-block">
           <div class="hero-screenshot">
             <div class="hero-screenshot-inner">
@@ -103,70 +103,59 @@
    		</div>
    	</div>
   </div>
-  <div class="container deploy-block">
-  	<div class="row padding-4x">
-      <div class="col-lg-10 col-lg-offset-1">
-        <h2 class="text-center">Start Deploying Applications Right Away.</h2>
-        <h4 class="col-lg-8 col-lg-offset-2 text-center lead">Configure and deploy applications using CM tools like <a class="more" href="">Docker</a>, <a class="more" href="">Chef</a>, and <a class="more">Puppet</a> or standard scripting languages like Bash and PowerShell.</h4>
-        
-        <hr>
-        <div class="row">
-          <div class="scripts">
-            <ul class="list-inline">
-              <li class="btn btn-sm btn-social btn-scripts active">Docker</li>
-              <li class="btn btn-sm btn-social btn-scripts">Chef</li>
-              <li class="btn btn-sm btn-social btn-scripts">Puppet</li>
-              <li class="btn btn-sm btn-social btn-scripts">Bash</li>
-            </ul>
-          </div>
-          <div class="col-lg-4"></div>
-          <div class="col-lg-8">
-            <div class="browser">
-              <div class="indicators">
-                <span class="circle"></span>
-                <span class="circle"></span>
-                <span class="circle"></span>
-              </div>
-              <div class="browser-editor">
-                <code>
-                  $ from ubuntu:12.10
-                  <br>
-                  $ run apt-get update
-                  <br>
-                  $ run DEBIAN_FRONTEND=noninteractive apt-get install -q -y python
-                  <br>
-                  $ run DEBIAN_FRONTEND=noninteractive apt-get install -q -y python-pip
-                  <br>
-                  $ run pip install django
-                  <br>
-                  run DEBIAN_FRONTEND=noninteractive apt-get install -q -y curl
-                  <br>
-                  run curl -L https://github.com/shykes/helloflask/archive/master.tar.gz | tar -xzv
-                  <br>
-                  http://sushi.herokuapp.com deployed to Heroku
-                </code>
+  <div class="jumbotron deploy">
+    <div class="container">
+    	<div class="row padding-4x">
+        <div class="col-lg-10 col-lg-offset-1">
+          <h2 class="text-center">Start Deploying Applications Right Away.</h2>
+          <h4 class="col-lg-8 col-lg-offset-2 text-center lead">Configure and deploy applications using CM tools like <a class="more" href="">Docker</a>, <a class="more" href="">Chef</a>, and <a class="more">Puppet</a> or standard scripting languages like Bash and PowerShell.</h4>
+          
+          <hr>
+          <div class="row">
+            <div class="scripts">
+              <ul class="list-inline">
+                <li class="btn btn-sm btn-social btn-scripts active">Docker</li>
+                <li class="btn btn-sm btn-social btn-scripts">Chef</li>
+                <li class="btn btn-sm btn-social btn-scripts">Puppet</li>
+                <li class="btn btn-sm btn-social btn-scripts">Bash</li>
+              </ul>
+            </div>
+            <div class="col-lg-4"></div>
+            <div class="col-lg-8">
+              <div class="browser">
+                <div class="indicators">
+                  <span class="circle"></span>
+                  <span class="circle"></span>
+                  <span class="circle"></span>
+                </div>
+                <div class="browser-editor">
+                  <code>
+                    $ from ubuntu:12.10
+                    <br>
+                    $ run apt-get update
+                    <br>
+                    $ run DEBIAN_FRONTEND=noninteractive apt-get install -q -y python
+                    <br>
+                    $ run DEBIAN_FRONTEND=noninteractive apt-get install -q -y python-pip
+                    <br>
+                    $ run pip install django
+                    <br>
+                    run DEBIAN_FRONTEND=noninteractive apt-get install -q -y curl
+                    <br>
+                    run curl -L https://github.com/shykes/helloflask/archive/master.tar.gz | tar -xzv
+                    <br>
+                    http://sushi.herokuapp.com deployed to Heroku
+                  </code>
+                </div>
               </div>
             </div>
-          </div>
-        </div>  
-      </div>
-  	</div>
-  </div>
-<!--   <div class="jumbotron box-overview-block">
-    <div class="container">
-      <h2 class="col-lg-offset-1 box-overview-lead">What are Boxes and why are they awesome?</h2>
-      <div class="col-lg-6 col-lg-offset-1 col-sm-6">
-        <h2>Create, reuse, and repurpose.</h2>
-        <p class="lead">Teams can assemble and launch n-tier applications by mixing and matching boxes. Launching applications from boxes gives you consistency and agility. Versioning means you can innovate without breaking things.</p>
-        <a class="more" href="../features/#box-block-link">LEARN MORE</a>
-      </div>
-      <div class="col-lg-5 col-sm-6">
-        <img class="img-responsive box-overview-img" src="http://www.elasticbox.com/images/features3.png"></img>
-      </div>
+          </div>  
+        </div>
+    	</div>
     </div>
-  </div> -->
-  <div class="jumbotron clouds-section">
-  	<div class="container">
+  </div>  
+  <div class="clouds">
+  	<div class="container padding-4x">
   		<h2 class="text-center">Feel Free To Move About The Clouds</h2>
       <h4 class="lead col-md-10 col-md-offset-1 text-center">ElasticBox supports all leading cloud providers, so you won't be boxed into any specific vendor. Public, private or hybrid clouds. You choose.</h4>
   		<div class="row text-center hidden-md hidden-xs padding-2x">
@@ -210,48 +199,48 @@
   		</div>
   	</div>
   </div>
-  
-  <div class="container">
-    <h2 class="text-center">Welcome to a new and improved workflow.</h2>
-    <h3 class="text-center lead col-lg-10 col-lg-offset-1">ElasticBox has tools and features you've never seen before. Give them a try and you'll wonder how you survived without them.</h3>
-    <div class="row padding-4x">
-      <div class="col-md-5 feature-highlight">
-        <h2 class="feature-title">ElasticBox Lifecycle Editor</h2>
-        <h4 class="feature-supporting">Reconfigure and Deploy in one view.</h4>
-        <div class="lead">No product has a tool quite like the Lifecycle Editor. In one view, you can manage scripts and variables, deploy and then reconfigure or reinstall. It’s all the power you ever wished for, right at your fingertips.</div>
-        <ul class="feature-list">
-          <li>Frictionless development tool.</li>
-          <li>Effective asset and dependency management.</li>
-          <li>Keep infrastructure fluid and manageable.</li>
-          <li>Audit and compare multiple deployment logs.</li>
-          <li>Increase deployment velocity by configuring<br> and installing on the fly.</li>
-        </ul>
+  <div class="jumbotron">
+    <div class="container">
+      <h2 class="text-center">Welcome to a new and improved workflow.</h2>
+      <h3 class="text-center lead col-lg-10 col-lg-offset-1">ElasticBox has tools and features you've never seen before. Give them a try and you'll wonder how you survived without them.</h3>
+      <div class="row padding-4x">
+        <div class="col-md-5 feature-highlight">
+          <h2 class="feature-title">ElasticBox Lifecycle Editor</h2>
+          <h4 class="feature-supporting">Reconfigure and Deploy in one view.</h4>
+          <div class="lead">No product has a tool quite like the Lifecycle Editor. In one view, you can manage scripts and variables, deploy and then reconfigure or reinstall. It’s all the power you ever wished for, right at your fingertips.</div>
+          <ul class="feature-list">
+            <li>Frictionless development tool.</li>
+            <li>Effective asset and dependency management.</li>
+            <li>Keep infrastructure fluid and manageable.</li>
+            <li>Audit and compare multiple deployment logs.</li>
+            <li>Increase deployment velocity by configuring<br> and installing on the fly.</li>
+          </ul>
+        </div>
+        <div class="col-md-6 col-md-offset-1">
+          <img class="img-responsive" src="https://dl.dropboxusercontent.com/u/11221717/Screenshot%202014-01-09%2015.44.51.png"></img>
+        </div>
       </div>
-      <div class="col-md-6 col-md-offset-1">
-        <img class="img-responsive" src="https://dl.dropboxusercontent.com/u/11221717/Screenshot%202014-01-09%2015.44.51.png"></img>
-      </div>
-    </div>
-    <div class="row padding-4x">
-      <div class="col-md-5 feature-highlight">
-        <h2 class="feature-title">Collaboration That Scales</h2>
-        <h4 class="feature-supporting">Scale to hundreds without loosing strategy.</h4>
-        <div class="lead">We know that collaboration leads to innovation and acceleration. ElasticBox is purpose built to center your team’s work on developing and maintaining, keeping everyone on the same page.</div>
-        <ul class="feature-list">
-          <li>Share service and provider resources.</li>
-          <li>Collaborate through sharing contained infrastructure.</li>
-          <li>Replicate infrastracture and apps across environments.</li>
-          <li>Incentivise sharing, agility and innovation.</li>
-          <li>Control access and control over application and infrastructure components.</li>
-        </ul>
-      </div>
-      <div class="col-md-6 col-md-offset-1">
-        <img class="img-responsive" src="https://dl.dropboxusercontent.com/u/11221717/Screenshot%202014-01-09%2015.44.51.png"></img>
+      <div class="row padding-4x">
+        <div class="col-md-5 feature-highlight">
+          <h2 class="feature-title">Collaboration That Scales</h2>
+          <h4 class="feature-supporting">Scale to hundreds without loosing strategy.</h4>
+          <div class="lead">We know that collaboration leads to innovation and acceleration. ElasticBox is purpose built to center your team’s work on developing and maintaining, keeping everyone on the same page.</div>
+          <ul class="feature-list">
+            <li>Share service and provider resources.</li>
+            <li>Collaborate through sharing contained infrastructure.</li>
+            <li>Replicate infrastracture and apps across environments.</li>
+            <li>Incentivise sharing, agility and innovation.</li>
+            <li>Control access and control over application and infrastructure components.</li>
+          </ul>
+        </div>
+        <div class="col-md-6 col-md-offset-1">
+          <img class="img-responsive" src="https://dl.dropboxusercontent.com/u/11221717/Screenshot%202014-01-09%2015.44.51.png"></img>
+        </div>
       </div>
     </div>
   </div>
-
   
-	<div class="jumbotron box-block" id="box-block-link">
+	<div class="box-block" id="box-block-link">
 		<div class="container">
       <div class="row padding-2x">
         <div class="col-md-8">

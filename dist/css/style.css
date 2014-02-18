@@ -353,14 +353,14 @@ input, .input-lg {
   background-repeat: no-repeat;
 }
 
-.jumbo-paas {
+.home-lead {
   padding-top: 70px;
 /*  font-size: 32px;*/
   color: #fff;
   line-height: 1.6;
 }
 
-.jumbo-paas-sub {
+.home-sub {
   margin: 0 auto;
   max-width: 90%;
   font-family: 'Monda', sans-serif;
@@ -371,12 +371,12 @@ input, .input-lg {
   line-height: 1.7;
 }
 
-.jumbo-enterprise {
+.enterprise-lead {
   color: #fff;
   line-height: 1.6;
 }
 
-.jumbo-enterprise-sub {
+.enterprise-sub {
   width: 90%;
   font-family: 'Monda', sans-serif;
   color: #627990;
@@ -548,11 +548,11 @@ h2.box-overview-lead {
 
 @media (max-width: 768px) {
 
-  .jumbo-paas {
+  .home-lead {
     padding-top: 30px;
   }
 
-  .jumbo-paas-sub {
+  .home-sub {
     max-width: 100%;
   }
 
@@ -755,6 +755,10 @@ h2.box-overview-lead {
 
 /*== FEATURES ==================*/
 
+.features-hero {
+  padding-top: 30px;
+}
+
 .hero-walkthrough {
   background-color: #7694be;
 }
@@ -775,17 +779,17 @@ h2.box-overview-lead {
   position: relative;
   width: 100%;
   height: 500px;
-  padding: 40px;
+  padding: 25px;
   border: 2px solid #496579;
   background-color: #a9c1db;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
-  border-bottom: none;
+  border-bottom: none
 }
 
 .hero-screenshot-base {
   margin-top: -40px;
-  height: 60px;
+  height: 40px;
   width: 90%;
   left: 5%;
   background-color: #92b2cf;
@@ -808,6 +812,10 @@ h2.box-overview-lead {
   background-size: cover;
   /*-webkit-filter: grayscale(100%);*/
   -webkit-filter: hue-rotate(180deg);
+}
+
+.deploy {
+  margin-top: -30px;
 }
 
 .browser {
@@ -1013,8 +1021,12 @@ code {
   }
 }
 
-.clouds-section {
-  background-color: #007bc9;
+.clouds {
+  padding-top: 4em;
+  padding-bottom: 10em;
+  background-image: url('https://dl.dropboxusercontent.com/u/11221717/background-small-mesh.png');
+  background-position: center bottom;
+  background-repeat: no-repeat;
 }
 
 
@@ -1127,9 +1139,13 @@ h2.feature-title {
 
 /*== ENTERPRISE SECTION ===============*/
 
+.enterprise-hero {
+  color: #fff;
+}
+
 .enterprise-background {
   background-image: url('https://dl.dropboxusercontent.com/u/11221717/enterprise-background.png');
-  background-position: bottom center;tt
+  background-position: center;
   background-size: cover;
 }
 
@@ -1314,21 +1330,42 @@ p.clear-leadership-social {
   border: 1px solid #f0f2f5;
 }
 
+/*== ERROR PAGE ============================*/
+
+.error-block {
+  height: 500px;
+  background-image: url('https://dl.dropboxusercontent.com/u/11221717/background-small-mesh.png');
+  background-position: center 140%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.error-brand {
+  margin: 0 auto;
+  height: 64px;
+  width: 64px;
+  background-image: url('https://beta.elasticbox.com/images/logo-errors.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.rocket {
+  position: absolute;
+  padding-top: 173px;
+}
+
+#rocket-background {
+  position: absolute;
+  width: 620px;
+  height: 300px;
+  background-image: url('https://dl.dropboxusercontent.com/u/11221717/ErrorRocket.png');
+  background-repeat: no-repeat;
+}
+
+
 /*== GLOBAL MEDIA QUERIES ==================*/
 
 @media (max-width: 767px) {
-/*  h1, h2 {
-    font-size: 26px;
-  }
-
-  h3 {
-    font-size: 22px;
-  } 
-
-  h4 {
-    font-size: 18px;
-  }*/
-
   .padding-4x {
     padding-top: 2em;
     padding-bottom: 2em;
