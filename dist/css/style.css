@@ -837,6 +837,17 @@ h2.box-overview-lead {
   overflow: scroll;x
 }
 
+code {
+  color: #4c4c4c;
+  line-height: 1em;
+  background: none;
+  font-size: 15px;
+}
+
+code > br {
+  line-height: .8em;
+}
+
 .indicators-hero {
   margin-top: -15px;
   padding-top: 2px;
@@ -1029,6 +1040,20 @@ code {
   background-repeat: no-repeat;
 }
 
+.clouds-inner {
+  background-image: url('https://dl.dropboxusercontent.com/u/11221717/ELS-CloudSectionBackground-1a.png');
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+.cloud-row-1 {
+  margin-top: 60px;
+}
+
+.cloud-row-2 {
+  margin-top: 100px;
+}
+
 
 .box-block {
   margin-bottom: -20px;
@@ -1204,6 +1229,10 @@ ul.persona-list li {
 
 .enterprise-contact-lead {
   color: #9a68cd;
+}
+
+.enterprise-contact-sub i {
+  padding-right: 10px;
 }
 
 /*== ABOUT ===============================*/
