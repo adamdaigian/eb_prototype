@@ -6,22 +6,109 @@ lead: "You have reached an error page."
 base_url: "../"
 ---
 
-<script>
-  $('#rocket #shell img').plaxify()
+<style type="text/css">
+  * {
+    margin: 0px;
+    padding: 0px;
+  }
+  body {
+    position: relative;
+  }
+  div#shell {
+    top: 0;
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 500px;
+    background: #2c3c5c;
+    background-image: url('https://dl.dropboxusercontent.com/u/11221717/background-small-mesh.png');
+    background-position: center 140%;
+    background-repeat: no-repeat;
+    z-index: 1;
+  }
+
+  img#background-stars {
+    margin-top: -200px;
+    position: absolute;
+    z-index: 3;
+  }
+
+  img#background-clouds {
+    opacity: .1;
+    margin-top: -360px;
+    position: absolute;
+    z-index: 4;
+  }
+
+  .error-links {
+    padding-bottom: 40px
+  }
+
+  .brand {
+    height: 64px;
+    width: 64px;
+    margin: 0 auto;
+    background-image: url('https://beta.elasticbox.com/images/logo-errors.png');
+    background-size: cover;
+  }
+
+  .jumbotron.error-base {
+    margin-top: 340px;
+    height: 100%;
+  }
+
+  .error-lead {
+    padding-top: 90px;
+    font-size: 40px;
+    position: relative;
+    text-align: center;
+    color: #a36eda;
+  }
+
+  .error-sub {
+    text-align: center;
+    color: #627990;
+  }
+</style>
+<script type="text/javascript">
+  $(document).ready(function () {
+    $('#shell img').plaxify()
     $.plax.enable()
   })
 </script>
 
-<main id="content" role="main">
-  <div class="jumbotron slate error-block">
-  	<div class="container">
-  			<div id="shell">
-	  			<img id="rocket-1" height="300px" width="500px" data-xrange="40" data-yrange="40" src="https://dl.dropboxusercontent.com/u/11221717/ErrorRocket.png"></img>
-					<img id="rocket-2" height="250px" width="450px" data-xrange="50" data-yrange="30" src="https://dl.dropboxusercontent.com/u/11221717/ErrorRocket.png"></img>	
-  		  </div>
+  </head>
+  <body>
+    <div id="shell">
+      <h2 class="error-lead">Crrshhh. Mission Control.</h2>
+      <h3 class="error-sub">This is not the page you're looking for.</h3>
+      <img src="https://dl.dropboxusercontent.com/u/11221717/stars-background.png" data-xrange="-64" data-yrange="-50" id="background-stars"></img>
+      <img src="https://dl.dropboxusercontent.com/u/11221717/clouds-error-background.png" data-xrange="50" data-yrange="30" id="background-clouds"/>
     </div>
-  </div>
-  <div class="container">
-  	<div class="error-brand"></div>
-  </div>
-</main>  
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-5 col-lg-offset-6">
+          <div class="rocket">
+            <img id="rocket" height="250px;" src="https://dl.dropboxusercontent.com/u/11221717/ErrorRocket.png"></img>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="margin-top:500px;" class="jumbotron error-base">
+      <div class="container">
+        <h3 class="text-center">Try one of these links instead.</h3>
+        <div class="row text-center error-links">
+          <div class="col-lg-2 col-lg-offset-3">
+            <a class="more" href="">Email Support</a>
+          </div>
+          <div class="col-lg-2">
+            <a class="more" href="">Browse Documentation</a>
+          </div>
+          <div class="col-lg-2">
+            <a class="more" href="">ElasticBox Status</a>
+          </div>
+        </div>
+        <div class="brand"></div>
+      </div>
+    </div>
+  </body>  
