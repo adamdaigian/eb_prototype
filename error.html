@@ -7,38 +7,21 @@ base_url: "../"
 ---
 
 <script>
-	// $.parallaxify();
-	// $(function(){
-			$('document').ready(function() {
-					$('#rocket-background').parallaxify();
-	// 			$.parallaxify({
-	// 				positionProperty: 'transform',
-	// 				responsive: true,
-	// 				motionType: 'natural',
-	// 				mouseMotionType: 'performance',
-	// 				motionAngleX: 70,
-	// 				motionAngleY: 70,
-	// 				alphaFilter: 0.5,
-	// 				adjustBasePosition: true,
-	// 				alphaPosition: 0.025,
-	// 			});
-			});
-	// 	}); // */
+  $('#rocket #shell img').plaxify()
+    $.plax.enable()
+  })
 </script>
 
 <main id="content" role="main">
   <div class="jumbotron slate error-block">
   	<div class="container">
-  		<div class="row">
-  			<div class="col-lg-5"></div>
-  				<div class="rocket">
-  					<div id="rocket-background"  data-parallaxify-background-range-x="100" data-parallaxify-background-range-y="50"></div>
-  				</div>	
+  			<div id="shell">
+	  			<img id="rocket" data-xrange="40" data-yrange="40" src="https://dl.dropboxusercontent.com/u/11221717/ErrorRocket.png"></img>
+					<img id="rocket" data-xrange="50" data-yrange="30" src="https://dl.dropboxusercontent.com/u/11221717/ErrorRocket.png"></img>	
   		</div>
     </div>
   </div>
   <div class="container">
   	<div class="error-brand"></div>
-
   </div>
 </main>  
