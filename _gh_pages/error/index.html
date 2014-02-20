@@ -66,15 +66,20 @@
     z-index: 1;
   }
 
+  img {
+    width: 100%;
+  }
+
   img#background-stars {
-    margin-top: -200px;
+    width: 100%;
+    margin-top: -320px;
     position: absolute;
     z-index: 3;
   }
 
   img#background-clouds {
     opacity: .1;
-    margin-top: -360px;
+    margin-top: -400px;
     position: absolute;
     z-index: 4;
   }
@@ -108,6 +113,65 @@
     text-align: center;
     color: #627990;
   }
+
+  #message {
+    opacity: .8;
+    position: absolute;
+    z-index: 5;
+    margin-top: 260px;
+    margin-left: 180px;
+    width: 260px;
+    height: 160px;
+    padding: 0px;
+    background: none;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    border: #63798f solid 3px;
+  }
+
+  #message:after {
+    content: '';
+    position: absolute;
+    border-style: solid;
+    border-width: 20px 0 20px 10px;
+    border-color: transparent #2c3c5c;
+    display: block;
+    width: 0;
+    z-index: 1;
+    right: -10px;
+    top: 24px;
+  }
+
+  #message:before {
+    content: '';
+    position: absolute;
+    border-style: solid;
+    border-width: 22px 0 22px 12px;
+    border-color: transparent #63798f;
+    display: block;
+    width: 0;
+    z-index: 0;
+    right: -13px;
+    top: 22px;
+  }
+
+  .message-inner {
+    margin-top: 280px;
+    margin-left: 200px;
+    width: 230px;
+    position: relative;
+    z-index: 6;
+  }
+
+  .message-inner > h2 {
+    color: #a36eda;
+  }
+
+  .message-inner > p {
+    color: #627990;
+  }
+
 </style>
 <script type="text/javascript">
   $(document).ready(function () {
@@ -126,9 +190,16 @@
     </div>
     <div class="container">
       <div class="row">
-        <div class="col-lg-5 col-lg-offset-6">
+        <div class="col-lg-6">
+          <div id="message" data-xrange="30" data-yrange="20"></div>
+          <div class="message-inner">
+            <h2>Error: 404 Bad Request</h2>
+            <p>This workspace has already been created.</p>
+          </div>
+        </div>
+        <div class="col-lg-5">
           <div class="rocket">
-            <img id="rocket" height="250px;" src="https://dl.dropboxusercontent.com/u/11221717/ErrorRocket.png"></img>
+            <img class="pull-right" id="rocket" height="250px;" src="https://dl.dropboxusercontent.com/u/11221717/ErrorRocket.png"></img>
           </div>
         </div>
       </div>
@@ -141,7 +212,7 @@
             <a class="more" href="">Email Support</a>
           </div>
           <div class="col-lg-2">
-            <a class="more" href="">Browse Documentation</a>
+            <a class="more" href="">Documentation</a>
           </div>
           <div class="col-lg-2">
             <a class="more" href="">ElasticBox Status</a>

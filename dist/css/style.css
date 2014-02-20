@@ -1392,6 +1392,7 @@ p.clear-leadership-social {
 }
 
 #rocket {
+  max-width: 600px;
   margin-top: 260px;
   position: absolute;
   height: 240px;
