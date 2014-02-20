@@ -1388,12 +1388,17 @@ p.clear-leadership-social {
 
 #shell {
   position: relative;
-  height: 400px;
-  width: 1000px;
+  z-index: -1;
 }
 
-#rocket {
+#rocket-1 {
   position: absolute;
+  z-index: 2;
+}
+
+#rocket-2 {
+  position: absolute;
+  z-index: 3;
 }
 
 /*#rocket-background {
