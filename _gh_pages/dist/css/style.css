@@ -679,7 +679,7 @@ h2.box-overview-lead {
   color: #FFF;
  	background-color: #2c3c5c;
   background-image: url('https://dl.dropboxusercontent.com/u/11221717/mountains.png');
-  background-position: center 30%;
+  background-position: center 40%;
   background-repeat: repeat;
 }
 
@@ -1119,6 +1119,14 @@ code {
   background-size: 100% 100%;
 }
 
+.glyphicon-chevron-left {
+  float: right;
+}
+
+.box-detail-select.glyphicon-chevron-right {
+  float: left;
+}
+
 
 /*== PRICING =========================*/
 
@@ -1380,10 +1388,27 @@ p.clear-leadership-social {
 
 /*== FORMS =======================*/
 
+.modal-backdrop.in {
+  opacity: 0.7;
+  filter: alpha(opacity=50);
+}
+
+.modal-backdrop {
+  background-color: #FFF;
+}
+
+.signup-form .modal-header {
+  color: #FFF;
+  background-color: #a271d7;
+}
 
 .modal-dialog {
-  max-width: 450px;
+  max-width: 390px;
   padding-top: 100px;
+}
+
+.modal-body {
+  padding:30px;
 }
 
 .required-form {
@@ -1395,11 +1420,7 @@ p.clear-leadership-social {
 }
 
 .signup-form {
-  background-color: #2e4052;
-}
-
-.signup-form .modal-header {
-  color: #999;
+  background-color: #fff;
 }
 
 .enterprise-contact-form {
