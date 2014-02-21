@@ -23,18 +23,17 @@ base_url: "../"
    		</div>
    	</div>
   </div>
-  <div class="jumbotron deploy">
+  <div class="deploy">
     <div class="container">
-    	<div class="row padding-4x">
+    	<div class="row padding-2x">
           <h2 class="text-center">Start Deploying Applications Right Away.</h2>
           <h4 class="col-lg-8 col-lg-offset-2 text-center lead">Configure and deploy applications using CM tools like <a class="more" href="">Docker</a>, <a class="more" href="">Chef</a>, and <a class="more">Puppet</a> or standard scripting languages like Bash and PowerShell.</h4>
-          <hr> 
       </div>    
-      <div class="row text-center">
-        <div class="col-lg-1 col-lg-offset-4"><button class="btn btn-md btn-primary active">Docker</button></div>
-          <div class="col-lg-1"><button class="btn btn-md button-block btn-primary">Chef</button></div>
-          <div class="col-lg-1"><button class="btn btn-md btn-primary">Puppet</button></div>
-          <div class="col-lg-1"><button class="btn btn-md btn-primary">Bash</button></div>
+      <div class="row row-scripts text-center padding-2x">
+        <div class="col-lg-2 col-lg-offset-2"><a class="btn btn-md btn-primary btn-deploy active">Docker</a></div>
+          <div class="col-lg-2"><a class="more btn-deploy">Chef</a></div>
+          <div class="col-lg-2"><a class="more btn-deploy">Puppet</a></div>
+          <div class="col-lg-2"><a class="more btn-deploy">Bash</a></div>
         </div>
       </div>
       <div class="row">
@@ -47,24 +46,19 @@ base_url: "../"
           </div>
           <div class="browser-editor">
             <code>
-              $ from ubuntu:12.10
+              $ if ! [ $(lsb_release -cs|grep raring|wc -c) -gt 1 ]; then echo "UNSUPPORTED IMAGE/AMI: This Box only works with Ubuntu 13.04 (Raring Ringtail)"; fi
               <br>
-              $ run apt-get update
+              $ sudo apt-key adv --keyserver keyserver.ubuntu.com 
               <br>
-              $ run DEBIAN_FRONTEND=noninteractive apt-get install -q -y python
+              $ sudo sh -c "echo deb http://get.docker.io/ubuntu docker main > /etc/apt/sources.list.d/docker.list"
               <br>
-              $ run DEBIAN_FRONTEND=noninteractive apt-get install -q -y python-pip
+              $ sudo apt-get update -y
               <br>
-              $ run pip install django
+              $ sudo apt-get install lxc-docker-0.7.6 -y
               <br>
-              run DEBIAN_FRONTEND=noninteractive apt-get install -q -y curl
-              <br>
-              run curl -L https://github.com/shykes/helloflask/archive/master.tar.gz | tar -xzv
-              <br>
-              http://sushi.herokuapp.com deployed to Heroku
+              $ run curl -L https://github.com/shykes/helloflask/archive/master.tar.gz | tar -xzv
             </code>
           </div>
-        </div>
         </div>
       </div>  
     </div>      
@@ -157,20 +151,32 @@ base_url: "../"
     </div>
   </div>
   
-	<div class="box-block" id="box-block-link">
-		<div class="container">
+  <div class="box-land">
+  	<div class="container box-friends" id="box-block-link">
       <div class="row padding-2x">
-        <div class="col-md-8">
+        <div class="col-lg-8 col-lg-offset-2 text-center">
           <h2 class="">Boxes Are Your New Best Friend.</h2>
-          <p>What is a Box you ask? A Box is an encapsulated, fully configured, component of your application architecture. A Box contains scripts, variables, files, and other metadata required to deploy the application.</p>
-          <p>It could be a database, webserver, middleware, language, runtime – really you can Box almost anything. A Box is reusable, can be versioned, and is fully mobile across cloud services.</p>
-        </div>
-        <div class="col-md-4 text-center padding-1x">
-          <span class="glyphicon glyphicon-th glyphicon-8x"></span>
+          <h4>Create, reuse, and repurpose.Teams can assemble and launch n-tier applications by mixing and matching boxes. Launching applications from boxes gives you consistency and agility. Versioning means you can innovate without breaking things.</h4>
         </div>
       </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <img class="img-responsive" src="https://dl.dropboxusercontent.com/u/11221717/boxes-best-friend-illustration.png"></img>
+        </div>
+      </div>
+    </div>    
+    <div class="jumbotron text-center">
+      <h2>See Why Boxes Are Awesome</h2>
+      <h4 class="col-lg-8 col-lg-offset-2">What is a Box you ask? A Box is an encapsulated, fully configured, component of your application architecture. A Box contains scripts, variables, files, and other metadata required to deploy the application. It could be a database, webserver, middleware, language, runtime – really you can Box almost anything. A Box is reusable, can be versioned, and is fully mobile across cloud services.</h4>
+      <div class="row">
+        <div class="col-lg-6 col-lg-offset-3">
+          <div class="box-explain">
+            <div class="box-large"></div>
+          </div>
+        </div>
+      </div> 
       <div class="row padding-1x">
-        <div class="col-md-10">
+        <div class="col-lg-10 col-lg-offset-1 text-center">
           <h3 class="">Language Runtimes.</h3>
           <h4 class="lead">Whatever language your application is written in, ElasticBox Has you covered.</h4>
           <div class="boxes-individual inline">
@@ -184,7 +190,7 @@ base_url: "../"
         </div>
       </div>
       <div class="row padding-1x">
-        <div class="col-md-10">
+        <div class="col-md-10 col-lg-offset-1 text-center">
           <h3 class="">Databases and Middleware.</h3>
           <h4 class="lead">Run your applications by assembling the right boxes and adding your code. Pick a box, add your code and then reuse over and over again.</h4>
           <div class="boxes-individual inline">
@@ -200,7 +206,7 @@ base_url: "../"
         </div>
       </div>
       <div class="row padding-1x">
-        <div class="col-md-10">
+        <div class="col-md-10 col-lg-offset-1 text-center">
           <h3 class="">Web Servers.</h3>
           <h4 class="lead">We support all the most popular web servers. Pick from our catalogue or add your own, it's that easy.</h4>
           <div class="boxes-individual inline">
@@ -213,7 +219,7 @@ base_url: "../"
             <div class="col-md-2"><img height="60px" width="60px" src="https://dl.dropboxusercontent.com/u/11221717/elasticbox.png"></img></div>
           </div>
         </div>
-      </div>
-		</div>
+  		</div>
+    </div>
 	</div>
 </main>
