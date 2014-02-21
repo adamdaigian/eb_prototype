@@ -1087,7 +1087,6 @@ code {
   margin-top: 100px;
 }
 
-
 .box-block {
   margin-bottom: -20px;
 }
@@ -1096,7 +1095,21 @@ code {
   padding-bottom: 100px;
 }
 
+.box-explain {
+  margin-top: 200px;
+}
+
+.box-detail-select {
+  margin-top: 310px;
+  color: #617990;
+}
+
+.box-detail-select.glyphicon {
+  margin: 0 auto;
+}
+
 .box-large {
+  margin: 0 auto;
   height: 220px;
   width: 220px;
   background-image: url('https://dl.dropboxusercontent.com/u/11221717/large-box.png');
