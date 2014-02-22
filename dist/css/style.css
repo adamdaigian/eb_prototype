@@ -206,10 +206,6 @@ p, div, span, .btn, .lead {
   width: 120px;
 }
 
-.btn-deploy {
-  width: 110px;
-}
-
 .btn-social:hover{
   background-color: #6d869f;
   border-color: #6d869f;
@@ -243,6 +239,48 @@ p, div, span, .btn, .lead {
 .open .dropdown-toggle.btn-challenges{
   background-color: #2a425a;
   border-color: #2a425a;
+  color: #FFF;
+}
+
+.btn-email {
+  background-color: #a9bdc9;
+  border-color: #a9bdc9;
+  color: #fff;
+}
+
+.btn-email:hover {
+  background-color: #B3C8D5;
+  border-color: #B3C8D5;
+  color: #fff;
+}
+
+.btn-email:focus,
+.btn-email:active,
+.btn-email.active,
+.open .dropdown-toggle.btn-email{
+  background-color: #97A9B4;
+  border-color: #97A9B4;
+  color: #FFF;
+}
+
+.btn-google {
+  background-color: #e75135;
+  border-color: #e75135;
+  color: #fff;
+}
+
+.btn-google:hover {
+  background-color: #F8583A;
+  border-color: #F8583A;
+  color: #fff;
+}
+
+.btn-google:focus,
+.btn-google:active,
+.btn-google.active,
+.open .dropdown-toggle.btn-google{
+  background-color: #CE4930;
+  border-color: #CE4930;
   color: #FFF;
 }
 
@@ -1407,8 +1445,17 @@ p.clear-leadership-social {
   padding-top: 100px;
 }
 
+.btn-google {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
 .modal-body {
   padding:30px;
+}
+
+#google-signup {
+  margin-top: 15px;
 }
 
 .required-form {
