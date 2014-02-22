@@ -1438,6 +1438,12 @@ p.clear-leadership-social {
 .signup-form .modal-header {
   color: #FFF;
   background-color: #a271d7;
+  border-bottom: none;
+}
+
+.modal-header.sub-header {
+  background-color: #f0f2f5;
+  color: #6f7f8e;
 }
 
 .modal-dialog {
@@ -1450,8 +1456,25 @@ p.clear-leadership-social {
   margin-bottom: 10px;
 }
 
+.btn-modal {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
 .modal-body {
-  padding:30px;
+  padding:20px 30px 10px 30px;
+}
+
+.modal-body > span.divider {
+  color: #f0f2f5;
+}
+
+.modal-body > span.divider:before {
+  background-color: #f0f2f5;
+}
+
+.modal-body > span.divider:after {
+  background-color: #f0f2f5;
 }
 
 #google-signup {
