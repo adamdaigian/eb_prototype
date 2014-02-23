@@ -1432,10 +1432,12 @@ p.clear-leadership-social {
 }
 
 .modal-backdrop {
-  background-color: #FFF;
+  background-color: #2c3c5c;
 }
 
-.signup-form .modal-header {
+
+
+.modal-header {
   color: #FFF;
   background-color: #a271d7;
   border-bottom: none;
@@ -1479,6 +1481,10 @@ p.clear-leadership-social {
 
 #google-signup {
   margin-top: 15px;
+}
+
+.modal-content {
+  border-radius: 0px;
 }
 
 .required-form {
