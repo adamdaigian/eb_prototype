@@ -1528,35 +1528,6 @@ p.clear-leadership-social {
 
 /*== ERROR PAGE ============================*/
 
-.error-block {
-  height: 500px;
-  background-image: url('https://dl.dropboxusercontent.com/u/11221717/background-small-mesh.png');
-  background-position: center 140%;
-  background-size: 100%;
-  background-repeat: no-repeat;
-}
-
-.error-brand {
-  margin: 0 auto;
-  height: 64px;
-  width: 64px;
-  background-image: url('https://beta.elasticbox.com/images/logo-errors.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-#shell {
-  position: relative;
-  z-index: 70;
-}
-
-#rocket {
-  max-width: 600px;
-  margin-top: 260px;
-  position: absolute;
-  height: 240px;
-  z-index: 300;
-}
 
 /*== GLOBAL MEDIA QUERIES ==================*/
 

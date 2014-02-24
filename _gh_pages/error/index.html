@@ -54,15 +54,17 @@
     position: relative;
   }
   div#shell {
-    top: 0;
-    display: block;
     position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
     width: 100%;
-    height: 500px;
-    background: #2c3c5c;
-    background-image: url('https://dl.dropboxusercontent.com/u/11221717/mountains.png');
-    background-position: center 140%;
-    background-repeat: no-repeat;
+    height: 100%;
+    background:
+      url('https://dl.dropboxusercontent.com/u/11221717/hero-texture.png') repeat, 
+      url('https://dl.dropboxusercontent.com/u/11221717/mountains.png') center bottom no-repeat;
     z-index: 1;
   }
 
@@ -70,17 +72,10 @@
     width: 100%;
   }
 
-  img#background-stars {
-    width: 100%;
-    margin-top: -320px;
-    position: absolute;
-    z-index: 3;
-  }
-
   img#background-clouds {
-    opacity: .1;
-    margin-top: -400px;
     position: absolute;
+    opacity: 1;
+    margin-top: -100px;
     z-index: 4;
   }
 
@@ -88,140 +83,82 @@
     padding-bottom: 40px
   }
 
-  .brand {
-    height: 64px;
-    width: 64px;
-    margin: 0 auto;
-    background-image: url('https://beta.elasticbox.com/images/logo-errors.png');
-    background-size: cover;
-  }
-
-  .jumbotron.error-base {
-    margin-top: 88px;
-    height: 100%;
-  }
-
   .error-lead {
-    padding-top: 90px;
-    font-size: 40px;
+    font-size: 32px;
     position: relative;
-    text-align: center;
     color: #a36eda;
+    z-index: 6;
   }
 
   .error-sub {
     text-align: center;
     color: #627990;
+    z-index: 7;
   }
 
-  #message {
-    opacity: .8;
-    position: absolute;
-    z-index: 5;
-    margin-top: 260px;
-    margin-left: 180px;
-    width: 260px;
-    height: 160px;
-    padding: 0px;
-    background: none;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    border-radius: 10px;
-    border: #63798f solid 3px;
-  }
-
-  #message:after {
-    content: '';
-    position: absolute;
-    border-style: solid;
-    border-width: 20px 0 20px 10px;
-    border-color: transparent #2c3c5c;
-    display: block;
-    width: 0;
-    z-index: 1;
-    right: -10px;
-    top: 24px;
-  }
-
-  #message:before {
-    content: '';
-    position: absolute;
-    border-style: solid;
-    border-width: 22px 0 22px 12px;
-    border-color: transparent #63798f;
-    display: block;
-    width: 0;
-    z-index: 0;
-    right: -13px;
-    top: 22px;
-  }
-
-  .message-inner {
-    margin-top: 280px;
-    margin-left: 200px;
-    width: 230px;
+  .spin-container {
     position: relative;
-    z-index: 6;
+    margin: 80px auto;
+    width: 117px;
+    height: 120px;
   }
 
-  .message-inner > h2 {
-    color: #a36eda;
+  .links-lead {
+    position: relative;
+    margin: 80px auto;
   }
 
-  .message-inner > p {
-    color: #627990;
+  .error-container {
+    text-align: center;
   }
+
+  .links-container {
+    width: 500px;
+    margin: 20px auto;
+    text-align: center;
+  }
+
+  .links-container a {
+    padding: 40px;
+    text-align: center;
+  }
+
+  a.more {
+    font-size: 18px;
+  }
+
+  #eb-logo {
+      -webkit-animation:spin 4s linear infinite;
+      -moz-animation:spin 4s linear infinite;
+      animation:spin 4s linear infinite;
+  }
+
+  @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+  @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+  @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } 
 
 </style>
 <script type="text/javascript">
   $(document).ready(function () {
-    $('#shell img').plaxify()
+    $('#shell #background-clouds').plaxify()
     $.plax.enable()
   })
 </script>
 
-  </head>
-  <body>
-    <div id="shell">
-      <h2 class="error-lead">Crrshhh. Mission Control.</h2>
-      <h3 class="error-sub">This is not the page you're looking for.</h3>
-      <img src="https://dl.dropboxusercontent.com/u/11221717/stars-background.png" data-xrange="-64" data-yrange="-50" id="background-stars"></img>
-      <img src="https://dl.dropboxusercontent.com/u/11221717/clouds-error-background.png" data-xrange="50" data-yrange="30" id="background-clouds"/>
+</head>
+<body>
+  <div id="shell">
+    <img src="https://dl.dropboxusercontent.com/u/11221717/error-cloud-background-2.png" data-xrange="50" data-yrange="30" id="background-clouds"/>
+    <div class="spin-container">
+      <img id="eb-logo" src="https://beta.elasticbox.com/images/logo-errors.png"></img>
     </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6">
-          <div id="message" data-xrange="30" data-yrange="20"></div>
-          <div class="message-inner">
-            <h2>Error: 404 Bad Request</h2>
-            <p>This workspace has already been created.</p>
-          </div>
-        </div>
-        <div class="col-lg-5">
-          <div class="rocket">
-            <img class="pull-right" id="rocket" height="250px;" src="https://dl.dropboxusercontent.com/u/11221717/ErrorRocket.png"></img>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="jumbotron error-base">
-      <div class="container">
-        <h3 class="text-center">Try one of these links instead.</h3>
-        <div class="row text-center error-links">
-          <div class="col-lg-2 col-lg-offset-3">
-            <a class="more" href="">Email Support</a>
-          </div>
-          <div class="col-lg-2">
-            <a class="more" href="">Documentation</a>
-          </div>
-          <div class="col-lg-2">
-            <a class="more" href="">ElasticBox Status</a>
-          </div>
-        </div>
-        <div class="brand"></div>
-      </div>
-    </div>
-  </body>  
+    <div class="error-container">
+      <h2 class="error-lead">404. This is not the page you're looking for.</h2>
+      <h3 class="error-sub">You do not have access to this page.</h3>
+      <h4 class="links-lead">Try these links instead. <a class="more" href="">Home</a> or <a class="more" href="">Email Support</a>.</h4>
+    </div> 
+  </div>
+</body>  
 
 
     <!-- Footer and Other Javascript. -->
