@@ -572,7 +572,7 @@ img.icon-challenges {
 }
 
 .feature-img {
-  margin-top: 30px;
+/*  margin-top: 30px;*/
 }
 
 .box-feature {
@@ -898,6 +898,25 @@ h2.box-overview-lead {
   border-top: 2px solid #63798f;
   background-color: #fff;
   overflow: scroll;x
+}
+
+.browser-feature {
+  height: 350px;
+  width: 100%;
+  margin-top: 50px;
+  padding-top: 50px;
+  border: 2px solid #63798f;
+  background-color: #e0ebf4;
+  border-radius: 3px;
+}
+
+.browser-window {
+  margin: 0 auto;
+  height: 323px;
+  width: 100%;
+  border-top: 2px solid #63798f;
+  background-color: #fff;
+  overflow: scroll;
 }
 
 code {
@@ -1229,7 +1248,7 @@ code {
 }
 
 .feature-screenshot {
-  padding-top: 40px;
+/*  padding-top: 40px;*/
 }
 
 .feature-highlight > h2.feature-title {
