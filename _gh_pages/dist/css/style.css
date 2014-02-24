@@ -1534,6 +1534,12 @@ p.clear-leadership-social {
   margin-bottom: 20px;
 }
 
+.login-container {
+  margin: 0 auto;
+  max-width: 390px;
+  background-color: #fff;
+}
+
 /*== ERROR PAGE ============================*/
 
 
