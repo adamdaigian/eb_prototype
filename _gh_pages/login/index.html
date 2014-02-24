@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<title>
+  
+    Error Page &middot; ElasticBox
+  
+</title>
+
+<!-- Bootstrap core CSS -->
+<link href="../dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="../dist/css/animate.css" rel="stylesheet">
+<link href="../dist/css/style.css" rel="stylesheet">
+<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+<link href='http://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Ubuntu|Monda:400,700|Inconsolata|Open+Sans:300,400,600.700,800' rel='stylesheet' type='text/css'>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<!--[if lt IE 9]><script src="../docs-assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+<![endif]-->
+
+<!-- Favicons -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/tbd">
+<link rel="shortcut icon" href="../assets/ico/tbd">
+
+<!-- Google Analytics -->
+<script>
+</script>
+
+<!-- Mixpanel -->
+<script>
+</script>
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="https://dl.dropboxusercontent.com/u/11221717/plax.js"></script>
+  </head>
+
+    <!-- Docs master nav -->
+    <!-- Page content of course! -->
+    <style type="text/css">
+  * {
+    margin: 0px;
+    padding: 0px;
+  }
+  body {
+    background-color: #2c3c5c;
+  }
+  div#shell {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background:
+      url('https://dl.dropboxusercontent.com/u/11221717/hero-texture.png') repeat, 
+      url('https://dl.dropboxusercontent.com/u/11221717/mountains.png') center bottom no-repeat;
+    z-index: 1;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  img#background-clouds {
+    position: absolute;
+    opacity: 1;
+    margin-top: -100px;
+    z-index: 4;
+  }
+
+  .error-links {
+    padding-bottom: 40px
+  }
+
+  .error-lead {
+    font-size: 32px;
+    position: relative;
+    color: #a36eda;
+    z-index: 6;
+  }
+
+  .error-sub {
+    text-align: center;
+    color: #627990;
+    z-index: 7;
+  }
+
+  .spin-container {
+    position: relative;
+    margin: 80px auto;
+    width: 117px;
+    height: 120px;
+  }
+
+  .links-lead {
+    position: relative;
+    margin: 80px auto;
+  }
+
+  .error-container {
+    text-align: center;
+  }
+
+  .links-container {
+    width: 500px;
+    margin: 20px auto;
+    text-align: center;
+  }
+
+  .links-container a {
+    padding: 40px;
+    text-align: center;
+  }
+
+  a.more {
+    font-size: 18px;
+  }
+
+  #eb-logo {
+      -webkit-animation:spin 4s linear infinite;
+      -moz-animation:spin 4s linear infinite;
+      animation:spin 4s linear infinite;
+  }
+
+  @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+  @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+  @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } 
+
+</style>
+<script type="text/javascript">
+  $(document).ready(function () {
+    $('#shell #background-clouds').plaxify()
+    $.plax.enable()
+  })
+</script>
+
+</head>
+<body>
+  <div id="shell">
+    <img src="https://dl.dropboxusercontent.com/u/11221717/error-cloud-background-2.png" data-xrange="50" data-yrange="30" id="background-clouds"/>
+    <div class="spin-container">
+      <img id="eb-logo" src="https://beta.elasticbox.com/images/logo-errors.png"></img>
+    </div>
+    <div class="col-lg-6 col-lg-offset-3">
+			  <div class="login-container">
+			    <div class="login-form">
+			      <div class="modal-header">
+			        <h3 class="modal-title text-center">LOG IN</h3>
+			      </div>
+			      <div class="modal-body">
+			        <script>
+			          $(document).ready(function() {    
+			            $('#email-signup').click(function () { 
+			              $('#github-signup').hide()
+			              $('#google-signup').hide()
+			              $('#email-signup').hide()
+			              $('.divider').hide()
+			              $('#signup-form').show()
+			            });
+			          });
+			        </script>
+			        <button type="button" class="btn btn-lg btn-primary btn-block btn-modal" id="github-signup" href="">
+			          <i class="fa fa-github" id="small-github-icon"></i>
+			          <span class="">LOG IN WITH GITHUB</span>
+			        </button>
+			        <button type="button" class="btn btn-lg btn-google btn-block btn-modal" id="google-signup" href="">
+			          <i class="fa fa-google-plus" id="small-github-icon"></i>
+			          <span class="">LOG IN WITH GOOGLE</span>
+			        </button>
+			        <span class="divider">Or</span>
+			        <button type="button" class="btn btn-lg btn-email btn-block btn-modal" id="email-signup" href="">
+			          <span class="">LOG IN WITH EMAIL</span>
+			        </button>
+			        <form role="form" id="signup-form" style="display:none;">
+			          <div class="form-group">
+			            <label class="text-muted" or="exampleInputEmail1">Full Name <span class="required-form">*</span></label>
+			            <input type="email" class="form-control input-lg" id="exampleInputEmail1">
+			          </div>
+			          <div class="form-group">
+			            <label class="text-muted" for="exampleInputPassword1">Work Email <span class="required-form">*</span></label>
+			            <input type="password" class="form-control input-lg" id="exampleInputPassword1">
+			          </div>
+			          <div class="form-group">
+			            <label class="text-muted" for="exampleInputPassword1">Password <span class="required-form">*</span></label>
+			            <input type="password" class="form-control input-lg" id="exampleInputPassword1">
+			          </div>
+			          <button class="btn btn-lg btn-primary btn-block" id="email-complete">Let's Go!</button>
+			        </form>
+			      <!-- <div class="modal-footer">
+			        <button type="button" class="btn btn-block btn-primary">LETS GO!</button>
+			      </div> -->
+
+			    </div><!-- /.modal-content -->
+			  </div><!-- /.modal-dialog -->
+			</div><!-- /.modal -->
+    </div>
+  </div>
+</body>  
+
+    <!-- Footer and Other Javascript. -->
+    
+</html>
