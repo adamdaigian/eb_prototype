@@ -870,8 +870,6 @@ h2.box-overview-lead {
   width: 100%;
   background-image: url('https://dl.dropboxusercontent.com/u/11221717/quick%20demo.gif');
   background-size: cover;
-  /*-webkit-filter: grayscale(100%);*/
-  -webkit-filter: hue-rotate(180deg);
 }
 
 .deploy {
