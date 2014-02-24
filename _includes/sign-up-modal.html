@@ -5,12 +5,6 @@
 <div id="sign-up-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="#sign-up-modal" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content signup-form">
-      <script type="javascript">  
-        $("#email-signup").click( function() {
-          console.log(hello)
-        });
-      </script>
-
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
         <h3 class="modal-title text-center" id="myModalLabel">SIGN UP</h3>
@@ -19,6 +13,16 @@
         <h4 class="text-center">Try the free Developer Edition. Deploy an application and get a free t-shirt</h4>
       </div>
       <div class="modal-body">
+        <script>
+          $(document).ready(function() {    
+            $('#email-signup').click(function () { 
+              $('#github-signup').hide()
+              $('#google-signup').hide()
+              $('.divider').hide()
+              $('#signup-form').show()
+            });
+          });
+        </script>
         <button type="button" class="btn btn-lg btn-primary btn-block btn-modal" id="github-signup" href="">
           <i class="fa fa-github" id="small-github-icon"></i>
           <span class="">SIGN UP WITH GITHUB</span>
@@ -28,9 +32,6 @@
           <span class="">SIGN UP WITH GOOGLE</span>
         </button>
         <span class="divider">Or</span>
-        <button type="button" class="btn btn-lg btn-email btn-block btn-modal" id="email-signup" href="">
-          <span class="">SIGN UP WITH EMAIL</span>
-        </button>
         <form role="form" id="signup-form" style="display:none;">
           <div class="form-group">
             <label class="text-muted" or="exampleInputEmail1">What's your name? <span class="required-form">*</span></label>
@@ -45,7 +46,9 @@
             <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter Password">
           </div>
         </form>
-
+        <button type="button" class="btn btn-lg btn-email btn-block btn-modal" id="email-signup" href="">
+          <span class="">SIGN UP WITH EMAIL</span>
+        </button>
       <!-- <div class="modal-footer">
         <button type="button" class="btn btn-block btn-primary">LETS GO!</button>
       </div> -->

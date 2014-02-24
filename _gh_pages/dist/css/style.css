@@ -1224,8 +1224,8 @@ code {
   width: 400px;
 }
 
-.feature-row {
-  padding-top: 12em;
+.feature-screenshot {
+  padding-top: 40px;
 }
 
 .feature-highlight > h2.feature-title {
