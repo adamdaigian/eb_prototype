@@ -154,6 +154,10 @@ p, div, span, .btn, .lead {
   font-weight: 300;
 }
 
+.text-muted {
+  color: #6f7f8e;
+}
+
 
 /*== BUTTONS & INPUTS ===============================*/
 
@@ -1436,7 +1440,6 @@ p.clear-leadership-social {
 }
 
 
-
 .modal-header {
   color: #FFF;
   background-color: #a271d7;
@@ -1524,6 +1527,11 @@ p.clear-leadership-social {
 .form-control {
   background-color: #f0f2f5;
   border: 1px solid #f0f2f5;
+}
+
+#email-complete {
+  margin-top: 30px;
+  margin-bottom: 20px;
 }
 
 /*== ERROR PAGE ============================*/

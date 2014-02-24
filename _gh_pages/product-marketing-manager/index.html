@@ -264,6 +264,7 @@
             $('#email-signup').click(function () { 
               $('#github-signup').hide()
               $('#google-signup').hide()
+              $('#email-signup').hide()
               $('.divider').hide()
               $('#signup-form').show()
             });
@@ -278,23 +279,24 @@
           <span class="">SIGN UP WITH GOOGLE</span>
         </button>
         <span class="divider">Or</span>
-        <form role="form" id="signup-form" style="display:none;">
-          <div class="form-group">
-            <label class="text-muted" or="exampleInputEmail1">What's your name? <span class="required-form">*</span></label>
-            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="First & Last Name">
-          </div>
-          <div class="form-group">
-            <label class="text-muted" for="exampleInputPassword1">What's your email address? <span class="required-form">*</span></label>
-            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter Email">
-          </div>
-          <div class="form-group">
-            <label class="text-muted" for="exampleInputPassword1">What password would you like to use? <span class="required-form">*</span></label>
-            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter Password">
-          </div>
-        </form>
         <button type="button" class="btn btn-lg btn-email btn-block btn-modal" id="email-signup" href="">
           <span class="">SIGN UP WITH EMAIL</span>
         </button>
+        <form role="form" id="signup-form" style="display:none;">
+          <div class="form-group">
+            <label class="text-muted" or="exampleInputEmail1">Full Name <span class="required-form">*</span></label>
+            <input type="email" class="form-control input-lg" id="exampleInputEmail1">
+          </div>
+          <div class="form-group">
+            <label class="text-muted" for="exampleInputPassword1">Work Email <span class="required-form">*</span></label>
+            <input type="password" class="form-control input-lg" id="exampleInputPassword1">
+          </div>
+          <div class="form-group">
+            <label class="text-muted" for="exampleInputPassword1">Password <span class="required-form">*</span></label>
+            <input type="password" class="form-control input-lg" id="exampleInputPassword1">
+          </div>
+          <button class="btn btn-lg btn-primary btn-block" id="email-complete">Let's Go!</button>
+        </form>
       <!-- <div class="modal-footer">
         <button type="button" class="btn btn-block btn-primary">LETS GO!</button>
       </div> -->
