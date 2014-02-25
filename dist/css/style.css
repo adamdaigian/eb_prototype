@@ -495,7 +495,8 @@ input, .input-lg {
 }
 
 .not-convinced-block {
-  max-height: 347px;
+  min-height: 350px;
+  height: auto;
   background-color: #2c3c5c;
 }
 
