@@ -16,7 +16,7 @@ hr {
 
 a.more {
   font-size: 14px;
-  font-weight: 700;
+  font-weight: 600;
   color: #007EFF;
   text-decoration: none;
 }
@@ -30,7 +30,7 @@ a:hover.more {
   font-size: 19px;
 }
 
-.lead > a.more {
+.scripts-more {
   font-size: 19px;
 }
 
@@ -538,7 +538,7 @@ input, .input-lg {
 }
 
 .challenges-row {
-  margin-top: 60px;
+  padding-top: 9em;
 }
 
 .challenges-title {
@@ -564,7 +564,7 @@ img.icon-challenges {
 }
 
 .challenges {
-  padding: 10px;
+  padding: 30px;
   color: #FFF;
 }
 
@@ -897,17 +897,19 @@ h2.box-overview-lead {
   padding-top: 50px;
   border: 2px solid #63798f;
   background-color: #e0ebf4;
-  border-radius: 3px;
+  border-radius: 6px;
 }
 
 .browser-editor {
   margin: 0 auto;
-  height: 302px;
+  height: 324px;
   padding: 10px 5px;
   width: 100%;
   border-top: 2px solid #63798f;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
   background-color: #fff;
-  overflow: scroll;x
+  overflow: scroll;
 }
 
 .browser-feature {
@@ -917,7 +919,7 @@ h2.box-overview-lead {
   padding-top: 50px;
   border: 2px solid #63798f;
   background-color: #e0ebf4;
-  border-radius: 3px;
+  border-radius: 6px;
 }
 
 .browser-window {
@@ -926,6 +928,8 @@ h2.box-overview-lead {
   width: 100%;
   border-top: 2px solid #63798f;
   background-color: #fff;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
   overflow: hidden;
 }
 
