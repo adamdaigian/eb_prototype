@@ -405,7 +405,7 @@ input, .input-lg {
   left: 0;
   background:
     url('https://dl.dropboxusercontent.com/u/11221717/hero-texture.png') repeat, 
-    url('https://dl.dropboxusercontent.com/u/11221717/hero-background.png') center bottom repeat, linear-gradient(to bottom, rgba(0, 124, 252, .1) 0%,rgba(160, 107, 213, .1) 100%);
+    url('https://dl.dropboxusercontent.com/u/11221717/hero-background-light.png') center bottom repeat, linear-gradient(to bottom, rgba(160, 107, 213, .1) 0%, rgba(0, 124, 252, .1) 100%);
 }
 
 .home-lead {
@@ -819,7 +819,7 @@ h2.box-overview-lead {
   height: 828px;
   background: 
     url('https://dl.dropboxusercontent.com/u/11221717/hero-texture.png') repeat, 
-    url('https://dl.dropboxusercontent.com/u/11221717/features-background.png') center bottom no-repeat, linear-gradient(to bottom, rgba(0, 124, 252, .1) 0%,rgba(160, 107, 213, .1) 100%);
+    url('https://dl.dropboxusercontent.com/u/11221717/features-background.png') center bottom no-repeat, linear-gradient(to bottom, rgba(160, 107, 213, .1) 0%, rgba(0, 124, 252, .1) 100%);
   background-size: 100%;
 }
 
@@ -914,7 +914,7 @@ h2.box-overview-lead {
   width: 100%;
   border-top: 2px solid #63798f;
   background-color: #fff;
-  overflow: scroll;
+  overflow: hidden;
 }
 
 code {
@@ -1299,7 +1299,7 @@ code {
   min-height: 680px;
   background:
     url('https://dl.dropboxusercontent.com/u/11221717/hero-texture.png') repeat, 
-    url('https://dl.dropboxusercontent.com/u/11221717/enterprise-background.png') center 140% no-repeat, linear-gradient(to bottom, rgba(0, 124, 252, .1) 0%,rgba(160, 107, 213, .1) 100%);
+    url('https://dl.dropboxusercontent.com/u/11221717/enterprise-background.png') center 140% no-repeat, linear-gradient(to bottom, rgba(160, 107, 213, .1) 0%, rgba(0, 124, 252, .1) 100%);
 }
 
 .enterprise-speed {
