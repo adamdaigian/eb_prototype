@@ -15,7 +15,7 @@ base_url: "./"
         <div class="sign-up-container">
           <button type="button" class="btn btn-primary btn-block btn-lg btn-home hidden-xs" href=""><span class="fa fa-github"></span>   SIGN UP WITH GITHUB</button>
           <span class="divider hidden-xs">Or</span>
-          <input class="input-lg input-home" placeholder="Enter Email Address"></input>
+          <input class="form-control input-lg input-home" placeholder="Enter Email Address"></input>
           <button class="btn btn-danger btn-lg btn-home">TRY FOR FREE</button>
           <h5 class="sub text-center">No credit card required • No commitment</h5>
         </div>
@@ -64,29 +64,30 @@ base_url: "./"
     <div class="container text-center">
       <h2 class="jumbo-not-convinced">Boom. Application Deployed.</h2>
       <h3 class="home-sub hidden-xs">DevOps At Your Fingertips.</h3>
-      <button type="button" class="btn btn-danger btn-lg" href="#sign-up-modal" data-toggle="modal" data-target="#sign-up-modal">TRY FOR YOURSELF</button>
-      <h4 class="lead sub hidden-xs">Still not convinced?</h4>
-      <h5 class="sub hidden-xs">See More</h5>
-      <span class="glyphicon glyphicon-chevron-down glyphicon-not-convinced hidden-xs"></span>
-
+      <button type="button" class="btn btn-danger btn-lg btn-convinced" href="#sign-up-modal" data-toggle="modal" data-target="#sign-up-modal">TRY FOR YOURSELF</button>
+      <div class="not-convinced-more">
+        <h5 class="sub hidden-xs">Still not convinced?</h5>
+        <h5 class="sub hidden-xs">Learn More Bellow.</h5>
+        <span class="glyphicon glyphicon-chevron-down not-convinced-down"></span>
+      </div>
     </div>
   </div>
 
   <div class="jumbotron jumbotron-home-special">
     <div class="container elasticbox-special padding-4x">
       <h2 class="text-center">What makes ElasticBox special?</h2>
-      <h4 class="col-md-8 col-md-offset-2 lead text-center">A central platform built for enterprise developers. Everything you need in one place to manage your cloud applications and infrastructure.</h4>
+      <h3 class="col-md-8 col-md-offset-2 lead text-center">A central platform built for enterprise developers. Everything you need in one place to manage your cloud applications and infrastructure.</h3>
 
       <div class="row padding-4x">
         <div class="col-lg-4 col-lg-offset-1 col-sm-6 feature-highlight padding-2x text-center">
           <img class="img-responsive" src="https://dl.dropboxusercontent.com/u/11221717/Screenshot%202014-02-06%2018.33.52.png"></img>
-          <h2 class="">Developer Focused</h2>
+          <h4 class="">Developer Focused</h4>
           <p class="lead">Purpose built to manage all your app configurations, variables and dependancies. Use ElasticBox to maintain your CM tools (Chef, Docker, Puppet) or standard scripting language scripts (bash, PowerShell).</p>
           <a class="more" href="{{ page.base_url }}features/#life-cycle-editor">LEARN MORE</a>
         </div>
         <div style="margin-top:40px;" class="col-lg-4 col-lg-offset-2 col-sm-6 feature-highlight padding-2x text-center">
           <img class="img-responsive" src="https://dl.dropboxusercontent.com/u/11221717/Screenshot%202014-02-06%2018.34.00.png"></img>
-          <h2>Collaborate With Ease</h2>
+          <h4>Collaborate With Ease</h4>
           <p class="lead">Work with teams or individual developers by adding users to your workspaces or sharing applications and components as boxes. Detailed collaboration and permission options means you can work together, securely.</p>
           <a class="more" href="{{ page.base_url }}about">LEARN MORE</a>
         </div>
