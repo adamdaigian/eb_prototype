@@ -8,7 +8,7 @@ base_url: "./"
 
 <main id="content" role="main">
   <div class="jumbotron hero" id="home">
-  	<div class="container">
+    <div class="container">
       <div class="col-lg-12 text-center">
         <h2 class="home-lead">Develop, Deploy and Manage Apps on any Cloud.</h2>
         <h3 class="home-sub">Designed And Built For Developers. Try The Free Edition.</h3>
@@ -22,42 +22,69 @@ base_url: "./"
       </div>
     </div>
   </div>
-  <div class="container scroll-section">
-    <div class="row padding-4x">
-      <div class="col-lg-5 col-lg-offset-1 scroll-content">
-        <h2 class="scroll-header">Pick Your Boxes.</h2>
-        <h4 class="lead">A Box is a component of your application architecture or framework, encapsulated, fully configured, and made available as a service.</h4>
-      </div>
-      <div class="col-lg-5 col-lg-offset-1 text-center padding-4x">
-        <img class="img-responsive img-selection" src="https://dl.dropboxusercontent.com/u/11221717/step-1.png"></img>
-      </div>  
-    </div>
-  </div>
 
-  <div class="scroll-break">
-    <div class="container scroll-section">
-      <div class="row padding-4x">
-        <div class="col-lg-5 col-lg-offset-1 scroll-content">
-          <h2 class="scroll-header">Stack Your Boxes.</h2>
-          <h4 class="lead">To create complex multi-tier application architecture just “stack” your boxes. It really is that simple.</h4>
+  <div id="animation-wrapper">
+    <section id="pick-your-boxes">
+      <div class="inner">
+        <div class="copy">
+          <h2>Pick Your Boxes</h2>
+          <p>Choose your application components from our service catalogue of boxes. Create your own boxes and isolated application components.</p>
         </div>
-        <div class="col-lg-5 col-lg-offset-1 text-center padding-4x animated fadeInRight">
-          <img class="img-responsive" style="margin-left: 60px;" src="https://dl.dropboxusercontent.com/u/11221717/step-2.png"></img>
-        </div>  
-      </div>
-    </div>
-  </div>  
 
-  <div class="container">
-    <div class="row padding-4x">
-      <div class="col-lg-5 col-lg-offset-1 scroll-content scroll-step-3">
-        <h2 class="scroll-header">Deploy Applications.</h2>
-        <h4 class="lead">Run your applications on the provider of your choice. Keep your applications cloud agnostic - and your options <em>open</em>.</h4>
+        <div class="static-illustration"></div>
+
+        <div class="boxes hidey">
+          <div class="box ruby"></div>
+          <div class="box mongo"></div>
+          <div class="box mysql"></div>
+          <div class="box newrelic"></div>
+          <div class="box jenkins"></div>
+          <div class="box node"></div>
+          <div class="box angular"></div>
+          <div class="box linux"></div>
+          <div class="box postgres"></div>
+          <div class="box rabbitmq"></div>
+          <div class="box chef"></div>
+          <div class="box apache"></div>
+        </div>
       </div>
-      <div class="col-lg-5 col-lg-offset-1 text-center padding-4x animated fadeInRight">
-        <img class="img-responsive img-rocket" src="https://dl.dropboxusercontent.com/u/11221717/step-3.png"></img>
-      </div>  
-    </div>
+    </section>
+
+    <section id="stack-your-boxes">
+      <div class="inner">
+        <div class="copy">
+          <h2>Stack Your Boxes</h2>
+          <p>Stack boxes to create complex multi-tier application architecture using modular, isolated components.</p>
+        </div>
+
+        <div class="static-illustration"></div>
+      </div>
+    </section>
+
+    <section id="deploy-applications">
+      <div class="inner">
+        <div class="copy">
+          <h2>Deploy Applications</h2>
+          <p>Get your applications running in no time on the provider of your choice. Keep your applications cloud agnostic and your options open.</p>
+        </div>
+
+        <div class="static-illustration"></div>
+
+        <div class="cloud c1"></div>
+        <div class="cloud c2"></div>
+        <div class="cloud c3"></div>
+        <div class="cloud c4"></div>
+        <div class="cloud c5"></div>
+        <div class="cloud c6 front"></div>
+        <div class="cloud c7 front"></div>
+        <div class="cloud c8 front"></div>
+        <div class="cloud c9 front"></div>
+
+        <div id="shuttle">
+          <div class="nose"></div>
+        </div>
+      </div>
+    </section>
   </div>
 
   <div class="jumbotron not-convinced-block">
@@ -82,7 +109,7 @@ base_url: "./"
         <div class="col-lg-4 col-lg-offset-1 col-sm-6 feature-highlight padding-2x text-center">
           <img class="img-responsive" src="https://dl.dropboxusercontent.com/u/11221717/Screenshot%202014-02-06%2018.33.52.png"></img>
           <h4 class="">Developer Focused</h4>
-          <p class="lead">Purpose built to manage all your app configurations, variables and dependancies. Use ElasticBox to maintain your CM tools (Chef, Docker, Puppet) or standard scripting language scripts (bash, PowerShell).</p>
+          <p class="lead">Purpose built to manage all your app configurations, variables and dependencies. Use ElasticBox to maintain your CM tools (Chef, Docker, Puppet) or standard scripting language scripts (bash, PowerShell).</p>
           <a class="more" href="{{ page.base_url }}features/#life-cycle-editor">LEARN MORE</a>
         </div>
         <div style="margin-top:40px;" class="col-lg-4 col-lg-offset-2 col-sm-6 feature-highlight padding-2x text-center">
@@ -93,5 +120,5 @@ base_url: "./"
         </div>
       </div>
     </div>
-  </div>  
+  </div>
 </main>
