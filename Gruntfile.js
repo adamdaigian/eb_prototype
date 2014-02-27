@@ -47,6 +47,13 @@ module.exports = function(grunt) {
             'src/js/home.coffee'
           ]
         }
+      },
+      enterprise: {
+        files: {
+          'dist/js/enterprise.js': [
+            'src/js/enterprise.coffee'
+          ]
+        }
       }
     },
 

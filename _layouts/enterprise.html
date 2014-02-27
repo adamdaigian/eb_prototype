@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta, title, CSS, favicons, etc. -->
+    {% include header.html %}
+
+    <script src="/dist/js/vendor.js"></script>
+    <script src="/dist/js/enterprise.js"></script>
+  </head>
+  <body class="">
+
+    <!-- Docs master nav -->
+    {% include nav-main.html %}
+
+    <!-- Page content of course! -->
+    {{ content }}
+
+    <!-- Footer and Other Javascript. -->
+    {% include footer.html %}
+    {% include sign-up-modal.html %}
+
+  </body>
+</html>
+{% include scripts.html %}

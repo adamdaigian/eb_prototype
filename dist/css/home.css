@@ -113,7 +113,7 @@ nav {
         width: 72px;
         height: 71px;
         position: absolute;
-        background: url("../../img/box.png");
+        background: url("../../img/home/box.png");
         z-index: 5; }
         #animation-wrapper section .inner .box:after {
           content: "";
@@ -127,63 +127,63 @@ nav {
           top: 142px;
           right: 290px; }
           #animation-wrapper section .inner .box.ruby:after {
-            background: url("../../img/logos/ruby.png"); }
+            background: url("../../img/home/logos/ruby.png"); }
         #animation-wrapper section .inner .box.mongo {
           top: 142px;
           right: 200px;
           z-index: 6; }
           #animation-wrapper section .inner .box.mongo:after {
-            background: url("../../img/logos/mongo.png"); }
+            background: url("../../img/home/logos/mongo.png"); }
         #animation-wrapper section .inner .box.mysql {
           top: 142px;
           right: 110px; }
           #animation-wrapper section .inner .box.mysql:after {
-            background: url("../../img/logos/mysql.png"); }
+            background: url("../../img/home/logos/mysql.png"); }
         #animation-wrapper section .inner .box.newrelic {
           top: 142px;
           right: 20px; }
           #animation-wrapper section .inner .box.newrelic:after {
-            background: url("../../img/logos/newrelic.png"); }
+            background: url("../../img/home/logos/newrelic.png"); }
         #animation-wrapper section .inner .box.jenkins {
           top: 242px;
           right: 290px; }
           #animation-wrapper section .inner .box.jenkins:after {
-            background: url("../../img/logos/jenkins.png"); }
+            background: url("../../img/home/logos/jenkins.png"); }
         #animation-wrapper section .inner .box.node {
           top: 242px;
           right: 200px; }
           #animation-wrapper section .inner .box.node:after {
-            background: url("../../img/logos/node.png"); }
+            background: url("../../img/home/logos/node.png"); }
         #animation-wrapper section .inner .box.angular {
           top: 242px;
           right: 110px; }
           #animation-wrapper section .inner .box.angular:after {
-            background: url("../../img/logos/angular.png"); }
+            background: url("../../img/home/logos/angular.png"); }
         #animation-wrapper section .inner .box.linux {
           top: 242px;
           right: 20px; }
           #animation-wrapper section .inner .box.linux:after {
-            background: url("../../img/logos/linux.png"); }
+            background: url("../../img/home/logos/linux.png"); }
         #animation-wrapper section .inner .box.postgres {
           top: 342px;
           right: 290px; }
           #animation-wrapper section .inner .box.postgres:after {
-            background: url("../../img/logos/postgres.png"); }
+            background: url("../../img/home/logos/postgres.png"); }
         #animation-wrapper section .inner .box.rabbitmq {
           top: 342px;
           right: 200px; }
           #animation-wrapper section .inner .box.rabbitmq:after {
-            background: url("../../img/logos/rabbitmq.png"); }
+            background: url("../../img/home/logos/rabbitmq.png"); }
         #animation-wrapper section .inner .box.chef {
           top: 342px;
           right: 110px; }
           #animation-wrapper section .inner .box.chef:after {
-            background: url("../../img/logos/chef.png"); }
+            background: url("../../img/home/logos/chef.png"); }
         #animation-wrapper section .inner .box.apache {
           top: 342px;
           right: 20px; }
           #animation-wrapper section .inner .box.apache:after {
-            background: url("../../img/logos/apache.png"); }
+            background: url("../../img/home/logos/apache.png"); }
       #animation-wrapper section .inner .copy {
         padding-top: 234px;
         width: 380px; }
@@ -239,7 +239,7 @@ nav {
     width: 620px;
     height: 449px;
     content: "";
-    background: url("../../img/pick-your-boxes-bg.png");
+    background: url("../../img/home/pick-your-boxes-bg.png");
     top: 196px;
     right: -70px; }
   #animation-wrapper #pick-your-boxes .inner .copy {
@@ -256,7 +256,7 @@ nav {
           font-size: 17px;
           line-height: 34px; } }
   #animation-wrapper #pick-your-boxes .inner .static-illustration {
-    background: url("../../img/pick-your-boxes-bg-mobile.png") no-repeat;
+    background: url("../../img/home/pick-your-boxes-bg-mobile.png") no-repeat;
     width: 620px;
     height: 503px; }
     @media only screen and (min-width: 640px) and (max-width: 959px) {
@@ -268,9 +268,9 @@ nav {
   #animation-wrapper #stack-your-boxes.no-bg .inner {
     background-image: none; }
   #animation-wrapper #stack-your-boxes .inner {
-    background: url("../../img/stack-your-boxes-bg.png") no-repeat right 175px; }
+    background: url("../../img/home/stack-your-boxes-bg.png") no-repeat right 175px; }
     #animation-wrapper #stack-your-boxes .inner .static-illustration {
-      background: url("../../img/stack-your-boxes-bg-mobile.png") no-repeat;
+      background: url("../../img/home/stack-your-boxes-bg-mobile.png") no-repeat;
       width: 342px;
       height: 341px;
       margin: 0 auto; }
@@ -287,7 +287,7 @@ nav {
     width: 616px;
     height: 256px;
     content: "";
-    background: url("../../img/deploy-applications-bg.png");
+    background: url("../../img/home/deploy-applications-bg.png");
     bottom: 0;
     right: -84px; }
   #animation-wrapper #deploy-applications .inner .copy {
@@ -304,7 +304,7 @@ nav {
           font-size: 17px;
           line-height: 34px; } }
   #animation-wrapper #deploy-applications .inner .static-illustration {
-    background: url("../../img/deploy-applications-bg-mobile.png") no-repeat;
+    background: url("../../img/home/deploy-applications-bg-mobile.png") no-repeat;
     width: 616px;
     height: 644px;
     margin: 0 auto; }
@@ -317,55 +317,55 @@ nav {
   #animation-wrapper #deploy-applications .inner .cloud {
     position: absolute; }
     #animation-wrapper #deploy-applications .inner .cloud.c1 {
-      background: url("../../img/clouds/tiny.png");
+      background: url("../../img/home/clouds/tiny.png");
       width: 73px;
       height: 32px;
       right: 395px;
       top: 87px; }
     #animation-wrapper #deploy-applications .inner .cloud.c2 {
-      background: url("../../img/clouds/type1.png");
+      background: url("../../img/home/clouds/type1.png");
       width: 121px;
       height: 54px;
       right: 146px;
       top: 16px; }
     #animation-wrapper #deploy-applications .inner .cloud.c3 {
-      background: url("../../img/clouds/type1.png");
+      background: url("../../img/home/clouds/type1.png");
       width: 121px;
       height: 54px;
       right: 5px;
       top: 60px; }
     #animation-wrapper #deploy-applications .inner .cloud.c4 {
-      background: url("../../img/clouds/type2.png");
+      background: url("../../img/home/clouds/type2.png");
       width: 121px;
       height: 54px;
       right: 140px;
       top: 65px; }
     #animation-wrapper #deploy-applications .inner .cloud.c5 {
-      background: url("../../img/clouds/type2.png");
+      background: url("../../img/home/clouds/type2.png");
       width: 121px;
       height: 54px;
       right: 247px;
       top: 98px; }
     #animation-wrapper #deploy-applications .inner .cloud.c6 {
-      background: url("../../img/clouds/vmware.png");
+      background: url("../../img/home/clouds/vmware.png");
       width: 239px;
       height: 106px;
       right: 47px;
       top: 78px; }
     #animation-wrapper #deploy-applications .inner .cloud.c7 {
-      background: url("../../img/clouds/amazon.png");
+      background: url("../../img/home/clouds/amazon.png");
       width: 210px;
       height: 93px;
       right: -68px;
       top: 124px; }
     #animation-wrapper #deploy-applications .inner .cloud.c8 {
-      background: url("../../img/clouds/openstack.png");
+      background: url("../../img/home/clouds/openstack.png");
       width: 191px;
       height: 91px;
       right: 212px;
       top: 131px; }
     #animation-wrapper #deploy-applications .inner .cloud.c9 {
-      background: url("../../img/clouds/double.png");
+      background: url("../../img/home/clouds/double.png");
       width: 219px;
       height: 77px;
       right: 44px;
@@ -378,7 +378,7 @@ nav {
     right: 56px;
     width: 232px;
     height: 300px;
-    background: url("../../img/shuttle-body.png") no-repeat center bottom;
+    background: url("../../img/home/shuttle-body.png") no-repeat center bottom;
     z-index: 10; }
     #animation-wrapper #deploy-applications .inner #shuttle .nose {
       width: 78px;
@@ -386,7 +386,7 @@ nav {
       position: absolute;
       top: 22px;
       right: 77px;
-      background: url("../../img/shuttle-nose.png"); }
+      background: url("../../img/home/shuttle-nose.png"); }
 
 #application-deployed {
   background: #2E4051;
