@@ -40,10 +40,31 @@ module.exports = function(grunt) {
       }
     },
 
+    coffee: {
+      home: {
+        files: {
+          'dist/js/home.js': [
+            'src/js/home.coffee'
+          ]
+        }
+      },
+      enterprise: {
+        files: {
+          'dist/js/enterprise.js': [
+            'src/js/enterprise.coffee'
+          ]
+        }
+      }
+    },
+
     concat: {
       options: {
         banner: '<%= banner %><%= jqueryCheck %>',
         stripBanners: false
+      },
+      vendor: {
+        src: 'src/vendor/js/*.js',
+        dest: 'dist/js/vendor.js'
       },
       bootstrap: {
         src: [
@@ -72,6 +93,17 @@ module.exports = function(grunt) {
       bootstrap: {
         src: ['<%= concat.bootstrap.dest %>'],
         dest: 'dist/js/<%= pkg.name %>.min.js'
+      }
+    },
+
+    sass: {
+      home: {
+        options: {
+          // style: 'compressed'
+        },
+        files: {
+          'dist/css/home.css': 'src/css/home.scss'
+        }
       }
     },
 
@@ -157,6 +189,20 @@ module.exports = function(grunt) {
       recess: {
         files: 'less/*.less',
         tasks: ['recess']
+      },
+      homeJs: {
+        files: ['src/**/*.coffee', 'src/**/*.js'],
+        tasks: ['coffee', 'concat'],
+        options: {
+          spawn: false
+        }
+      },
+      homeCss: {
+        files: ['src/**/*.scss'],
+        tasks: ['sass'],
+        options: {
+          spawn: false
+        }
       }
     },
 
@@ -268,6 +314,8 @@ module.exports = function(grunt) {
 
 
   // These plugins provide necessary tasks.
+  grunt.loadNpmTasks('grunt-contrib-coffee');
+  grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-connect');

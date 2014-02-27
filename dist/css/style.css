@@ -36,7 +36,7 @@ a:hover.more {
 
 .padding-1x {
   padding-top: 1em;
-  padding-bottom: 1em; 
+  padding-bottom: 1em;
 }
 
 .padding-2x {
@@ -134,7 +134,7 @@ h1, h2, h3, h4 {
 }
 
 p, div, span, .btn, .lead {
-  font-family: 'Open Sans', sans-serif; 
+  font-family: 'Open Sans', sans-serif;
 }
 
 .btn {
@@ -185,14 +185,14 @@ p, div, span, .btn, .lead {
 .btn-danger:active,
 .btn-danger.active,
 .open .dropdown-toggle.btn-danger{
-  background-color: #8d5fbe; 
+  background-color: #8d5fbe;
   border-color: #8d5fbe;
   color: #FFF;
 }
 
 .btn-primary {
   background-color: #007eff;
-  border-color: #007eff; 
+  border-color: #007eff;
 }
 
 .btn-primary:hover{
@@ -410,7 +410,7 @@ input, .input-lg {
   right: 0;
   left: 0;
   background:
-    url('https://dl.dropboxusercontent.com/u/11221717/hero-texture.png') repeat, 
+    url('https://dl.dropboxusercontent.com/u/11221717/hero-texture.png') repeat,
     url('https://dl.dropboxusercontent.com/u/11221717/hero-background-light.png') center bottom repeat, linear-gradient(to bottom, rgba(160, 107, 213, .1) 0%, rgba(0, 124, 252, .1) 100%);
 }
 
@@ -829,7 +829,7 @@ h2.box-overview-lead {
 
 .hero-walkthrough {
   height: 858px;
-  background:  
+  background:
     linear-gradient(to bottom, rgba(160, 107, 213, .2) 0%, rgba(0, 124, 252, .2) 100%),
     url('https://dl.dropboxusercontent.com/u/11221717/features-background.png') center bottom repeat-x,
     url('https://dl.dropboxusercontent.com/u/11221717/hero-texture-heavy.png') repeat;
@@ -1284,7 +1284,7 @@ code {
 
 .feature-highlight .lead {
   color: #6f7f8f;
-  font-weight: 400; 
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.6;
 }
@@ -1318,7 +1318,7 @@ code {
 .enterprise-background {
   min-height: 680px;
   background:
-    url('https://dl.dropboxusercontent.com/u/11221717/hero-texture.png') repeat, 
+    url('https://dl.dropboxusercontent.com/u/11221717/hero-texture.png') repeat,
     url('https://dl.dropboxusercontent.com/u/11221717/enterprise-background.png') center 140% repeat-x, linear-gradient(to bottom, rgba(160, 107, 213, .1) 0%, rgba(0, 124, 252, .1) 100%);
 }
 
@@ -1326,9 +1326,19 @@ code {
   height: 303px;
   width: 475px;
   margin-left: -100px;
-  background-image: url('https://dl.dropboxusercontent.com/u/11221717/enterprise-speed.png');
+  background-image: url('../../img/enterprise/speedometer-bg.png');
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
+}
+
+#enterprise-speed-needle {
+  width: 164px;
+  height: 39px;
+  background: url("../../img/enterprise/speedometer-needle.png");
+  position: absolute;
+  top: 195px;
+  left: 168px;
 }
 
 .personas-background {
@@ -1338,7 +1348,7 @@ code {
   margin-left: -26px;
   background-image: url('https://dl.dropboxusercontent.com/u/11221717/dev-ops-it-management.png');
   background-position: center bottom;
-  background-size: cover; 
+  background-size: cover;
 }
 
 .row-personas {
@@ -1589,10 +1599,10 @@ p.clear-leadership-social {
   background-image: none;
   border: 1px solid #ccc;
   border-radius: 3px;
-   -webkit-box-shadow: none; 
-   box-shadow: none; 
-   -webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s; 
-   transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s; 
+   -webkit-box-shadow: none;
+   box-shadow: none;
+   -webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+   transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
 }
 
 .form-control {

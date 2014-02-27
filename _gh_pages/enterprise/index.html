@@ -40,6 +40,9 @@
 <script>
 </script>
 
+
+    <script src="/dist/js/vendor.js"></script>
+    <script src="/dist/js/enterprise.js"></script>
   </head>
   <body class="">
 
@@ -96,7 +99,9 @@
    				<h3 class="enterprise-sub">ElasticBox is an enterprise-grade cloud app environment built for the demanding needs of large scale deployments. Empower IT with governance and resource allocation. Accelerate your DevOps and Developers with an integrated platform. Accomplish more, faster, without losing transparency.</h3>
    			</div>
         <div class="col-lg-4">
-          <div class="enterprise-speed"></div>
+          <div class="enterprise-speed">
+            <div id="enterprise-speed-needle"></div>
+          </div>
         </div>
    		</div>
       <br>
@@ -149,7 +154,7 @@
         </div>
         <div class="col-lg-2">
           <button class="btn btn-danger btn-lg btn-block input-cta">REQUEST DEMO</button>
-        </div>  
+        </div>
       </div>
     </div>
   </div>
@@ -190,15 +195,15 @@
             <button href="" class="btn btn-lg btn-challenges" id="download-datasheet">DOWNLOAD DATASHEET</button>
           </div>
           <script>
-            $('#download-datasheet').click(function () { 
-              console.log('clicked!') 
+            $('#download-datasheet').click(function () {
+              console.log('clicked!')
             });
           </script>
         </div>
-      </div>  
+      </div>
     </div>
   </div>
-  <div class="enterprise-features">  
+  <div class="enterprise-features">
     <div class="container padding-4x">
       <h2 class="text-center lead-color">Enterprise Grade Features.</h2>
       <h3 class="col-lg-10 col-lg-offset-1 text-center lead sub">ElasticBox features built specifically to accelerate development and deployment, facilitate innovation and collaboration, and maintain governance and policies.</h3>
@@ -307,7 +312,7 @@
 </div>
       </div>
     </div>
-  </div>  
+  </div>
 </main>
 
     <!-- Footer and Other Javascript. -->
