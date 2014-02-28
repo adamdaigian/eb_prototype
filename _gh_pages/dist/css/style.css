@@ -95,7 +95,7 @@ a:hover.more {
 }
 
 .jumbotron {
-  background-color: #f0f2f5;
+  background-color: #e2e6ed;
 }
 
 .jumbotron.slate {
@@ -434,22 +434,6 @@ input, .input-lg {
   margin-bottom: 20px;
   font-weight: 400;
   line-height: 1.7;
-}
-
-.enterprise-lead {
-  font-size: 30px;
-  color: #fff;
-  line-height: 1.6;
-}
-
-.enterprise-sub {
-  width: 90%;
-  font-family: 'Monda', sans-serif;
-  color: #627990;
-  font-size: 20px;
-  margin-bottom: 20px;
-  font-weight: 400;
-  line-height: 1.6;
 }
 
 .scroll-block {
@@ -1177,8 +1161,10 @@ code {
   padding-bottom: 100px;
 }
 
-.img-box-labratory {
+.img-story-block {
   margin: 0 auto;
+  padding-top:2em;
+  padding-bottom: 2em;
 }
 
 .box-explain {
@@ -1345,26 +1331,42 @@ code {
   left: 168px;
 }
 
-.personas-background {
-  margin-top: 140px;
-  height: 240px;
-  width: 100%;
-  margin-left: -26px;
-  background-image: url('https://dl.dropboxusercontent.com/u/11221717/dev-ops-it-management.png');
-  background-position: center bottom;
-  background-size: cover;
+.enterprise-lead {
+  font-size: 34px;
+  color: #fff;
+  line-height: 1.6;
+}
+
+.enterprise-sub {
+  width: 90%;
+  font-family: 'Monda', sans-serif;
+  color: #627990;
+  font-size: 22px;
+  margin-bottom: 20px;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.persona-lead {
+  padding-top: 40px;
+  font-size: 34px;
+  color: #f06c52;
 }
 
 .row-personas {
-  padding-top: 480px;
+  padding-top: 60px;
   padding-bottom: 100px;
+}
+
+.row-personas > h3 {
+  font-size: 22px;
 }
 
 ul.persona-list li {
   list-style: none;
-  text-indent: -14px;
+  text-indent: -16px;
   margin-left: 0px;
-  font-size: 15px;
+  font-size: 16px;
   color: #4a6179;
 }
 
