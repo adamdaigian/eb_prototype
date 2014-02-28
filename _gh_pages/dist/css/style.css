@@ -157,7 +157,7 @@ p, div, span, .btn, .lead {
 }
 
 .lead-color {
-  color: #a36eda;
+  color: #f06c52;
 }
 
 .text-muted {
@@ -172,8 +172,8 @@ p, div, span, .btn, .lead {
 }
 
 .btn-danger {
-  background-color: #a36eda;
-  border-color: #a36eda;
+  background-color: #f06c52;
+  border-color: #f06c52;
 }
 
 .btn-danger:hover {
@@ -880,7 +880,7 @@ h2.box-overview-lead {
 .hero-screenshot-placeholder {
   height: 100%;
   width: 100%;
-  background-image: url('https://dl.dropboxusercontent.com/u/11221717/quick%20demo%20%281%29.gif');
+  background-image: url('https://dl.dropboxusercontent.com/u/11221717/quick%20demo.gif');
   background-size: cover;
 }
 
@@ -1147,7 +1147,7 @@ code {
 }
 
 .cloud-lead {
-  color: #a36eda;
+  color: #f06c52;
 }
 
 .cloud-sub {
@@ -1494,7 +1494,7 @@ p.clear-leadership-social {
 
 .modal-header {
   color: #FFF;
-  background-color: #a271d7;
+  background-color: #f06c52;
   border-bottom: none;
 }
 
