@@ -95,7 +95,7 @@ a:hover.more {
 }
 
 .jumbotron {
-  background-color: #f0f2f5;
+  background-color: #e2e6ed;
 }
 
 .jumbotron.slate {
@@ -138,7 +138,7 @@ p, div, span, .btn, .lead {
 }
 
 .btn {
-  font-weight: 400;
+  font-weight: 600;
 }
 
 .lead-lg {
@@ -171,20 +171,43 @@ p, div, span, .btn, .lead {
   border-radius: 3px;
 }
 
+.btn {
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, .08) 0%, rgba(0, 0, 0, .08) 100%);
+}
+
 .btn-danger {
-  background-color: #a36eda;
-  border-color: #a36eda;
+  background-color: #46d745;
+  border-color: #46d745;
 }
 
 .btn-danger:hover {
-  background-color: #b67bf2;
-  border-color: #b67bf2;
+  background-color: #4ae549;
+  border-color: #4ae549;
 }
 
 .btn-danger:focus,
 .btn-danger:active,
 .btn-danger.active,
 .open .dropdown-toggle.btn-danger{
+  background-color: #42cd41;
+  border-color: #42cd41;
+  color: #FFF;
+}
+
+.btn-safe {
+  background-color: #a36eda;
+  border-color: #a36eda;
+}
+
+.btn-safe:hover {
+  background-color: #b67bf2;
+  border-color: #b67bf2;
+}
+
+.btn-safe:focus,
+.btn-safe:active,
+.btn-safe.active,
+.open .dropdown-toggle.btn-safe{
   background-color: #8d5fbe;
   border-color: #8d5fbe;
   color: #FFF;
@@ -432,22 +455,6 @@ input, .input-lg {
   line-height: 1.7;
 }
 
-.enterprise-lead {
-  font-size: 30px;
-  color: #fff;
-  line-height: 1.6;
-}
-
-.enterprise-sub {
-  width: 90%;
-  font-family: 'Monda', sans-serif;
-  color: #627990;
-  font-size: 20px;
-  margin-bottom: 20px;
-  font-weight: 400;
-  line-height: 1.6;
-}
-
 .scroll-block {
   background-color: #bec5cc;
 }
@@ -611,6 +618,19 @@ h2.box-overview-lead {
 
 .box-overview h2 {
   font-size: 30px;
+}
+
+.special {
+  padding: 20px;
+}
+
+.special > h3 {
+  font-size: 22px;
+}
+
+.special > p {
+  padding-top: 20px;
+  font-size: 18px;
 }
 
 @media (max-width: 768px) {
@@ -831,7 +851,7 @@ h2.box-overview-lead {
   height: 858px;
   background:
     linear-gradient(to bottom, rgba(160, 107, 213, .2) 0%, rgba(0, 124, 252, .2) 100%),
-    url('https://dl.dropboxusercontent.com/u/11221717/features-background.png') center bottom repeat-x,
+    url('https://dl.dropboxusercontent.com/u/11221717/features-background.png') center bottom repeat-x no-repeat-y,
     url('https://dl.dropboxusercontent.com/u/11221717/hero-texture-heavy.png') repeat;
 }
 
@@ -880,7 +900,7 @@ h2.box-overview-lead {
 .hero-screenshot-placeholder {
   height: 100%;
   width: 100%;
-  background-image: url('https://dl.dropboxusercontent.com/u/11221717/quick%20demo%20%281%29.gif');
+  background-image: url('https://dl.dropboxusercontent.com/u/11221717/quick%20demo.gif');
   background-size: cover;
 }
 
@@ -1147,7 +1167,7 @@ code {
 }
 
 .cloud-lead {
-  color: #a36eda;
+  color: #f06c52;
 }
 
 .cloud-sub {
@@ -1173,8 +1193,10 @@ code {
   padding-bottom: 100px;
 }
 
-.img-box-labratory {
+.img-story-block {
   margin: 0 auto;
+  padding-top:2em;
+  padding-bottom: 2em;
 }
 
 .box-explain {
@@ -1341,26 +1363,42 @@ code {
   left: 168px;
 }
 
-.personas-background {
-  margin-top: 140px;
-  height: 240px;
-  width: 100%;
-  margin-left: -26px;
-  background-image: url('https://dl.dropboxusercontent.com/u/11221717/dev-ops-it-management.png');
-  background-position: center bottom;
-  background-size: cover;
+.enterprise-lead {
+  font-size: 34px;
+  color: #fff;
+  line-height: 1.6;
+}
+
+.enterprise-sub {
+  width: 90%;
+  font-family: 'Monda', sans-serif;
+  color: #627990;
+  font-size: 22px;
+  margin-bottom: 20px;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.persona-lead {
+  padding-top: 40px;
+  font-size: 34px;
+  color: #f06c52;
 }
 
 .row-personas {
-  padding-top: 480px;
+  padding-top: 60px;
   padding-bottom: 100px;
+}
+
+.row-personas > h3 {
+  font-size: 22px;
 }
 
 ul.persona-list li {
   list-style: none;
-  text-indent: -14px;
+  text-indent: -16px;
   margin-left: 0px;
-  font-size: 15px;
+  font-size: 16px;
   color: #4a6179;
 }
 
@@ -1380,12 +1418,43 @@ ul.persona-list li.feature-included {
   margin-top: -30px;
 }
 
-#download-data-sheet-form {
+#download-datasheet-filter {
   display: none;
 }
 
 .netflix {
   background-color: #d43f3a;
+}
+
+.use-case-block > h3 {
+  margin-bottom: 20px;
+}
+
+.use-case-inner {
+  text-align: center;
+  color: #fff;
+  background-color: #2c3c5c;
+  padding: 60px;
+  border-radius: 50%;
+}
+
+.use-case-select {
+  margin: 0 auto;
+  margin-bottom: -50px;
+  width: 126px;
+  height: 39px;
+}
+
+.use-case-select.active {
+  margin: 0 auto;
+  margin-bottom: -50px;
+  width: 126px;
+  height: 39px;
+  background-image: url('https://dl.dropboxusercontent.com/u/11221717/use-case-select.png');
+}
+
+.row-use-case-description {
+  padding-bottom: 40px;
 }
 
 .kail {
@@ -1494,7 +1563,7 @@ p.clear-leadership-social {
 
 .modal-header {
   color: #FFF;
-  background-color: #a271d7;
+  background-color: #f06c52;
   border-bottom: none;
 }
 

@@ -107,8 +107,14 @@
       <br>
    	</div>
   </div>
+  <div class="row">
+    <h2 class="text-center persona-lead">One Solution For The Enterprise Of Tomorrow.</h2>
+    <h3 class="col-lg-8 col-lg-offset-2 text-center lead sub">Experience unification of your IT department and the accleratation of enterprise wide innovation. ElasticBox helps pave the way for the modern IT department.</h3>
+  </div>
+  <div class="row">
+    <img class="img-responsive img-story-block"src="https://dl.dropboxusercontent.com/u/11221717/devs-ops-management.svg"></img>
+  </div>
   <div class="container">
-    <div class="col-lg-12 personas-background"></div>
   	<div class="row padding-4x row-personas">
   		<div class="col-md-4">
   			<h3 class="text-center lead-color">Developers</h3>
@@ -146,14 +152,13 @@
       <div class="row">
           <h3 class="text-center">Request A Product Demo</h3>
           <h4 class="text-center">See how ElasticBox can transform your enterprise.</h4>
-        <div class="col-lg-3 col-lg-offset-2">
-          <input class="form-control input-lg input-cta" placeholder="Enter Email"></input>
-        </div>
-        <div class="col-lg-3">
-          <input class="form-control input-lg input-cta" placeholder="Company"></input>
-        </div>
-        <div class="col-lg-2">
-          <button class="btn btn-danger btn-lg btn-block input-cta">REQUEST DEMO</button>
+        <div class="col-lg-6 col-lg-offset-3">
+          <div class="col-lg-6">
+            <input class="form-control input-lg input-cta" placeholder="Enter Email"></input>
+          </div>
+          <div class="col-lg-6">
+            <button class="btn btn-danger btn-lg btn-block input-cta">REQUEST DEMO</button>
+          </div>
         </div>
       </div>
     </div>
@@ -187,21 +192,83 @@
           <div class="col-lg-3 col-md-6 col-sm-6 challenges">
             <div class="challenges-inner">
               <img class="img-responsive icon-challenges" src="https://dl.dropboxusercontent.com/u/11221717/icon-governance.svg"></img>
-              <h3 class="text-center">Governance</h3>
+              <h3 class="text-center">Policy</h3>
               <p>Hard maintaining a centralized strategy in your organization? Worry no more.</p>
             </div>
           </div>
-          <div class="row text-center">
-            <button href="" class="btn btn-lg btn-challenges" id="download-datasheet">DOWNLOAD DATASHEET</button>
-          </div>
           <script>
-            $('#download-datasheet').click(function () {
-              console.log('clicked!')
+            $(document).ready(function() {    
+            $('#download-datasheet').click(function () { 
+              $('#datasheet-prompt').hide()
+              $('#download-datasheet-filter').show()
             });
+          });
           </script>
+          <div class="row text-center" id="datasheet-prompt">
+            <button href="" class="btn btn-lg btn-challenges btn-datasheet" id="download-datasheet">DOWNLOAD DATASHEET</button>
+          </div>
+          <div class="row text-center" id="download-datasheet-filter">
+            <div class="col-lg-6 col-lg-offset-3">
+              <div class="col-lg-6">
+                <input class="form-control input-lg input-cta" placeholder="Enter Email"></input>
+              </div>
+              <div class="col-lg-6">
+                <button href="" class="btn btn-lg btn-challenges" id="download-datasheet">DOWNLOAD DATASHEET</button>
+              </div>
+            </div>  
+          </div>
         </div>
       </div>
     </div>
+  </div>
+  <div class="jumbotron">
+    <div class="container">
+      <h2 class="col-lg-10 col-lg-offset-1 text-center padding-1x">Conqueror your complex use cases with ease</h2>
+      <div class="row">
+        <div class="col-lg-10 col-lg-offset-1">
+          <div class="col-lg-3 use-case-block text-center">
+            <a href="">
+              <div class="use-case-inner">
+                <i class="fa fa-refresh glyphicon-4x"></i>
+              </div>
+            </a>
+            <h3>Continous Integration</h3>
+            <div class="use-case-select active"></div>
+          </div>
+          <div class="col-lg-3 use-case-block text-center">
+            <div class="use-case-inner">
+              <i class="fa fa-tasks glyphicon-4x"></i>
+            </div>
+            <h3>Orchestrated Updates</h3>
+            <div class="use-case-select"></div>
+          </div>
+          <div class="col-lg-3 use-case-block text-center">
+            <div class="use-case-inner">
+              <i class="fa fa-money glyphicon-4x"></i>
+            </div>
+            <h3>Resource Provisioning</h3>
+            <div class="use-case-select"></div>
+          </div>
+          <div class="col-lg-3 use-case-block text-center">
+            <div class="use-case-inner">
+              <i class="fa fa-trophy glyphicon-4x"></i>
+            </div>
+            <h3>Infrastructure Independence</h3>
+            <div class="use-case-select"></div>
+          </div>
+        </div>  
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row row-use-case-description">
+      <div class="col-lg-10 col-lg-offset-1 padding-2x">
+        <div class="col-lg-8">
+          <p class="lead sub">When executed properly, continous integration can mean the most efficient and innovative development. See how ElasticBox uses continous integration and helps customers onboard with best practices.</p>
+        </div>
+        <div class="col-lg-4 text-center"><button class="btn btn-lg btn-danger">LEARN MORE</button></div>
+      </div>
+    </div>  
   </div>
   <div class="enterprise-features">
     <div class="container padding-4x">
