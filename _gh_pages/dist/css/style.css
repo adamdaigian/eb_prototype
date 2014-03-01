@@ -575,7 +575,7 @@ img.icon-challenges {
   color: #FFF;
 }
 
-.btn-challenges {
+.btn-datasheet {
   margin-top: 60px;
 }
 
@@ -851,7 +851,7 @@ h2.box-overview-lead {
   height: 858px;
   background:
     linear-gradient(to bottom, rgba(160, 107, 213, .2) 0%, rgba(0, 124, 252, .2) 100%),
-    url('https://dl.dropboxusercontent.com/u/11221717/features-background.png') center bottom repeat-x no-repeat-y,
+    url('https://dl.dropboxusercontent.com/u/11221717/features-background.png') center bottom repeat-x,
     url('https://dl.dropboxusercontent.com/u/11221717/hero-texture-heavy.png') repeat;
 }
 
@@ -1167,7 +1167,7 @@ code {
 }
 
 .cloud-lead {
-  color: #f06c52;
+  color: #a36eda;
 }
 
 .cloud-sub {
@@ -1382,7 +1382,7 @@ code {
 .persona-lead {
   padding-top: 40px;
   font-size: 34px;
-  color: #f06c52;
+  color: #a36eda;
 }
 
 .row-personas {
@@ -1419,6 +1419,7 @@ ul.persona-list li.feature-included {
 }
 
 #download-datasheet-filter {
+  padding-top: 60px;
   display: none;
 }
 
@@ -1567,7 +1568,7 @@ p.clear-leadership-social {
 
 .modal-header {
   color: #FFF;
-  background-color: #f06c52;
+  background-color: #a36eda;
   border-bottom: none;
 }
 
