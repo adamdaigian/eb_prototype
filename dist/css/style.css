@@ -1426,6 +1426,10 @@ ul.persona-list li.feature-included {
   background-color: #d43f3a;
 }
 
+.jumbotron-use-cases {
+  margin-top: -30px;
+}
+
 .use-case-block > h3 {
   margin-bottom: 20px;
 }
