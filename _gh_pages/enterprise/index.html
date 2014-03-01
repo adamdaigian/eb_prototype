@@ -152,14 +152,13 @@
       <div class="row">
           <h3 class="text-center">Request A Product Demo</h3>
           <h4 class="text-center">See how ElasticBox can transform your enterprise.</h4>
-        <div class="col-lg-3 col-lg-offset-2">
-          <input class="form-control input-lg input-cta" placeholder="Enter Email"></input>
-        </div>
-        <div class="col-lg-3">
-          <input class="form-control input-lg input-cta" placeholder="Company"></input>
-        </div>
-        <div class="col-lg-2">
-          <button class="btn btn-danger btn-lg btn-block input-cta">REQUEST DEMO</button>
+        <div class="col-lg-6 col-lg-offset-3">
+          <div class="col-lg-6">
+            <input class="form-control input-lg input-cta" placeholder="Enter Email"></input>
+          </div>
+          <div class="col-lg-6">
+            <button class="btn btn-danger btn-lg btn-block input-cta">REQUEST DEMO</button>
+          </div>
         </div>
       </div>
     </div>
@@ -197,14 +196,27 @@
               <p>Hard maintaining a centralized strategy in your organization? Worry no more.</p>
             </div>
           </div>
-          <div class="row text-center">
-            <button href="" class="btn btn-lg btn-challenges" id="download-datasheet">DOWNLOAD DATASHEET</button>
-          </div>
           <script>
-            $('#download-datasheet').click(function () {
-              console.log('clicked!')
+            $(document).ready(function() {    
+            $('#download-datasheet').click(function () { 
+              $('#datasheet-prompt').hide()
+              $('#download-datasheet-filter').show()
             });
+          });
           </script>
+          <div class="row text-center" id="datasheet-prompt">
+            <button href="" class="btn btn-lg btn-challenges btn-datasheet" id="download-datasheet">DOWNLOAD DATASHEET</button>
+          </div>
+          <div class="row text-center" id="download-datasheet-filter">
+            <div class="col-lg-6 col-lg-offset-3">
+              <div class="col-lg-6">
+                <input class="form-control input-lg input-cta" placeholder="Enter Email"></input>
+              </div>
+              <div class="col-lg-6">
+                <button href="" class="btn btn-lg btn-challenges" id="download-datasheet">DOWNLOAD DATASHEET</button>
+              </div>
+            </div>  
+          </div>
         </div>
       </div>
     </div>
@@ -215,38 +227,44 @@
       <div class="row">
         <div class="col-lg-10 col-lg-offset-1">
           <div class="col-lg-3 use-case-block text-center">
-            <div class="use-case-inner">
-              <i class="fa fa-refresh glyphicon-4x"></i>
-            </div>
+            <a href="">
+              <div class="use-case-inner">
+                <i class="fa fa-refresh glyphicon-4x"></i>
+              </div>
+            </a>
             <h3>Continous Integration</h3>
+            <div class="use-case-select active"></div>
           </div>
           <div class="col-lg-3 use-case-block text-center">
             <div class="use-case-inner">
               <i class="fa fa-tasks glyphicon-4x"></i>
             </div>
             <h3>Orchestrated Updates</h3>
+            <div class="use-case-select"></div>
           </div>
           <div class="col-lg-3 use-case-block text-center">
             <div class="use-case-inner">
               <i class="fa fa-money glyphicon-4x"></i>
             </div>
             <h3>Resource Provisioning</h3>
+            <div class="use-case-select"></div>
           </div>
           <div class="col-lg-3 use-case-block text-center">
             <div class="use-case-inner">
               <i class="fa fa-trophy glyphicon-4x"></i>
             </div>
             <h3>Infrastructure Independence</h3>
+            <div class="use-case-select"></div>
           </div>
         </div>  
       </div>
-    </div>  
+    </div>
   </div>
   <div class="container">
-    <div class="row">
+    <div class="row row-use-case-description">
       <div class="col-lg-10 col-lg-offset-1 padding-2x">
         <div class="col-lg-8">
-          <p class="lead sub">When executed properly, continous integration can mean the most efficient and innovative development. See how ElasticBox employees continous integration and helps customers adapt best practices.</p>
+          <p class="lead sub">When executed properly, continous integration can mean the most efficient and innovative development. See how ElasticBox uses continous integration and helps customers onboard with best practices.</p>
         </div>
         <div class="col-lg-4 text-center"><button class="btn btn-lg btn-danger">LEARN MORE</button></div>
       </div>
