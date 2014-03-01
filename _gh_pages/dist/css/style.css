@@ -138,7 +138,7 @@ p, div, span, .btn, .lead {
 }
 
 .btn {
-  font-weight: 400;
+  font-weight: 600;
 }
 
 .lead-lg {
@@ -157,7 +157,7 @@ p, div, span, .btn, .lead {
 }
 
 .lead-color {
-  color: #f06c52;
+  color: #a36eda;
 }
 
 .text-muted {
@@ -176,21 +176,40 @@ p, div, span, .btn, .lead {
 }
 
 .btn-danger {
-  background-color: #f06c52;
-  border-color: #f06c52;
+  background-color: #46d745;
+  border-color: #46d745;
 }
 
 .btn-danger:hover {
-  background-color: #FC7156;
-  border-color: #FC7156;
+  background-color: #4ae549;
+  border-color: #4ae549;
 }
 
 .btn-danger:focus,
 .btn-danger:active,
 .btn-danger.active,
 .open .dropdown-toggle.btn-danger{
-  background-color: #DA6149;
-  border-color: #DA6149;
+  background-color: #42cd41;
+  border-color: #42cd41;
+  color: #FFF;
+}
+
+.btn-safe {
+  background-color: #a36eda;
+  border-color: #a36eda;
+}
+
+.btn-safe:hover {
+  background-color: #b67bf2;
+  border-color: #b67bf2;
+}
+
+.btn-safe:focus,
+.btn-safe:active,
+.btn-safe.active,
+.open .dropdown-toggle.btn-safe{
+  background-color: #8d5fbe;
+  border-color: #8d5fbe;
   color: #FFF;
 }
 
