@@ -601,6 +601,19 @@ h2.box-overview-lead {
   font-size: 30px;
 }
 
+.special {
+  padding: 20px;
+}
+
+.special > h3 {
+  font-size: 22px;
+}
+
+.special > p {
+  padding-top: 20px;
+  font-size: 18px;
+}
+
 @media (max-width: 768px) {
 
   .home-lead {
@@ -819,7 +832,7 @@ h2.box-overview-lead {
   height: 858px;
   background:
     linear-gradient(to bottom, rgba(160, 107, 213, .2) 0%, rgba(0, 124, 252, .2) 100%),
-    url('https://dl.dropboxusercontent.com/u/11221717/features-background.png') center bottom repeat-x,
+    url('https://dl.dropboxusercontent.com/u/11221717/features-background.png') center bottom repeat-x no-repeat-y,
     url('https://dl.dropboxusercontent.com/u/11221717/hero-texture-heavy.png') repeat;
 }
 
@@ -1392,6 +1405,18 @@ ul.persona-list li.feature-included {
 
 .netflix {
   background-color: #d43f3a;
+}
+
+.use-case-block {
+
+}
+
+.use-case-inner {
+  text-align: center;
+  color: #fff;
+  background-color: #a46eda;
+  padding: 60px;
+  border-radius: 50%;
 }
 
 .kail {
