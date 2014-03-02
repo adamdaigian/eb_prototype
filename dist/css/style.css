@@ -15,7 +15,7 @@ hr {
 }
 
 a.more {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 600;
   color: #007EFF;
   text-decoration: none;
@@ -1231,17 +1231,30 @@ code {
 
 /*== PRICING =========================*/
 
+.jumbotron-pricing {
+  margin-top: -30px;
+}
+
 .pricing-cta {
   padding-top: 70px;
   padding-bottom: 70px;
 }
 
 .pricing-callout {
-  padding: 10px 40px 40px;
+  background-color: #fff;
+  height: auto;
 }
 
-.pricing-callout-developer {
-  max-height: 384px;
+.pricing-callout-header {
+  padding: 10px 10px 15px 10px;
+  background-color: #a36eda;
+  color: #fff;
+  width: 100%;
+  text-align: center;
+}
+
+.pricing-callout-inner {
+  padding: 40px;
 }
 
 .pricing-developer-cta {

@@ -87,52 +87,62 @@
 
     <!-- Page content of course! -->
     <main id="content" role="main">
-  <div class="jumbotron text-center">
+  <div class="jumbotron slate text-center">
     <br><br><br>
     <div class="container">
-	    <h2>ElasticBox Developer Edition, Free Forever.</h2>
-		    <p class="lead">Enterprise-grade cloud management. See How ElasticBox can transform your organization with a specific POC.</p>
+	    <h2 class="lead-color">ElasticBox Developer Edition, Free Forever.</h2>
+		    <h3 class="sub">Enterprise-grade cloud management. See How ElasticBox can transform your organization with a specific POC.</h3>
 		    <p>
 		      <button type="button" class="btn btn-danger btn-lg" href="#sign-up-modal" data-toggle="modal" data-target="#sign-up-modal">Get Started For Free</button>
 		    </p>
     </div>
     <br><br><br>
   </div>
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-6 col-md-6">
-				<div class="well pricing-callout pricing-callout-developer">
-					<h1>Developer Edition</h1>
-					<p>Got no money but still want a better way to develop and deploy cloud based applications? We got you covered. We <span class="glyphicon glyphicon-heart required-form"></span> developers.</p>
-					<ul>
-						<li>Collaboration features.</li>
-						<li>Workspaces for environments.</li>
-						<li>Multiple providers and instances.</li>
-            <li>ElasticBox and community boxes.</li>
-					</ul>
-					<div class="text-center pricing-developer-cta">
-						<button class="btn btn-danger" href="#sign-up-modal" data-toggle="modal" data-target="#sign-up-modal">Get Started</button>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-6 col-md-6">
-				<div class="well pricing-callout">
-					<h1>Enterprise ElasticBox</h1>
-					<p>For companies large and small with complex virtual infrastructure and demanding multi-tear applications. Accelerate development, retain governance and get your innovation machine up and running.</p>
-					<ul>
-						<li>Admin users and access control.</li>
-						<li>Public and private cloud integration.</li>
-						<li>Unlimited users and workspaces.</li>
-            <li>Continuous integration features.</li>
-            <li>Policy management and detailed reporting.</li>
-					</ul>
-					<div class="text-center">
-						<button class="btn btn-danger" href="#signup-form" data-toggle="modal" data-target="#signup-form">Request Info</button>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+  <div class="jumbotron jumbotron-pricing">  
+  	<div class="container">
+  		<div class="row">
+  			<div class="col-lg-5 col-lg-offset-1">
+  				<div class="pricing-callout pricing-callout-developer">
+            <div class="pricing-callout-header">
+              <h2>Developer Edition</h2>
+            </div>
+            <div class="pricing-callout-inner">
+              <p>Got no money but still want a better way to develop and deploy cloud based applications? We got you covered. We <span class="glyphicon glyphicon-heart required-form"></span> developers.</p>
+    					<ul>
+    						<li>Collaboration features.</li>
+    						<li>Workspaces for environments.</li>
+    						<li>Multiple providers and instances.</li>
+                <li>ElasticBox and community boxes.</li>
+    					</ul>
+    					<div class="text-center pricing-developer-cta">
+    						<button class="btn btn-danger" href="#sign-up-modal" data-toggle="modal" data-target="#sign-up-modal">GET STARTED</button>
+    					</div>
+            </div>  
+  				</div>
+  			</div>
+  			<div class="col-lg-5 col-md-6">
+  				<div class="pricing-callout">
+            <div class="pricing-callout-header">
+    					<h2>Enterprise ElasticBox</h2>
+            </div>
+            <div class="pricing-callout-inner">
+              <p>For companies large and small with complex virtual infrastructure and demanding multi-tear applications. Accelerate development, retain governance and get your innovation machine up and running.</p>
+    					<ul>
+    						<li>Admin users and access control.</li>
+    						<li>Public and private cloud integration.</li>
+    						<li>Unlimited users and workspaces.</li>
+                <li>Continuous integration features.</li>
+                <li>Policy management and detailed reporting.</li>
+    					</ul>
+    					<div class="text-center">
+    						<button class="btn btn-danger" href="#signup-form" data-toggle="modal" data-target="#signup-form">REQUEST INFO</button>
+    					</div>
+            </div>  
+  				</div>
+  			</div>
+  		</div>
+  	</div>
+  </div>  
 	<div class="container">	
 		<div class="table-responsive">
     <table class="table table-bordered table-pricing">
@@ -185,6 +195,16 @@
                 <td><span class="glyphicon glyphicon-ok yes"></span></td>
             </tr>
             <tr>
+                <td>Single Sign On Control</td>
+                <td><span class="glyphicon glyphicon-remove no"></span></td>
+                <td><span class="glyphicon glyphicon-ok yes"></span></td>
+            </tr>
+            <tr>
+                <td>Cloud Provider Access</td>
+                <td><span class="glyphicon glyphicon-remove no"></span></td>
+                <td><span class="glyphicon glyphicon-ok yes"></span></td>
+            </tr>
+            <tr>
                 <td>Reporting</td>
                 <td><span class="glyphicon glyphicon-remove no"></span></td>
                 <td><span class="glyphicon glyphicon-ok yes"></span></td>
@@ -195,14 +215,14 @@
                 <td><span class="glyphicon glyphicon-ok yes"></span></td>
             </tr>
             <tr>
-                <td>Feature</td>
-                <td><span class="glyphicon glyphicon-remove no"></span></td>
-                <td><span class="glyphicon glyphicon-ok yes"></span></td>
-            </tr>
-             <tr>
                 <td>Support Level</td>
                 <td>Sorry :(</td>
                 <td>Enterprise</td>
+            </tr>
+             <tr>
+                <td>Contact</td>
+                <td>Email</td>
+                <td>Direct phone numbers for our CTO & CEO</td>
             </tr>
             <tr>
                 <td>Payment Options</td>
@@ -218,7 +238,7 @@
     <div class="col-md-6">
       <div class="well pricing-callout">
         <h1>Enterprise Support</h1>
-        <p>Enterprises with high-scale applications means they operate around the clock. With Offices in San Francisco and Madrid, ElasticBox is here to help 24/7.</p>
+        <p>Enterprises with high-scale applications means they operate around the clock. With Offices in San Francisco, London and Madrid, ElasticBox is here to help 24/7.</p>
         <p>Enterprise support means 1-hour SLA for urgent ticket items. Unlimited support for all other items.</p>
       </div>
     </div>
