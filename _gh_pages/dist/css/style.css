@@ -176,21 +176,21 @@ p, div, span, .btn, .lead {
 }
 
 .btn-danger {
-  background-color: #46d745;
-  border-color: #46d745;
+  background-color: #40C33F;
+  border-color: #40C33F;
 }
 
 .btn-danger:hover {
-  background-color: #4ae549;
-  border-color: #4ae549;
+  background-color: #4AD84A;
+  border-color: #4AD84A;
 }
 
 .btn-danger:focus,
 .btn-danger:active,
 .btn-danger.active,
 .open .dropdown-toggle.btn-danger{
-  background-color: #42cd41;
-  border-color: #42cd41;
+  background-color: #39AF39;
+  border-color: #39AF39;
   color: #FFF;
 }
 
