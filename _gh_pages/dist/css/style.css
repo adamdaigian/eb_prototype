@@ -950,7 +950,7 @@ h2.box-overview-lead {
   background-color: #fff;
   border-bottom-left-radius: 6px;
   border-bottom-right-radius: 6px;
-  overflow: hidden;
+  overflow: scroll;
 }
 
 code {
