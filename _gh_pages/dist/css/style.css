@@ -1237,6 +1237,10 @@ code {
   margin-top: -30px;
 }
 
+.btn-pricing {
+  margin-top: 40px;
+}
+
 .pricing-cta {
   padding-top: 70px;
   padding-bottom: 70px;
@@ -1300,6 +1304,11 @@ code {
   margin-top: 20px;
 }
 
+thead {
+  text-align: center;
+  background-color: #f0f2f5;
+}
+
 .row .feature-list {
   margin-right: 15px;
 }
@@ -1326,12 +1335,23 @@ code {
   font-size: 19px;
 }
 
-.table-pricing th:first-child, td:first-child {
-  width: 400px;
+.table-pricing {
+  text-align: center;
 }
 
-.feature-screenshot {
-/*  padding-top: 40px;*/
+.table-pricing th:first-child, td:first-child {
+  width: 300px;
+}
+
+thead > tr > th {
+  text-align: center;
+  padding: 15px;
+}
+
+
+
+.table-bordered {
+  border: 2px solid #ccd6dc;
 }
 
 .feature-highlight > h2.feature-title {

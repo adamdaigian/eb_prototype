@@ -1,13 +1,20 @@
 ---
-layout: default
+layout: about
 title: About
 slug: about
 lead: "Learn about ElasticBox, meet the core team, and check out the ever-growing community of Enterprises and Developers."
 base_url: "../"
 ---
 
+<script>
+	$('document').ready(function() {
+    $('#about-wrapper').tubular({videoId: 'RC4rSE8GMn0'}); // where idOfYourVideo is the YouTube ID.
+  });
+
+</script>
+
 <main class="bs-masthead" id="content" role="main">
-	<div class="jumbotron jumbotron-about text-center slate">
+	<div class="jumbotron jumbotron-about text-center slate" id="about-wrapper">
 		<br><br><br>
 		<div class="container">
 	    <h2 class="about-lead">About ElasticBox</h2>
@@ -18,7 +25,7 @@ base_url: "../"
   </div>
   <div class="jumbotron jumbotron-history">
 	  <div class="container">
-	  	<div class="row padding-4x">
+	  	<div class="row padding-2x">
 		    <h2 class="text-center padding-1x">What Is ElasticBox?</h2>
 		    <div class="col-lg-5 col-lg-offset-1">
 		    	<p class="lead">ElasticBox is transforming enterprises through next-generation cloud application management that delivers unprecedented agility, productivity, and innovation. The convergence of mobile, content, and cloud is redefining these apps and how enterprises use them. Develop and deploy modular application components across various groups.</p>
