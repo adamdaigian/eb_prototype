@@ -1546,9 +1546,14 @@ ul.persona-list li.feature-included {
 
 /*== ABOUT ===============================*/
 
+#content-wrapper {
+  position: relative;
+  z-index: 200;"
+}
+
 .jumbotron-about {
   height: 500px;
-  background: url('https://dl.dropboxusercontent.com/u/11221717/ELS-About-1a.jpg');
+  background: none;
 }
 
 .jumbotron-history {
