@@ -197,11 +197,13 @@ p, div, span, .btn, .lead {
 .btn-safe {
   background-color: #a36eda;
   border-color: #a36eda;
+  color:#FFF;
 }
 
 .btn-safe:hover {
   background-color: #b67bf2;
   border-color: #b67bf2;
+  color:#FFF;
 }
 
 .btn-safe:focus,
@@ -1523,6 +1525,29 @@ ul.persona-list li.feature-included {
 }
 
 /*== ABOUT ===============================*/
+
+.jumbotron-about {
+  height: 500px;
+  background: url('https://dl.dropboxusercontent.com/u/11221717/ELS-About-1a.jpg');
+}
+
+.jumbotron-history {
+  background-color: #218dfc;
+  color: #fff;
+  margin-top: -30px;
+  margin-bottom: -20px;
+}
+
+.jumbotron-history p.lead {
+  color: #fff;
+  line-height: 1.8;
+
+}
+
+.about-lead {
+  color: #fff;
+  line-height: 1.6;
+}
 
 .history {
   padding-top: 50px;
