@@ -95,6 +95,10 @@ a:hover.more {
 }
 
 .jumbotron {
+  background-color: #f0f2f5;
+}
+
+.jumbotron.dark {
   background-color: #e2e6ed;
 }
 
@@ -161,6 +165,7 @@ p, div, span, .btn, .lead {
 }
 
 .text-muted {
+  font-weight: 600;
   color: #6f7f8e;
 }
 
@@ -931,7 +936,7 @@ h2.box-overview-lead {
   border-bottom-left-radius: 6px;
   border-bottom-right-radius: 6px;
   background-color: #fff;
-  overflow: scroll;
+  overflow: hidden;
 }
 
 .browser-feature {
@@ -952,7 +957,7 @@ h2.box-overview-lead {
   background-color: #fff;
   border-bottom-left-radius: 6px;
   border-bottom-right-radius: 6px;
-  overflow: scroll;
+  overflow: hidden;
 }
 
 code {
@@ -1172,9 +1177,6 @@ code {
   color: #a36eda;
 }
 
-.cloud-sub {
-}
-
 .cloud-row-1 {
   margin-top: 100px;
 }
@@ -1228,6 +1230,10 @@ code {
 
 .glyphicon-chevron-right {
   float: left;
+}
+
+.box-land {
+  margin-bottom: -30px;
 }
 
 
@@ -1552,7 +1558,7 @@ ul.persona-list li.feature-included {
 }
 
 .jumbotron-about {
-  height: 500px;
+  height: 650px;
   background: none;
 }
 
@@ -1570,8 +1576,20 @@ ul.persona-list li.feature-included {
 }
 
 .about-lead {
+  padding-top: 100px;
   color: #fff;
   line-height: 1.6;
+}
+
+.about-sub {
+  color: #007eff;
+}
+
+.leadership-wrapper {
+  margin-top: -30px;
+  height: 100%;
+  width: 100%;
+  background-color: #fff;
 }
 
 .history {
