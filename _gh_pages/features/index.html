@@ -115,31 +115,31 @@
           <div class="col-lg-2 col-md-3 col-sm-3 col-xs-3"><a class="more btn-deploy">PUPPET</a></div>
           <div class="col-lg-2 col-md-3 col-sm-3 col-xs-3"><a class="more btn-deploy">BASH</a></div>
         </div>
-      </div>
       <div class="row">
         <div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-12 col-xs-12">
-        <div class="browser">
-          <div class="indicators">
-            <span class="circle"></span>
-            <span class="circle"></span>
-            <span class="circle"></span>
+          <div class="browser">
+            <div class="indicators">
+              <span class="circle"></span>
+              <span class="circle"></span>
+              <span class="circle"></span>
+            </div>
+            <div class="browser-editor">
+              <code>
+                $ if ! [ $(lsb_release -cs|grep raring|wc -c) -gt 1 ]; then echo "UNSUPPORTED IMAGE/AMI: This Box only works with Ubuntu 13.04 (Raring Ringtail)"; fi
+                <br>
+                $ sudo apt-key adv --keyserver keyserver.ubuntu.com 
+                <br>
+                $ sudo sh -c "echo deb http://get.docker.io/ubuntu docker main > /etc/apt/sources.list.d/docker.list"
+                <br>
+                $ sudo apt-get update -y
+                <br>
+                $ sudo apt-get install lxc-docker-0.7.6 -y
+                <br>
+                $ run curl -L https://github.com/shykes/helloflask/archive/master.tar.gz | tar -xzv
+              </code>
+            </div>
           </div>
-          <div class="browser-editor">
-            <code>
-              $ if ! [ $(lsb_release -cs|grep raring|wc -c) -gt 1 ]; then echo "UNSUPPORTED IMAGE/AMI: This Box only works with Ubuntu 13.04 (Raring Ringtail)"; fi
-              <br>
-              $ sudo apt-key adv --keyserver keyserver.ubuntu.com 
-              <br>
-              $ sudo sh -c "echo deb http://get.docker.io/ubuntu docker main > /etc/apt/sources.list.d/docker.list"
-              <br>
-              $ sudo apt-get update -y
-              <br>
-              $ sudo apt-get install lxc-docker-0.7.6 -y
-              <br>
-              $ run curl -L https://github.com/shykes/helloflask/archive/master.tar.gz | tar -xzv
-            </code>
-          </div>
-        </div>
+        </div>  
       </div>  
     </div>      
   </div>  
