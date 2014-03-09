@@ -1543,6 +1543,7 @@ ul.persona-list li.feature-included {
 
 .jumbotron-use-cases {
   margin-top: -30px;
+  background-color: #cad2de;
 }
 
 .use-case-block > h3 {
@@ -1560,15 +1561,15 @@ ul.persona-list li.feature-included {
 .use-case-select {
   margin: 0 auto;
   margin-bottom: -50px;
-  width: 126px;
-  height: 39px;
+  width: 64px;
+  height: 20px;
 }
 
 .use-case-select.active {
   margin: 0 auto;
   margin-bottom: -50px;
-  width: 126px;
-  height: 39px;
+  width: 64px;
+  height: 20px;
   background-image: url('https://dl.dropboxusercontent.com/u/11221717/use-case-select.png');
 }
 
