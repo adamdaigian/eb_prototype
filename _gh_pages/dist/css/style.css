@@ -1504,7 +1504,7 @@ img.icon-challenges {
 }
 
 .btn-datasheet {
-  margin-top: 60px;
+  margin-top: 40px;
 }
 
 .challenges p {
@@ -1529,12 +1529,16 @@ ul.persona-list li.feature-included {
   padding-left: 25px;
 }
 
+.data-sheet-header {
+  margin-top: 6em;
+}
+
 .data-sheet-block {
   margin-top: -30px;
 }
 
 #download-datasheet-filter {
-  padding-top: 120px;
+  padding-top: 70px;
   display: none;
 }
 
@@ -1610,10 +1614,16 @@ ul.persona-list li.feature-included {
 }
 
 .kail {
-  height: 200px;
-  width: 200px;
+  max-height: 250px;
+  max-width: 250px;
   border-radius: 50%;
-  border: 4px solid #FFF;
+}
+
+.kail-quote {
+  padding-top: 38px;
+  color: #6f7f8f;
+  font-size: 18px;
+  line-height: 2;
 }
 
 .enterprise-signup-block {
