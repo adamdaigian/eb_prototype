@@ -1457,7 +1457,7 @@ ul.persona-list {
 ul.persona-list li {
   list-style: none;
   text-indent: -16px;
-  margin-left: 0px;
+  line-height: 1.6;
   font-size: 14px;
   color: #4a6179;
 }
