@@ -1413,7 +1413,7 @@ thead > tr > th {
 }
 
 .enterprise-lead {
-  font-size: 34px;
+  font-size: 32px;
   color: #fff;
   line-height: 1.6;
 }
@@ -1422,7 +1422,7 @@ thead > tr > th {
   width: 90%;
   font-family: 'Monda', sans-serif;
   color: #627990;
-  font-size: 22px;
+  font-size: 20px;
   margin-bottom: 20px;
   font-weight: 400;
   line-height: 1.6;
@@ -1443,11 +1443,22 @@ thead > tr > th {
   font-size: 22px;
 }
 
+.row-personas > p {
+  font-size: 14px;
+  color: #4a6179;
+}
+
+ul.persona-list {
+  margin: 0 auto;
+  width: 85%;
+  padding-top: 16px;
+}
+
 ul.persona-list li {
   list-style: none;
   text-indent: -16px;
   margin-left: 0px;
-  font-size: 16px;
+  font-size: 14px;
   color: #4a6179;
 }
 
