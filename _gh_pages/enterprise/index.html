@@ -164,46 +164,88 @@
       </div>
     </div>
   </div>
+  <script>
+    $(document).ready(function() {    
+      $('#use-case-1').click(function () {
+        console.log('hello1') 
+        $('#use-case-select-1').addClass('active')
+        $('#use-case-description-1').show()
+      });
+      $('#use-case-2').click(function () {
+        console.log('hello2') 
+        // $('#github-signup').hide()
+        // $('#google-signup').hide()
+        // $('#email-signup').hide()
+        // $('.divider').hide()
+        // $('#signup-form').show()
+      });
+      $('#use-case-3').click(function () {
+        console.log('hello3') 
+        // $('#github-signup').hide()
+        // $('#google-signup').hide()
+        // $('#email-signup').hide()
+        // $('.divider').hide()
+        // $('#signup-form').show()
+      });
+      $('#use-case-4').click(function () {
+        console.log('hello4') 
+        // $('#github-signup').hide()
+        // $('#google-signup').hide()
+        // $('#email-signup').hide()
+        // $('.divider').hide()
+        // $('#signup-form').show()
+      });
+    });
+  </script>
   <div class="jumbotron jumbotron-use-cases">
     <div class="container">
       <h2 class="col-lg-10 col-lg-offset-1 use-case-lead text-center padding-1x">Conqueror your complex use cases and challenges with ease</h2>
       <div class="row">
         <div class="col-lg-10 col-lg-offset-1">
           <div class="col-lg-3 use-case-block text-center">
-            <a href="">
-              <div class="use-case-inner">
+            <div id="use-case-1">
+              <div id="use-case-select-1" class="use-case-inner">
                 <img class="use-case-icon" src="https://dl.dropboxusercontent.com/u/11221717/continuous-integration.svg"></img>
               </div>
-            </a>
+            </div>
             <h3>Continous Integration</h3>
-            <div class="use-case-select active"></div>
+            <div id="use-case-select-1" class="use-case-select"></div>
           </div>
           <div class="col-lg-3 use-case-block text-center">
-            <div class="use-case-inner">
-             <img class="use-case-icon" src="https://dl.dropboxusercontent.com/u/11221717/orchestrated-updates.svg"></img>
+            <div id="use-case-2">
+              <div id="use-case-select-2"class="use-case-inner">
+                <img class="use-case-icon" src="https://dl.dropboxusercontent.com/u/11221717/orchestrated-updates.svg"></img>
+              </div>
             </div>
             <h3>Orchestrated Application Updates</h3>
-            <div class="use-case-select"></div>
+            <div id="use-case-select-2" class="use-case-select"></div>
           </div>
           <div class="col-lg-3 use-case-block text-center">
-            <div class="use-case-inner">
-              <img class="use-case-icon" src="https://dl.dropboxusercontent.com/u/11221717/resource-provisioning.svg"></img>
+            <div id="use-case-3">
+              <div id="use-case-select-3"class="use-case-inner">
+                <img class="use-case-icon" src="https://dl.dropboxusercontent.com/u/11221717/resource-provisioning.svg"></img>
+              </div>
             </div>
             <h3>Resource Provisioning</h3>
-            <div class="use-case-select"></div>
+            <div id="use-case-select-3" class="use-case-select"></div>
           </div>
           <div class="col-lg-3 use-case-block text-center">
-            <div class="use-case-inner">
-              <img class="use-case-icon" src="https://dl.dropboxusercontent.com/u/11221717/infrastructure-independence.svg"></img>
+            <div id="use-case-4">
+              <div id="use-case-select-4"class="use-case-inner">
+                <img class="use-case-icon" src="https://dl.dropboxusercontent.com/u/11221717/infrastructure-independence.svg"></img>
+              </div>
             </div>
-            <h3>Infrastructure Independence</h3>
-            <div class="use-case-select"></div>
+            <h3>Hybrid Application Deployment</h3>
+            <div id="use-case-select-4" class="use-case-select"></div>
           </div>
         </div>  
       </div>
       <div class="row row-use-case-description">
         <div class="col-lg-10 col-lg-offset-1 use-case-description padding-2x">
-          <p class="lead sub">Continuous integration can give you the most efficient and innovative development for your organization. Use our APIs to create a continuous integration environment with Git and Jenkins.</p>
+          <p id="use-case-description-1" class="use-case-description-text lead sub">Continuous integration can give you the most efficient and innovative development for your organization. Use our APIs to create a continuous integration environment with Git and Jenkins.</p>
+          <p id="use-case-description-2" class="use-case-description-text lead sub">ElasticBox makes pushing component updates to apps a breeze. Update the box and push the changes to all apps using that box. Teams can then choose to apply the update with a few clicks.</p>
+          <p id="use-case-description-3" class="use-case-description-text lead sub">ElasticBox gives you the freedom to provision resrouces across providers, environments, teams and users. Enforce strategy, policy and budgets through a series of admin features.</p>
+          <p id="use-case-description-4" class="use-case-description-text lead sub">Deploy your application across public and private clouds giving you the freedom to comply with your data policies, and business and IT requirements.</p>
         </div>
         <div class="col-lg-12 text-center padding-2x"><button class="btn btn-lg btn-danger">LEARN MORE</button></div>
       </div>
@@ -268,7 +310,7 @@
       </div>
     </div>
   </div>
-  <div class="jumbotron challenges-block">
+  <div class="jumbotron challenges-block slate-light">
     <div class="container">
       <h2 class="jumbo-challenges text-center">We know. Lots Of Things Can Slow You Down.</h2>
       <h3 class="col-lg-10 col-lg-offset-1 text-center challenges-header">ElasticBox's environment for hybrid cloud lifecycle management strengthens IT foundations while unifying Developers, DevOps and Management.</h3>
@@ -310,8 +352,8 @@
           });
           </script>
           <div class="row text-center" id="datasheet-prompt">
-            <h2>Is your current approach to DevOps Time-consuming and Repetitive? Error-prone and Inefficient? Lacking Governance?</h2>
-            <h3>See how ElasticBox can help!</h3>
+            <h3 class="col-lg-8 col-lg-offset-2 text-center challenges-header">Is your current approach to DevOps Time-consuming and Repetitive? Error-prone and Inefficient? Lacking Governance?</h3>
+            <h4 class="">See how ElasticBox can help!</h4>
             <button href="" class="btn btn-lg btn-challenges btn-datasheet" id="download-datasheet">DOWNLOAD DATASHEET</button>
           </div>
           <div class="row text-center" id="download-datasheet-filter">

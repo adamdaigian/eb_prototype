@@ -86,10 +86,6 @@ a:hover.more {
   font-size: 12em;
 }
 
-.small {
-  font-size: 100%;
-}
-
 .white {
   color: #FFF;
 }
@@ -1547,8 +1543,13 @@ ul.persona-list li.feature-included {
 }
 
 .use-case-block > h3 {
-  margin-bottom: 40px;
+  margin-bottom: 70px;
   color: #5a7385;
+}
+
+.use-case-block > h3.active {
+  margin-bottom: 70px;
+  color: #007EFF;
 }
 
 .use-case-lead {
@@ -1563,6 +1564,10 @@ ul.persona-list li.feature-included {
   width: 140px;
   background-color: #8699a9;
   border-radius: 100%;
+}
+
+.use-case-inner.active {
+  background-color: #007EFF;
 }
 
 .use-case-icon {
@@ -1586,8 +1591,13 @@ ul.persona-list li.feature-included {
 
 .use-case-description {
   padding: 40px 40px 20px 40px;
+  color: #7694be;
   background-color: #fff;
-  margin-top: 42px;
+  margin-top: 20px;
+}
+
+.use-case-description-text {
+  display: none;
 }
 
 .kail {
