@@ -323,6 +323,11 @@ p, div, span, .btn, .lead {
   color: #FFF;
 }
 
+.btn-datasheet-download {
+  margin-top: 25px;
+  height: 46px;
+}
+
 input, .input-lg {
   border-radius: 3px;
 }
@@ -1529,7 +1534,7 @@ ul.persona-list li.feature-included {
 }
 
 #download-datasheet-filter {
-  padding-top: 60px;
+  padding-top: 120px;
   display: none;
 }
 
