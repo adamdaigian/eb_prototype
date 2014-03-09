@@ -1583,7 +1583,7 @@ ul.persona-list li.feature-included {
 
 .use-case-select.active {
   margin: 0 auto;
-  margin-bottom: -50px;
+  margin-bottom: -25px;
   width: 64px;
   height: 20px;
   background-image: url('https://dl.dropboxusercontent.com/u/11221717/use-case-select.png');
@@ -1598,6 +1598,10 @@ ul.persona-list li.feature-included {
 
 .use-case-description-text {
   display: none;
+}
+
+#use-case-description-1 {
+  display: block;
 }
 
 .kail {

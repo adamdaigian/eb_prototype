@@ -82,35 +82,69 @@ base_url: "../"
     </div>
   </div>
   <script>
-    $(document).ready(function() {    
+    $(document).ready(function() { 
+
+      //remove active states
+
+      // var remove1 = function {
+      //   $('#use-case-select-1').removeClass('active')
+      //   $('#use-case-carrot-1').removeClass('active')
+      //   $('#use-case-lead-1').removeClass('active')
+      //   $('#use-case-description-1').hide()
+      // }
+
+      // var remove2 = function {
+      //   $('#use-case-select-1').removeClass('active')
+      //   $('#use-case-carrot-1').removeClass('active')
+      //   $('#use-case-lead-1').removeClass('active')
+      //   $('#use-case-description-1').hide()
+      // }
+
+      // var remove3 = function {
+      //   $('#use-case-select-1').removeClass('active')
+      //   $('#use-case-carrot-1').removeClass('active')
+      //   $('#use-case-lead-1').removeClass('active')
+      //   $('#use-case-description-1').hide()
+      // }
+
+      // var remove4 = function {
+      //   $('#use-case-select-1').removeClass('active')
+      //   $('#use-case-carrot-1').removeClass('active')
+      //   $('#use-case-lead-1').removeClass('active')
+      //   $('#use-case-description-1').hide()
+      // }
+
+      //click actions
+
       $('#use-case-1').click(function () {
         console.log('hello1') 
         $('#use-case-select-1').addClass('active')
+        $('#use-case-carrot-1').addClass('active')
+        $('#use-case-lead-1').addClass('active')
         $('#use-case-description-1').show()
+
       });
       $('#use-case-2').click(function () {
         console.log('hello2') 
-        // $('#github-signup').hide()
-        // $('#google-signup').hide()
-        // $('#email-signup').hide()
-        // $('.divider').hide()
-        // $('#signup-form').show()
+        $('#use-case-select-2').addClass('active')
+        $('#use-case-carrot-2').addClass('active')
+        $('#use-case-lead-2').addClass('active')
+        $('#use-case-description-2').show()
+        remove1()
       });
       $('#use-case-3').click(function () {
         console.log('hello3') 
-        // $('#github-signup').hide()
-        // $('#google-signup').hide()
-        // $('#email-signup').hide()
-        // $('.divider').hide()
-        // $('#signup-form').show()
+        $('#use-case-select-3').addClass('active')
+        $('#use-case-carrot-3').addClass('active')
+        $('#use-case-lead-3').addClass('active')
+        $('#use-case-description-3').show()
       });
       $('#use-case-4').click(function () {
         console.log('hello4') 
-        // $('#github-signup').hide()
-        // $('#google-signup').hide()
-        // $('#email-signup').hide()
-        // $('.divider').hide()
-        // $('#signup-form').show()
+        $('#use-case-select-4').addClass('active')
+        $('#use-case-carrot-4').addClass('active')
+        $('#use-case-lead-4').addClass('active')
+        $('#use-case-description-4').show()
       });
     });
   </script>
@@ -121,12 +155,12 @@ base_url: "../"
         <div class="col-lg-10 col-lg-offset-1">
           <div class="col-lg-3 use-case-block text-center">
             <div id="use-case-1">
-              <div id="use-case-select-1" class="use-case-inner">
+              <div id="use-case-select-1" class="use-case-inner active">
                 <img class="use-case-icon" src="https://dl.dropboxusercontent.com/u/11221717/continuous-integration.svg"></img>
               </div>
             </div>
-            <h3>Continous Integration</h3>
-            <div id="use-case-select-1" class="use-case-select"></div>
+            <h3 id="use-case-lead-1" class="active">Continous Integration</h3>
+            <div id="use-case-carrot-1" class="use-case-select active"></div>
           </div>
           <div class="col-lg-3 use-case-block text-center">
             <div id="use-case-2">
@@ -134,8 +168,8 @@ base_url: "../"
                 <img class="use-case-icon" src="https://dl.dropboxusercontent.com/u/11221717/orchestrated-updates.svg"></img>
               </div>
             </div>
-            <h3>Orchestrated Application Updates</h3>
-            <div id="use-case-select-2" class="use-case-select"></div>
+            <h3 id="use-case-lead-2">Orchestrated Updates</h3>
+            <div id="use-case-carrot-2" class="use-case-select"></div>
           </div>
           <div class="col-lg-3 use-case-block text-center">
             <div id="use-case-3">
@@ -143,8 +177,8 @@ base_url: "../"
                 <img class="use-case-icon" src="https://dl.dropboxusercontent.com/u/11221717/resource-provisioning.svg"></img>
               </div>
             </div>
-            <h3>Resource Provisioning</h3>
-            <div id="use-case-select-3" class="use-case-select"></div>
+            <h3 id="use-case-lead-3">Resource Provisioning</h3>
+            <div id="use-case-carrot-3" class="use-case-select"></div>
           </div>
           <div class="col-lg-3 use-case-block text-center">
             <div id="use-case-4">
@@ -152,8 +186,8 @@ base_url: "../"
                 <img class="use-case-icon" src="https://dl.dropboxusercontent.com/u/11221717/infrastructure-independence.svg"></img>
               </div>
             </div>
-            <h3>Hybrid Application Deployment</h3>
-            <div id="use-case-select-4" class="use-case-select"></div>
+            <h3 id="use-case-lead-4">Hybrid Deployments</h3>
+            <div id="use-case-carrot-4" class="use-case-select"></div>
           </div>
         </div>  
       </div>
