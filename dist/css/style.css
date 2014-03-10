@@ -1901,7 +1901,29 @@ p.clear-leadership-social {
   border: 1px solid #f0f2f5;
 }
 
-/*== ERROR PAGE ============================*/
+/*== LEGAL ============================*/
+
+.jumbotron-terms {
+  margin-bottom: -30px;
+}
+
+.terms-inner {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  padding: 40px;
+  max-height: 680px;
+  background-color: #fff;
+  border-radius: 3px;
+  border: 2px solid #63798f;
+  font-size: 14px;
+}
+
+.terms-content {
+  position: relative;
+  max-height: 600px;
+  width: 100%;
+  overflow: scroll;
+}
 
 
 /*== GLOBAL MEDIA QUERIES ==================*/
