@@ -110,6 +110,10 @@ a:hover.more {
   background-color: #6f7f8e;
 }
 
+.jumbotron.slate-gray {
+  background-color: #a0abb6; 
+}
+
 /*== FONTS =================================*/
 
 h1 {
@@ -426,16 +430,6 @@ input, .input-lg {
   margin-right: -50%;
 }
 
-/*.divider:before, .divider:after {
-  background-color: #3C4C5A;
-  content: "";
-  display: inline-block;
-  height: 1px;
-  position: relative;
-  vertical-align: middle;
-  width: 50%;
-}*/
-
 #home {
   background-color: #2d3e5f;
 }
@@ -460,7 +454,6 @@ input, .input-lg {
   margin: 0 auto;
   max-width: 90%;
   font-family: 'Monda', sans-serif;
-/*  font-size: 22px;*/
   color: #627990;
   margin-bottom: 20px;
   font-weight: 400;
@@ -838,9 +831,9 @@ h2.box-overview-lead {
 
 .hero-walkthrough {
   height: 888px;
-  background:
-    linear-gradient(to bottom, rgba(160, 107, 213, .2) 0%, rgba(0, 124, 252, .2) 100%),
-    url('https://dl.dropboxusercontent.com/u/11221717/features-background.png') center bottom repeat-x,
+  background: 
+    linear-gradient(to bottom, rgba(160, 107, 213, .1) 0%, rgba(0, 124, 252, .1) 10%), 
+    url('https://dl.dropboxusercontent.com/u/11221717/features-background.png') center bottom repeat-x, 
     url('https://dl.dropboxusercontent.com/u/11221717/hero-texture-heavy.png') repeat;
 }
 
@@ -862,7 +855,7 @@ h2.box-overview-lead {
   height: 500px;
   padding: 35px 25px 25px;
   background-color: #2B3C47;
-  border: 2px solid #92b2cf;
+  border: 2px solid #272b2e;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
   border-bottom: none;
@@ -873,8 +866,8 @@ h2.box-overview-lead {
   height: 30px;
   width: 90%;
   left: 5%;
-  background-color: #92b2cf;
-  border: 2px solid #496579;
+  background-color: #79848f;
+  border: 2px solid #272b2e;
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
 }
@@ -883,6 +876,7 @@ h2.box-overview-lead {
   height: 100%;
   width: 100%;
   background-color: #fff;
+  border: 2px solid #272b2e;
 }
 
 .hero-screenshot-placeholder {

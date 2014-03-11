@@ -78,4 +78,10 @@ $(document).ready(function() {
     $('#use-case-lead-3').removeClass('active')
     $('#use-case-description-3').hide()
   });
+
+  //data sheet download
+  $('#download-datasheet').click(function () { 
+    $('#datasheet-prompt').hide()
+    $('#download-datasheet-filter').show()
+  });
 });
