@@ -19,6 +19,7 @@
 <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 <link href='http://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Ubuntu|Monda:400,700|Inconsolata|Open+Sans:300,400,600.700,800' rel='stylesheet' type='text/css'>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="{{ page.base_url }}dist/js/eb.js"></script>
 <!--[if lt IE 9]><script src="{{ page.base_url }}docs-assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
 <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!--[if lt IE 9]>
@@ -31,9 +32,7 @@
 <link rel="shortcut icon" href="{{ page.base_url }}assets/ico/tbd">
 
 <!-- Google Analytics -->
-<script>
-</script>
+{% include google.html %}
 
 <!-- Mixpanel -->
-<script>
-</script>
+{% include mixpanel.html %}
