@@ -111,46 +111,21 @@
     z-index: 7;
   }
 
-  .spin-container {
+  .logo-container {
     position: relative;
-    margin: 80px auto;
-    width: 64px;
-    height: 64px;
-  }
-
-  .links-lead {
-    position: relative;
-    margin: 80px auto;
-  }
-
-  .error-container {
-    text-align: center;
-  }
-
-  .links-container {
-    width: 500px;
     margin: 20px auto;
-    text-align: center;
-  }
-
-  .links-container a {
-    padding: 40px;
-    text-align: center;
+    width: 250px;
+    height: auto;
   }
 
   a.more {
     font-size: 18px;
   }
 
-/*  #eb-logo {
-      -webkit-animation:spin 4s linear infinite;
-      -moz-animation:spin 4s linear infinite;
-      animation:spin 4s linear infinite;
+  #eb-logo {
+    margin: 0 auto;
+    width: 250px;
   }
-
-  @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
-  @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
-  @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } */
 
 </style>
 <script type="text/javascript">
@@ -163,59 +138,40 @@
 </head>
 <body>
   <div id="shell">
-    <img src="https://dl.dropboxusercontent.com/u/11221717/error-cloud-background-2.png" data-xrange="50" data-yrange="30" id="background-clouds"/>
-    <div class="spin-container">
-      <img id="eb-logo" src="https://beta.elasticbox.com/images/logo-errors.png"></img>
+    <img src="https://dl.dropboxusercontent.com/u/11221717/error-cloud-background-2.png" data-xrange="20" data-yrange="10" id="background-clouds"/>
+    <div class="logo-container">
+      <img id="eb-logo" src="https://dl.dropboxusercontent.com/u/11221717/elasticbox-verticle-gray.svg"></img>
     </div>
     <div class="col-lg-6 col-lg-offset-3">
-			  <div class="login-container">
-			    <div class="login-form">
-			      <div class="modal-header">
-			        <h3 class="modal-title text-center">LOG IN</h3>
-			      </div>
-			      <div class="modal-body">
-			        <script>
-			          $(document).ready(function() {    
-			            $('#email-signup').click(function () { 
-			              $('#github-signup').hide()
-			              $('#google-signup').hide()
-			              $('#email-signup').hide()
-			              $('.divider').hide()
-			              $('#signup-form').show()
-			            });
-			          });
-			        </script>
-			        <button type="button" class="btn btn-lg btn-primary btn-block btn-modal" id="github-signup" href="">
-			          <i class="fa fa-github" id="small-github-icon"></i>
-			          <span class="">LOG IN WITH GITHUB</span>
-			        </button>
-			        <button type="button" class="btn btn-lg btn-google btn-block btn-modal" id="google-signup" href="">
-			          <i class="fa fa-google-plus" id="small-github-icon"></i>
-			          <span class="">LOG IN WITH GOOGLE</span>
-			        </button>
-			        <span class="divider">Or</span>
-			        <button type="button" class="btn btn-lg btn-email btn-block btn-modal" id="email-signup" href="">
-			          <span class="">LOG IN WITH EMAIL</span>
-			        </button>
-			        <form role="form" id="signup-form" style="display:none;">
-			          <div class="form-group">
-			            <label class="text-muted" or="exampleInputEmail1">Full Name <span class="required-form">*</span></label>
-			            <input type="email" class="form-control input-lg" id="exampleInputEmail1">
-			          </div>
-			          <div class="form-group">
-			            <label class="text-muted" for="exampleInputPassword1">Work Email <span class="required-form">*</span></label>
-			            <input type="password" class="form-control input-lg" id="exampleInputPassword1">
-			          </div>
-			          <div class="form-group">
-			            <label class="text-muted" for="exampleInputPassword1">Password <span class="required-form">*</span></label>
-			            <input type="password" class="form-control input-lg" id="exampleInputPassword1">
-			          </div>
-			          <button class="btn btn-lg btn-primary btn-block" id="email-complete">Let's Go!</button>
-			        </form>
-			      <!-- <div class="modal-footer">
-			        <button type="button" class="btn btn-block btn-primary">LETS GO!</button>
-			      </div> -->
-
+		  <div class="login-container">
+		    <div class="login-form">
+		      <div class="modal-header">
+		        <h3 class="modal-title text-center">LOG IN</h3>
+		      </div>
+		      <div class="modal-body">
+		        <button type="button" class="btn btn-lg btn-primary btn-block btn-modal" id="github-signup" href="">
+		          <i class="fa fa-github" id="small-github-icon"></i>
+		          <span class="">LOG IN WITH GITHUB</span>
+		        </button>
+		        <button type="button" class="btn btn-lg btn-google btn-block btn-modal" id="google-signup" href="">
+		          <i class="fa fa-google-plus" id="small-github-icon"></i>
+		          <span class="">LOG IN WITH GOOGLE</span>
+		        </button>
+		        <span class="divider">Or</span>
+		        <button type="button" class="btn btn-lg btn-email btn-block btn-modal" id="email-signup" href="">
+		          <span class="">LOG IN WITH EMAIL</span>
+		        </button>
+		        <form role="form" id="signup-form" style="display:none;">
+		          <div class="form-group">
+		            <label class="text-muted" for="exampleInputPassword1">Email</label>
+		            <input type="password" class="form-control input-lg" id="exampleInputPassword1">
+		          </div>
+		          <div class="form-group">
+		            <label class="text-muted" for="exampleInputPassword1">Password</label>
+		            <input type="password" class="form-control input-lg" id="exampleInputPassword1">
+		          </div>
+		          <button class="btn btn-lg btn-primary btn-block" id="email-complete">Let's Go!</button>
+		        </form>
 			    </div><!-- /.modal-content -->
 			  </div><!-- /.modal-dialog -->
 			</div><!-- /.modal -->

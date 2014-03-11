@@ -3,6 +3,15 @@ $(document).ready(function() {
   //mixpanel track
   $('[track]').click(function () {
     mixpanel.track($(this).attr("track"))  
+  });
+
+  //signup
+  $('#email-signup').click(function () { 
+    $('#github-signup').hide()
+    $('#google-signup').hide()
+    $('#email-signup').hide()
+    $('.divider').hide()
+    $('#signup-form').show()
   });  
 
   //use cases jquery  
