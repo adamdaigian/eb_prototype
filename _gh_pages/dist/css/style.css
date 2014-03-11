@@ -1563,7 +1563,7 @@ ul.persona-list li.feature-included {
 }
 
 #download-datasheet-filter {
-  padding-top: 70px;
+  margin-top: -30px;
   display: none;
 }
 
@@ -1572,7 +1572,7 @@ ul.persona-list li.feature-included {
 }
 
 .jumbotron-use-cases {
-  margin-top: -30px;
+  margin-top: 50px;
   background-color: #cad2de;
 }
 

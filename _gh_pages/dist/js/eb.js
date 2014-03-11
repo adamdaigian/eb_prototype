@@ -80,7 +80,7 @@ $(document).ready(function() {
   });
 
   //data sheet download
-  $('#download-datasheet').click(function () { 
+  $('#datasheet-prompt').click(function () { 
     $('#datasheet-prompt').hide()
     $('#download-datasheet-filter').show()
   });
