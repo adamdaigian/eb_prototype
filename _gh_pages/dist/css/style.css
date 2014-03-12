@@ -733,6 +733,11 @@ h2.box-overview-lead {
   z-index: 10;
 }
 
+#inline-sign-up {
+  margin-top: -30px;
+  margin-bottom: -20px;
+}
+
 /* == FOOTER ==================== */
 
 .bs-footer {
@@ -1153,10 +1158,6 @@ code {
   background-image: url('https://dl.dropboxusercontent.com/u/11221717/ELS-CloudSectionBackground-1a.png');
   background-position: center top;
   background-repeat: no-repeat;
-}
-
-.cloud-lead {
-  color: #2c3c5c;
 }
 
 .cloud-row-1 {
