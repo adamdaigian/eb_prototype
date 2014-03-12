@@ -17,7 +17,7 @@ hr {
 a.more {
   font-size: 16px;
   font-weight: 600;
-  color: #007EFF;
+  color: #0066cc;
   text-decoration: none;
 }
 
@@ -50,7 +50,7 @@ a:hover.more {
 }
 
 .yes {
-	color: #007eff;
+	color: #0066cc;
 }
 
 .no {
@@ -162,7 +162,7 @@ p, div, span, .btn, .lead {
 }
 
 .lead-color {
-  color: #a36eda;
+  color: #2c3c5c;
 }
 
 .text-muted {
@@ -182,8 +182,8 @@ p, div, span, .btn, .lead {
 }
 
 .btn-danger {
-  background-color: #40C33F;
-  border-color: #40C33F;
+  background-color: #41b53e;
+  border-color: #41b53e;
 }
 
 .btn-danger:hover {
@@ -201,8 +201,8 @@ p, div, span, .btn, .lead {
 }
 
 .btn-safe {
-  background-color: #a36eda;
-  border-color: #a36eda;
+  background-color: #2c3c5c;
+  border-color: #2c3c5c;
   color:#FFF;
 }
 
@@ -222,8 +222,8 @@ p, div, span, .btn, .lead {
 }
 
 .btn-primary {
-  background-color: #007eff;
-  border-color: #007eff;
+  background-color: #0066cc;
+  border-color: #0066cc;
 }
 
 .btn-primary:hover{
@@ -607,14 +607,14 @@ h2.box-overview-lead {
 
 .icon-for-devs {
   padding: 40px;
-  background: #a36eda;
+  background: #2c3c5c;
   border-radius: 100%;
   color: #fff;
 }
 
 .icon-for-enterprise {
   padding: 40px;
-  background: #007eff;
+  background: #0066cc;
   border-radius: 100%;
   color: #fff;
 }
@@ -1152,7 +1152,7 @@ code {
 }
 
 .cloud-lead {
-  color: #a36eda;
+  color: #2c3c5c;
 }
 
 .cloud-row-1 {
@@ -1204,7 +1204,7 @@ code {
 }
 
 .box-data.active {
-  background-color: #007EFF;
+  background-color: #0066cc;
 }
 
 .box-detail-select {
@@ -1243,7 +1243,7 @@ code {
 
 .box-detail-title {
   font-size: 24px;
-  color: #007EFF;
+  color: #0066cc;
 }
 
 
@@ -1300,7 +1300,7 @@ code {
 .pricing-callout li:before {
   content: "■";
   font-family: Arial, Helvetica, sans-serif;
-  color: #007eff;
+  color: #0066cc;
   font-size: 9px;
   padding-right: 15px;
   position: relative;
@@ -1402,7 +1402,7 @@ thead > tr > th {
 .feature-list li:before {
   content: "■";
   font-family: Arial, Helvetica, sans-serif;
-  color: #007eff;
+  color: #0066cc;
   font-size: 9px;
   padding-right: 15px;
   position: relative;
@@ -1462,7 +1462,7 @@ thead > tr > th {
 .persona-lead {
   padding-top: 40px;
   font-size: 34px;
-  color: #a36eda;
+  color: #2c3c5c;
 }
 
 .row-personas {
@@ -1588,7 +1588,7 @@ ul.persona-list li.feature-included {
 
 .use-case-block > h3.active {
   margin-bottom: 70px;
-  color: #007EFF;
+  color: #0066cc;
 }
 
 .use-case-lead {
@@ -1607,7 +1607,7 @@ ul.persona-list li.feature-included {
 }
 
 .use-case-inner.active {
-  background-color: #007EFF;
+  background-color: #0066cc;
 }
 
 .use-case-icon {
@@ -1701,7 +1701,7 @@ ul.persona-list li.feature-included {
 }
 
 .about-sub {
-  color: #007eff;
+  color: #0066cc;
 }
 
 .leadership-wrapper {
@@ -1765,7 +1765,7 @@ p.clear-leadership-social {
   padding-bottom: 20px;
   height: 200px;
   width: 200px;
-  border: 2px solid #a36eda;
+  border: 2px solid #2c3c5c;
   border-radius: 100%;
 }
 
@@ -1784,7 +1784,7 @@ p.clear-leadership-social {
 
 .modal-header {
   color: #FFF;
-  background-color: #a36eda;
+  background-color: #2c3c5c;
   border-bottom: none;
 }
 
@@ -1833,7 +1833,7 @@ p.clear-leadership-social {
 }
 
 .required-form {
-  color: #007eff;
+  color: #0066cc;
 }
 
 .signup-form .modal-footer {
