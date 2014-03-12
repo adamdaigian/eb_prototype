@@ -440,7 +440,7 @@ input, .input-lg {
   left: 0;
   background:
     url('https://dl.dropboxusercontent.com/u/11221717/hero-texture.png') repeat,
-    url('https://dl.dropboxusercontent.com/u/11221717/hero-background-light.png') center bottom repeat, linear-gradient(to bottom, rgba(160, 107, 213, .1) 0%, rgba(0, 124, 252, .1) 10%);
+    url('https://dl.dropboxusercontent.com/u/11221717/hero-background-light.png') center bottom repeat;
 }
 
 .home-lead {
@@ -571,7 +571,11 @@ h2.box-overview-lead {
 }
 
 .box-overview {
-  margin-bottom: -40px;
+  text-align: center;
+}
+
+.box-overview > h3 {
+  width: 70%;
 }
 
 .box-overview h2 {
@@ -1172,7 +1176,9 @@ code {
 }
 
 .img-story-block {
+  position: relative;
   margin: 0 auto;
+  left: -1%;
   padding-bottom: 5em;
 }
 
@@ -1974,5 +1980,9 @@ p.clear-leadership-social {
 
 @media (min-width: 992px) and (max-width: 1199px) {
 
+}
+
+h1, h2, h3, h4, .lead-color {
+  color: #000;
 }
 
