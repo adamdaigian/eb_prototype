@@ -35,11 +35,11 @@ base_url: "../"
   }
 
   img#background-clouds {
+    min-width: 1000px;
     position: absolute;
+    text-align: center;
     opacity: 1;
-    margin-top: -100px;
     z-index: 4;
-    width: 100%;
   }
 
   .error-links {
@@ -75,22 +75,43 @@ base_url: "../"
     width: 250px;
   }
 
+  .sign-up-block {
+    position: relative;
+  }
+
+  .login-container {
+    position: relative;
+    margin: 0 auto;
+    width: 390px;
+    z-index: 200;
+  }
+
 </style>
 <script type="text/javascript">
   $(document).ready(function () {
+    $('#email-signup').click(function () {
+      console.log('hello') 
+      $('#github-signup').hide()
+      $('#google-signup').hide()
+      $('#email-signup').hide()
+      $('.divider').hide()
+      $('#signup-form').show()
+    });  
+
     $('#shell #background-clouds').plaxify()
     $.plax.enable()
+
   })
 </script>
 
 </head>
 <body>
   <div id="shell">
-    <img src="https://dl.dropboxusercontent.com/u/11221717/error-cloud-background-2.png" data-xrange="20" data-yrange="10" id="background-clouds"/>
+    <img height="100%" width="100%" src="https://dl.dropboxusercontent.com/u/11221717/ELS-LoginSignup-1a.png" data-xrange="20" data-yrange="10" id="background-clouds"/>
     <div class="logo-container">
       <img id="eb-logo" src="https://dl.dropboxusercontent.com/u/11221717/elasticbox-verticle-gray.svg"></img>
     </div>
-    <div class="col-lg-6 col-lg-offset-3">
+    <div class="sign-up-block">
 		  <div class="login-container">
 		    <div class="login-form">
 		      <div class="modal-header">
