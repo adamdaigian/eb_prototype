@@ -5,7 +5,6 @@ html {
 
 hr {
   width: 100%;
-/*  margin-left: 43px;*/
   margin-top: 30px;
   margin-bottom: 30px;
   border: 0;
@@ -28,6 +27,11 @@ a:hover.more {
 
 .lead {
   font-size: 19px;
+  color: #707F8E;
+}
+
+h3.lead {
+  font-size: inherit;
   color: #707F8E;
 }
 
@@ -152,7 +156,6 @@ p, div, span, .btn, .lead {
 }
 
 .lead {
-  padding-top: 15px;
   font-weight: 400;
   line-height: 1.6;
 }
@@ -188,8 +191,8 @@ p, div, span, .btn, .lead {
 }
 
 .btn-danger:hover {
-  background-color: #54D551;
-  border-color: #54D551;
+  background-color: #59d152;
+  border-color: #59d152;
 }
 
 .btn-danger:focus,
@@ -228,8 +231,8 @@ p, div, span, .btn, .lead {
 }
 
 .btn-primary:hover{
-  background-color: #007BF6;
-  border-color: #007BF6;
+  background-color: #0086f4;
+  border-color: #0086f4;
 }
 
 .btn-primary:focus,
@@ -282,8 +285,8 @@ p, div, span, .btn, .lead {
 .btn-challenges:active,
 .btn-challenges.active,
 .open .dropdown-toggle.btn-challenges{
-  background-color: #2a425a;
-  border-color: #2a425a;
+  background-color: #325068;
+  border-color: #325068;
   color: #FFF;
 }
 
@@ -440,13 +443,12 @@ input, .input-lg {
   right: 0;
   left: 0;
   background:
-    url('https://dl.dropboxusercontent.com/u/11221717/hero-texture.png') repeat,
+    linear-gradient(to bottom, rgba(160, 107, 213, .1) 0%, rgba(0, 124, 252, .1) 100%),
     url('https://dl.dropboxusercontent.com/u/11221717/home-hero-background-2.png') center bottom repeat no-repeat;
 }
 
 .home-lead {
   padding-top: 70px;
-/*  font-size: 32px;*/
   color: #fff;
   line-height: 1.6;
 }
@@ -855,7 +857,7 @@ h2.box-overview-lead {
   height: 888px;
   background: 
     url('https://dl.dropboxusercontent.com/u/11221717/features-background.png') center bottom repeat-x, 
-    url('https://dl.dropboxusercontent.com/u/11221717/hero-texture-heavy.png') repeat;
+    linear-gradient(to bottom, rgba(160, 107, 213, .1) 0%, rgba(0, 124, 252, .1) 100%);
 }
 
 .jumbotron.hero-walkthrough h2 {
@@ -1432,7 +1434,7 @@ thead > tr > th {
 .enterprise-background {
   min-height: 680px;
   background:
-    url('https://dl.dropboxusercontent.com/u/11221717/hero-texture.png') repeat,
+    linear-gradient(to bottom, rgba(160, 107, 213, .1) 0%, rgba(0, 124, 252, .1) 100%),
     url('https://dl.dropboxusercontent.com/u/11221717/enterprise-background.png') center 140% repeat-x, linear-gradient(to bottom, rgba(160, 107, 213, .1) 0%, rgba(0, 124, 252, .1) 10%);
 }
 
@@ -1694,7 +1696,7 @@ ul.persona-list li.feature-included {
 }
 
 .jumbotron-history {
-  background-color: #218dfc;
+  background-color: #3196e5;
   color: #fff;
   margin-top: -30px;
   margin-bottom: -20px;
@@ -1745,7 +1747,10 @@ p.clear-leadership-social {
 }
 
 .investors {
+  margin-top: -30px;
   margin-bottom: -20px;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .nexus {
