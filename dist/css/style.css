@@ -607,7 +607,9 @@ h2.box-overview-lead {
 }
 
 .btn-split {
+  width: 260px;
   margin-top: 40px;
+  margin-bottom: 100px;
 }
 
 .icon-for-devs {
@@ -622,6 +624,12 @@ h2.box-overview-lead {
   background: #0066cc;
   border-radius: 100%;
   color: #fff;
+}
+
+#container-enterprise {
+  background-image: url('https://dl.dropboxusercontent.com/u/11221717/ELS-EnterpriseSkyline-1b.png');
+  background-position: center bottom;
+  background-repeat: no-repeat;
 }
 
 @media (max-width: 768px) {
