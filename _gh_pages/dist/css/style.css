@@ -441,7 +441,7 @@ input, .input-lg {
   left: 0;
   background:
     url('https://dl.dropboxusercontent.com/u/11221717/hero-texture.png') repeat,
-    url('https://dl.dropboxusercontent.com/u/11221717/hero-background-light.png') center bottom repeat;
+    url('https://dl.dropboxusercontent.com/u/11221717/home-hero-background-2.png') center bottom repeat no-repeat;
 }
 
 .home-lead {
