@@ -17,7 +17,7 @@ hr {
 a.more {
   font-size: 16px;
   font-weight: 600;
-  color: #0066cc;
+  color: #0073e6;
   text-decoration: none;
 }
 
@@ -51,7 +51,7 @@ a:hover.more {
 }
 
 .yes {
-	color: #0066cc;
+	color: #0073e6;
 }
 
 .no {
@@ -188,8 +188,8 @@ p, div, span, .btn, .lead {
 }
 
 .btn-danger:hover {
-  background-color: #4AD84A;
-  border-color: #4AD84A;
+  background-color: #54D551;
+  border-color: #54D551;
 }
 
 .btn-danger:focus,
@@ -223,13 +223,13 @@ p, div, span, .btn, .lead {
 }
 
 .btn-primary {
-  background-color: #0066cc;
-  border-color: #0066cc;
+  background-color: #0073e6;
+  border-color: #0073e6;
 }
 
 .btn-primary:hover{
-  background-color: #2e95fe;
-  border-color: #2e95fe;
+  background-color: #007BF6;
+  border-color: #007BF6;
 }
 
 .btn-primary:focus,
@@ -621,7 +621,7 @@ h2.box-overview-lead {
 
 .icon-for-enterprise {
   padding: 40px;
-  background: #0066cc;
+  background: #0073e6;
   border-radius: 100%;
   color: #fff;
 }
@@ -1217,7 +1217,7 @@ code {
 }
 
 .box-data.active {
-  background-color: #0066cc;
+  background-color: #0073e6;
 }
 
 .box-detail-select {
@@ -1256,7 +1256,7 @@ code {
 
 .box-detail-title {
   font-size: 24px;
-  color: #0066cc;
+  color: #0073e6;
 }
 
 
@@ -1313,7 +1313,7 @@ code {
 .pricing-callout li:before {
   content: "■";
   font-family: Arial, Helvetica, sans-serif;
-  color: #0066cc;
+  color: #0073e6;
   font-size: 9px;
   padding-right: 15px;
   position: relative;
@@ -1415,7 +1415,7 @@ thead > tr > th {
 .feature-list li:before {
   content: "■";
   font-family: Arial, Helvetica, sans-serif;
-  color: #0066cc;
+  color: #0073e6;
   font-size: 9px;
   padding-right: 15px;
   position: relative;
@@ -1600,7 +1600,7 @@ ul.persona-list li.feature-included {
 
 .use-case-block > h3.active {
   margin-bottom: 70px;
-  color: #0066cc;
+  color: #0073e6;
 }
 
 .use-case-lead {
@@ -1619,7 +1619,7 @@ ul.persona-list li.feature-included {
 }
 
 .use-case-inner.active {
-  background-color: #0066cc;
+  background-color: #0073e6;
 }
 
 .use-case-icon {
@@ -1713,7 +1713,7 @@ ul.persona-list li.feature-included {
 }
 
 .about-sub {
-  color: #0066cc;
+  color: #0073e6;
 }
 
 .leadership-wrapper {
@@ -1793,10 +1793,14 @@ p.clear-leadership-social {
   background-color: #2c3c5c;
 }
 
+h3.modal-title {
+  color: #fff;
+}
+
 
 .modal-header {
   color: #FFF;
-  background-color: #2c3c5c;
+  background-color: #4d69a1;
   border-bottom: none;
 }
 
@@ -1845,7 +1849,7 @@ p.clear-leadership-social {
 }
 
 .required-form {
-  color: #0066cc;
+  color: #0073e6;
 }
 
 .signup-form .modal-footer {
