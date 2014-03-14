@@ -26,12 +26,12 @@ a:hover.more {
 }
 
 .lead {
+  margin-top: 15px;
   font-size: 19px;
   color: #707F8E;
 }
 
 h3.lead {
-  font-size: inherit;
   color: #707F8E;
 }
 
@@ -414,7 +414,7 @@ input, .input-lg {
 }
 
 .divider {
-  color: #627990;
+  color: #E0E2E6;
   font-size: 16px;
   margin: 5px 0;
   overflow: hidden;
@@ -1819,7 +1819,6 @@ h3.modal-title {
   color: #fff;
 }
 
-
 .modal-header {
   color: #FFF;
   background-color: #4d69a1;
@@ -1894,7 +1893,7 @@ h3.modal-title {
 
 .enterprise-contact-form-header {
   padding: 1px;
-  background-color: #9a68cd;
+  background-color: #4d69a1;
 }
 
 .enterprise-contact-form-header > h2 {
@@ -1960,6 +1959,12 @@ h3.modal-title {
   max-height: 600px;
   width: 100%;
   overflow: scroll;
+}
+
+.tos {
+  position: relative;
+  margin-top: 40px;
+  z-index: 70;
 }
 
 

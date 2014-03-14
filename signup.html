@@ -71,8 +71,11 @@ base_url: "../"
   }
 
   #eb-logo {
+    position: relative;
     margin: 0 auto;
     width: 250px;
+    opacity: 0.4;
+    z-index: 70;
   }
 
   .sign-up-block {
@@ -84,6 +87,10 @@ base_url: "../"
     margin: 0 auto;
     width: 390px;
     z-index: 200;
+  }
+
+  .modal-body > span.divider {
+    color: #E0E0E0;
   }
 
 </style>
@@ -109,7 +116,7 @@ base_url: "../"
   <div id="shell">
     <img height="100%" width="100%" src="https://dl.dropboxusercontent.com/u/11221717/ELS-LoginSignup-1a.png" data-xrange="20" data-yrange="10" id="background-clouds"/>
     <div class="logo-container">
-      <img id="eb-logo" src="https://dl.dropboxusercontent.com/u/11221717/elasticbox-verticle-gray-light.svg"></img>
+      <a href="{{ page.base_url }}"><img id="eb-logo" src="https://dl.dropboxusercontent.com/u/11221717/elasticbox-verticle-gray-light.svg"></img></a>
     </div>
     <div class="sign-up-block">
 		  <div class="login-container">
@@ -145,5 +152,6 @@ base_url: "../"
 			  </div><!-- /.modal-dialog -->
 			</div><!-- /.modal -->
     </div>
+    <p class="tos text-muted text-center">By signing up you agree to ElasticBox's <a href="{{ page.base_url }}terms-of-service">terms of service</a></p>
   </div>
 </body>  

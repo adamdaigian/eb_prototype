@@ -79,7 +79,7 @@
           <a href="../enterprise">Enterprise</a>
         </li>
         <li>
-          <a href="../pricing">Pricing</a>
+          <a href="../editions">Editions</a>
         </li>
         <li>
           <a href="../about">About</a>
@@ -393,6 +393,87 @@
   </form>
   <div class="text-center"><button class="btn btn-lg btn-primary" id="enterprise-contact-btn">SEND</button></div>
 </div>
+
+<div id="contactModal" class="reveal-modal medium">
+  <div class="row">
+    <div class="large-12 columns">
+      <h2>Contact Us</h2>
+      <p id="contact-lead" class="contact-lead lead">Send us your name and email and we'll respond within 24 hours.</p>
+      <div id="contact-success" class="dialog-success" style="display:none;">Thanks! We will contact you shortly.</div>
+      <form class="lpeRegForm formNotEmpty" method="post" enctype="application/x-www-form-urlencoded" action="http://pages.elasticbox.com/index.php/leadCapture/save" id="mktForm_1001" name="mktForm_1001">
+      <div class="mktLblLeft">
+        <div class="mktFormReq mktField">
+          <label class="input-label">Your Name</label>
+          <span class='mktInput'>
+            <input class='mktFormText mktFormString mktFReq required form-control' name="FirstName" id="FirstName" type='text' value=""  maxlength='255' tabIndex='1' />
+            <span class='mktFormMsg'></span>
+          </span>
+        </div>
+        <div class="mktFormReq mktField">
+            <label class="input-label">Email Address</label>
+            <span class='mktInput'>
+                <input class='mktFormText mktFormEmail mktFReq required' name="Email" id="Email" type='email' value=""  maxlength='255' tabIndex='2' />
+                <span class='mktFormMsg'></span>
+            </span>
+        </div>
+        <div class="mktField">
+            <label class="input-label">Company Name<em class="gray"> (Optional)</em></label>
+            <span class='mktInput'>
+                <input class='mktFormText mktFormString' name="Company" id="Company" type='text' value=""  maxlength='255' tabIndex='3' />
+                <span class='mktFormMsg'></span>
+            </span>
+        </div>
+        <div class="mktField">
+            <label class="input-label">Phone Number<em class="gray"> (Optional)</em></label>
+            <span class='mktInput'>
+                <input class='mktFormText mktFormPhone phone' name="Phone" id="Phone" type='text' value=""  maxlength='255' tabIndex='4' />
+                <span class='mktFormMsg'></span>
+            </span>
+        </div>
+        <div class="mktField">
+            <label class="input-label">Message</label>
+            <span class='mktInput'>
+        <textarea class="mktFormTextarea mktFormTextarea required" name="ContactUsMessage" id="ContactUsMessage" cols="20" rows="2" tabindex="7"></textarea>
+                <span class='mktFormMsg'></span>
+            </span>
+        </div>
+        <div class="mktField" style="display: none;">
+            <label class="input-label">Lead Source</label>
+            <span class='mktInput'>
+        <input class='mktFormHidden' name="LeadSource" id="LeadSource" type='hidden' value="Contact Us" />
+                <span class='mktFormMsg'></span>
+            </span>
+        </div>
+        </div>
+        <span style="display:none;">
+          <input type="text" name="_marketo_comments" value="" />
+        </span>
+          <input type="hidden" name="lpId" value="1002" />
+          <input type="hidden" name="subId" value="102" />
+          <input type="hidden" name="munchkinId" value="801-NVA-287" />
+          <input type="hidden" name="kw" value="" />
+          <input type="hidden" name="cr" value="" />
+          <input type="hidden" name="searchstr" value="" />
+          <input type="hidden" name="lpurl" value="http://pages.elasticbox.com/ContactUs.html?cr={creative}&kw={keyword}" />
+          <input type="hidden" name="formid" value="1001" />
+          <input type="hidden" id="returnURL" name="returnURL" value="#" />
+          <input type="hidden" id="retURL" name="retURL" value="#" />
+          <input type="hidden" name="returnLPId" value="-1" />
+          <input type="hidden" name="_mkt_disp" value="return" />
+          <input type="hidden" name="_mkt_trk" value="id:801-NVA-287&token:_mch-elasticbox.com-1371234849910-35688" />
+  </form>
+    </div>
+    <div id='mktFrmButtons'>
+        <div id="contact-buttonset" class="dialog-buttonset">
+          <a class="radius button bump green" href="#" id="submit-contact">Send</a>
+          <a href="#" class="grey secondary button radius close-reveal-modal">Cancel</a>
+        </div>
+    <input style='display: none;' id='mktFrmReset' type='reset' value='Clear' name='resetButton' onclick='formReset(document.getElementById("mktForm_1001")); return false;' />
+  </div> 
+    <a class="close-reveal-modal xclose">&#215;</a>
+  </div>
+</div>
+
       </div>
     </div>
   </div>
@@ -539,3 +620,71 @@
 ================================================== -->
 <script src="../dist/js/bootstrap.js"></script>
 <script src="https://platform.linkedin.com/in.js" type="text/javascript">api_key: nv48emv5hh8q</script>
+<script type="text/javascript" src="http://pages.elasticbox.com/js/mktFormSupport.js"></script>
+<script type="text/javascript">
+$.validator.addMethod("emailFilter", function (value, element) {
+     var filterDomains = ["yahoo", "gmail", "aol", "hotmail", "live", "aim", "outlook", "ymail"];
+     var domainEntered = value.replace(/.*@(.*)\..*/, "$1");
+     var approvedDomain = true;
+
+     if ($.inArray(domainEntered, filterDomains) >= 0) {
+         approvedDomain = false;
+     }
+     return this.optional(element) || (approvedDomain);
+ }, "Please use a corporate email address");
+ 
+$().ready(function() {
+	$("#mktForm_1002").validate({
+		messages: {
+			FirstName: "Please enter your name"
+		},
+		submitHandler: function() {
+		$.ajax({
+			success: function() {
+   				Mkto.formSubmit(document.getElementById("mktForm_1002"));
+				$('#mktForm_1002').hide();
+				$('#trial-lead').hide();
+				$('#trial-buttonset').hide();
+				$('#trial-success').fadeIn("slow");
+			}
+		});
+	}
+	});
+	$("#mktForm_1001").validate({
+		messages: {
+			FirstName: "Please enter your name"
+		},
+		submitHandler: function() {
+		$.ajax({
+			success: function() {
+   				Mkto.formSubmit(document.getElementById("mktForm_1001"));
+				$('#mktForm_1001').hide();
+				$('#contact-lead').hide();
+				$('#contact-buttonset').hide();
+				$('#contact-success').fadeIn("slow");
+			}
+		});
+	}
+	});
+	$("#submit-trial").click(function(){
+		$("#mktForm_1002").submit();
+		return false;
+	});
+	$("#submit-contact").click(function(){
+		$("#mktForm_1001").submit();
+		return false;
+	});
+	var is_chrome = navigator.userAgent.indexOf('Chrome') > -1;
+	var is_explorer = navigator.userAgent.indexOf('MSIE') > -1;
+	var is_firefox = navigator.userAgent.indexOf('Firefox') > -1;
+	var is_safari = navigator.userAgent.indexOf("Safari") > -1;
+	var is_opera = navigator.userAgent.indexOf("Presto") > -1;
+	if ((is_chrome)&&(is_safari)) {is_safari=false;}
+	if (is_safari || is_opera) {
+		$('#returnURL').attr('value', 'http://www.elasticbox.com/contact-submit');
+		$('#retURL').attr('value', 'http://www.elasticbox.com/contact-submit');
+		$('#ft-returnURL').attr('value', 'http://www.elasticbox.com/confirm-account');
+		$('#ft-retURL').attr('value', 'http://www.elasticbox.com/confirm-account');
+	}
+});
+</script>

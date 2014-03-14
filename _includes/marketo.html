@@ -1,0 +1,68 @@
+<script type="text/javascript" src="http://pages.elasticbox.com/js/mktFormSupport.js"></script>
+<script type="text/javascript">
+$.validator.addMethod("emailFilter", function (value, element) {
+     var filterDomains = ["yahoo", "gmail", "aol", "hotmail", "live", "aim", "outlook", "ymail"];
+     var domainEntered = value.replace(/.*@(.*)\..*/, "$1");
+     var approvedDomain = true;
+
+     if ($.inArray(domainEntered, filterDomains) >= 0) {
+         approvedDomain = false;
+     }
+     return this.optional(element) || (approvedDomain);
+ }, "Please use a corporate email address");
+ 
+$().ready(function() {
+	$("#mktForm_1002").validate({
+		messages: {
+			FirstName: "Please enter your name"
+		},
+		submitHandler: function() {
+		$.ajax({
+			success: function() {
+   				Mkto.formSubmit(document.getElementById("mktForm_1002"));
+				$('#mktForm_1002').hide();
+				$('#trial-lead').hide();
+				$('#trial-buttonset').hide();
+				$('#trial-success').fadeIn("slow");
+			}
+		});
+	}
+	});
+	$("#mktForm_1001").validate({
+		messages: {
+			FirstName: "Please enter your name"
+		},
+		submitHandler: function() {
+		$.ajax({
+			success: function() {
+   				Mkto.formSubmit(document.getElementById("mktForm_1001"));
+				$('#mktForm_1001').hide();
+				$('#contact-lead').hide();
+				$('#contact-buttonset').hide();
+				$('#contact-success').fadeIn("slow");
+			}
+		});
+	}
+	});
+	$("#submit-trial").click(function(){
+		$("#mktForm_1002").submit();
+		return false;
+	});
+	$("#submit-contact").click(function(){
+		$("#mktForm_1001").submit();
+		return false;
+	});
+	var is_chrome = navigator.userAgent.indexOf('Chrome') > -1;
+	var is_explorer = navigator.userAgent.indexOf('MSIE') > -1;
+	var is_firefox = navigator.userAgent.indexOf('Firefox') > -1;
+	var is_safari = navigator.userAgent.indexOf("Safari") > -1;
+	var is_opera = navigator.userAgent.indexOf("Presto") > -1;
+	if ((is_chrome)&&(is_safari)) {is_safari=false;}
+	if (is_safari || is_opera) {
+		$('#returnURL').attr('value', 'http://www.elasticbox.com/contact-submit');
+		$('#retURL').attr('value', 'http://www.elasticbox.com/contact-submit');
+		$('#ft-returnURL').attr('value', 'http://www.elasticbox.com/confirm-account');
+		$('#ft-retURL').attr('value', 'http://www.elasticbox.com/confirm-account');
+	}
+});
+</script>
