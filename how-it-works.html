@@ -57,12 +57,18 @@ base_url: "../"
           <h2 class="text-center lead-color">Start Deploying Applications Right Away</h2>
           <h4 class="col-lg-8 col-lg-offset-2 text-center sub">Configure and deploy applications using CM tools like <a class="more" href="">Docker</a>, <a class="more scripts-more" href="">Chef</a>, and <a class="more">Puppet</a> or standard scripting languages like Bash and PowerShell.</h4>
       </div>    
-      <div class="row row-scripts text-center padding-2x">
-        <div class="col-lg-2 col-lg-offset-2 col-md-3 col-sm-3 col-xs-3"><a class="btn btn-md btn-primary btn-deploy active">DOCKER</a></div>
-          <div class="col-lg-2 col-md-3 col-sm-3 col-xs-3"><a class="more btn-deploy">CHEF</a></div>
-          <div class="col-lg-2 col-md-3 col-sm-3 col-xs-3"><a class="more btn-deploy">PUPPET</a></div>
-          <div class="col-lg-2 col-md-3 col-sm-3 col-xs-3"><a class="more btn-deploy">BASH</a></div>
-        </div>
+      <div class="row padding-1x">
+        <div class="col-lg-10 col-lg-offset-1 text-center">
+          <div class="boxes-individual inline">
+            <div class="col-lg-2"><img height="80px" width="80px" src="https://dl.dropboxusercontent.com/u/11221717/boxes/box-docker.png"></img><h5>Docker</h5></div>
+            <div class="col-lg-2"><img height="80px" width="80px" src="https://dl.dropboxusercontent.com/u/11221717/boxes/box-chef.png"></img><h5>Chef</h5></div>
+            <div class="col-lg-2"><img height="80px" width="80px" src="https://dl.dropboxusercontent.com/u/11221717/boxes/box-puppet.png"></img><h5>Puppet</h5></div>
+            <div class="col-lg-2"><img height="80px" width="80px" src="https://dl.dropboxusercontent.com/u/11221717/boxes/box-docker.png"></img><h5>Bash</h5></div>
+            <div class="col-lg-2"><img height="80px" width="80px" src="https://dl.dropboxusercontent.com/u/11221717/boxes/box-chef.png"></img><h5>Powershell</h5></div>
+          </div>
+        </div>  
+      </div>
+    </div>
       <div class="row">
         <div class="col-lg-8 col-lg-offset-2 col-md-12 col-sm-12 col-xs-12">
           <div class="life-cycle-editor">
@@ -70,9 +76,12 @@ base_url: "../"
               <button class="btn btn-md btn-lce">Events</button>
               <button class="btn btn-md btn-lce">Variables</button>
               <button class="btn btn-md btn-lce">Logs</button>
-              <button class="btn btn-md btn-lce"><span class="reconfigure-icon-container"><i class="fa fa-cog"></span></i>Reconfigue</button>
+              <button class="btn btn-md btn-lce"><span class="reconfigure-icon-container"><i class="fa fa-cog reconfigure-icon"></span></i>Reconfigue</button>
+              <button class="btn btn-md btn-lce btn-lce-close"><strong class="lce-close-icon">&times;</strong></button>
             </div>
-            <div class="life-cycle-pad"></div>
+            <div class="life-cycle-pad">
+              <img class="life-cycle-tab" src="https://dl.dropboxusercontent.com/u/11221717/Screenshot%202014-03-14%2001.56.57.png"></img>
+            </div>
             <div class="life-cycle-inner">
               <code>
                 $ if ! [ $(lsb_release -cs|grep raring|wc -c) -gt 1 ]; then echo "UNSUPPORTED IMAGE/AMI: This Box only works with Ubuntu 13.04 (Raring Ringtail)"; fi
@@ -283,7 +292,7 @@ base_url: "../"
       </div>
     </div>
     <div class="row padding-1x">
-      <div class="col-md-10 col-lg-offset-1 text-center">
+      <div class="col-lg-10 col-lg-offset-1 text-center">
         <h3 class="lead-color">Datastores</h3>
         <h4 class="lead sub">Databases as Boxes means your datastores are plug and play. Versionable and fully mobile across clouds, environments and applications.</h4>
         <div class="boxes-individual inline">
