@@ -444,7 +444,7 @@ input, .input-lg {
   left: 0;
   background:
     linear-gradient(to bottom, rgba(160, 107, 213, .1) 0%, rgba(0, 124, 252, .1) 100%),
-    url('https://dl.dropboxusercontent.com/u/11221717/home-hero-background-2.png') center bottom repeat no-repeat;
+    url('http://static.elasticbox.com.s3-us-west-1.amazonaws.com/home-hero-background-2.png') center bottom repeat no-repeat;
 }
 
 .home-lead {
