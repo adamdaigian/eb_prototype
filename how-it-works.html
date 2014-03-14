@@ -232,20 +232,20 @@ base_url: "../"
         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
           <div class="box-explain">
             <div class="box-large"></div>
-            <div class="box-contents">
-              <div class="box-data active">
+            <div class="box-contents"  data-toggable-target-family="box-explain">
+              <div class="box-data toggable active" data-toggable-target-name="code">
                 <img class="box-data-icon" src="https://dl.dropboxusercontent.com/u/11221717/box-detail-code.png"></img>
               </div>
-              <div class="box-data">
+              <div class="box-data toggable" data-toggable-target-name="configuration">
                 <img class="box-data-icon" src="https://dl.dropboxusercontent.com/u/11221717/box-detail-settings.png"></img>
               </div>
-              <div class="box-data">
+              <div class="box-data toggable" data-toggable-target-name="automation">
                 <img class="box-data-icon" src="https://dl.dropboxusercontent.com/u/11221717/box-detail-automate.png"></img>
               </div>
-              <div class="box-data">
+              <div class="box-data toggable" data-toggable-target-name="integration">
                 <img class="box-data-icon" src="https://dl.dropboxusercontent.com/u/11221717/box-detail-connections.png"></img>
               </div>
-              <div class="box-data">
+              <div class="box-data toggable" data-toggable-target-name="scripts">
                 <img class="box-data-icon" src="https://dl.dropboxusercontent.com/u/11221717/box-detail-script.png"></img>
               </div>
             </div>
@@ -253,10 +253,28 @@ base_url: "../"
         </div>
         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3"><div class="box-detail-select"><span class="glyphicon glyphicon-chevron-right"></span></div></div>
       </div>
-      <div class="row">
-        <h3 class="box-detail-title">Code</h3>
-        <p class="col-lg-8 col-lg-offset-2 lead sub">Boxes can contain code that might execute comands or configue application settings. Any thing that can be scipted can be contained in a box. The sky is the limit.</p>
-      </div> 
+      <div data-toggable-family="box-explain">
+        <div class="row" data-toggable-name="code">
+          <h3 class="box-detail-title">Code</h3>
+          <p class="col-lg-8 col-lg-offset-2 lead sub">Boxes can contain code that might execute comands or configue application settings. Any thing that can be scipted can be contained in a box. The sky is the limit.</p>
+        </div> 
+        <div id="configuration" class="row" style="display:none;" data-toggable-name="configuration">
+          <h3 class="box-detail-title">Configuration</h3>
+          <p class="col-lg-8 col-lg-offset-2 lead sub">Configuration.</p>
+        </div> 
+        <div  id="code" class="row" style="display:none;" data-toggable-name="automation">
+          <h3 class="box-detail-title">Automation</h3>
+          <p class="col-lg-8 col-lg-offset-2 lead sub">Automation.</p>
+        </div> 
+        <div class="row" style="display:none;" data-toggable-name="integration">
+          <h3 class="box-detail-title">Integration</h3>
+          <p class="col-lg-8 col-lg-offset-2 lead sub">Integration.</p>
+        </div> 
+        <div class="row" style="display:none;" data-toggable-name="scripts">
+          <h3 class="box-detail-title">Scripts</h3>
+          <p class="col-lg-8 col-lg-offset-2 lead sub">Scripts.</p>
+        </div> 
+      </div>
     </div>
   </div>  
   <div class="container" id="box-library">  

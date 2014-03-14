@@ -5,6 +5,18 @@ $(document).ready(function() {
     mixpanel.track($(this).attr("track"))  
   });
 
+  $(".toggable").mouseover(function() {
+    obj = $(this)
+    data_toggable_family = obj.parent().data("toggable-target-family");
+    data_toggable_name = obj.data("toggable-target-name");
+
+    obj.siblings().removeClass("active");
+    obj.addClass('active');
+
+    $("[data-toggable-family='"+data_toggable_family+"']").children().hide();
+    $("[data-toggable-family='"+data_toggable_family+"']").children("[data-toggable-name='"+ data_toggable_name+"']").show();
+  });
+
   //signup
   $('#email-signup').click(function () { 
     $('#github-signup').hide()
