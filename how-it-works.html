@@ -233,19 +233,19 @@ base_url: "../"
           <div class="box-explain">
             <div class="box-large"></div>
             <div class="box-contents"  data-toggable-target-family="box-explain">
-              <div class="box-data toggable active" data-toggable-target-name="code">
+              <div class="box-data toggable active" data-toggable-target-name="scripts">
                 <img class="box-data-icon" src="https://dl.dropboxusercontent.com/u/11221717/box-detail-code.png"></img>
               </div>
-              <div class="box-data toggable" data-toggable-target-name="configuration">
-                <img class="box-data-icon" src="https://dl.dropboxusercontent.com/u/11221717/box-detail-settings.png"></img>
-              </div>
-              <div class="box-data toggable" data-toggable-target-name="automation">
+              <div class="box-data toggable" data-toggable-target-name="events">
                 <img class="box-data-icon" src="https://dl.dropboxusercontent.com/u/11221717/box-detail-automate.png"></img>
               </div>
-              <div class="box-data toggable" data-toggable-target-name="integration">
+              <div class="box-data toggable" data-toggable-target-name="composition">
                 <img class="box-data-icon" src="https://dl.dropboxusercontent.com/u/11221717/box-detail-connections.png"></img>
               </div>
-              <div class="box-data toggable" data-toggable-target-name="scripts">
+              <div class="box-data toggable" data-toggable-target-name="automation">
+                <img class="box-data-icon" src="https://dl.dropboxusercontent.com/u/11221717/box-detail-settings.png"></img>
+              </div>
+              <div class="box-data toggable" data-toggable-target-name="integration">
                 <img class="box-data-icon" src="https://dl.dropboxusercontent.com/u/11221717/box-detail-script.png"></img>
               </div>
             </div>
@@ -254,25 +254,25 @@ base_url: "../"
         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3"><div class="box-detail-select"><span class="glyphicon glyphicon-chevron-right"></span></div></div>
       </div>
       <div data-toggable-family="box-explain">
-        <div class="row" data-toggable-name="code">
-          <h3 class="box-detail-title">Code</h3>
-          <p class="col-lg-8 col-lg-offset-2 lead sub">Boxes can contain code that might execute comands or configue application settings. Any thing that can be scipted can be contained in a box. The sky is the limit.</p>
+        <div class="row" data-toggable-name="scripts">
+          <h3 class="box-detail-title">Scripts</h3>
+          <p class="col-lg-8 col-lg-offset-2 lead sub">Scripts are executed when deploying a box on a cloud provider. Use any Configuration Management tools (Chef, Puppet, Saltstack...) or scripting languages (bash, powershell…) to deploy your applications and services on any cloud.</p>
         </div> 
-        <div id="configuration" class="row" style="display:none;" data-toggable-name="configuration">
-          <h3 class="box-detail-title">Configuration</h3>
-          <p class="col-lg-8 col-lg-offset-2 lead sub">Configuration.</p>
+        <div class="row" style="display:none;" data-toggable-name="events">
+          <h3 class="box-detail-title">Events</h3>
+          <p class="col-lg-8 col-lg-offset-2 lead sub">Manage the full lifecycle of your applications through ElasticBox. Define and run scripts to install, start, configure, and shut down your boxes and instances on the cloud according to your specific requirements.</p>
         </div> 
-        <div  id="code" class="row" style="display:none;" data-toggable-name="automation">
+        <div  id="code" class="row" style="display:none;" data-toggable-name="composition">
+          <h3 class="box-detail-title">Composition</h3>
+          <p class="col-lg-8 col-lg-offset-2 lead sub">Boxes can be composed together to build and deploy complex applications. This allows you to build simple, modular, reusable boxes that can be stacked together or communicate through bindings.</p>
+        </div> 
+        <div class="row" style="display:none;" data-toggable-name="automation">
           <h3 class="box-detail-title">Automation</h3>
           <p class="col-lg-8 col-lg-offset-2 lead sub">Automation.</p>
         </div> 
         <div class="row" style="display:none;" data-toggable-name="integration">
           <h3 class="box-detail-title">Integration</h3>
-          <p class="col-lg-8 col-lg-offset-2 lead sub">Integration.</p>
-        </div> 
-        <div class="row" style="display:none;" data-toggable-name="scripts">
-          <h3 class="box-detail-title">Scripts</h3>
-          <p class="col-lg-8 col-lg-offset-2 lead sub">Scripts.</p>
+          <p class="col-lg-8 col-lg-offset-2 lead sub">It’s easy to integrate ElasticBox with the tools you already use. Upload your source code or deployment files from Github, build Continuous Integration with Jenkins and more.</p>
         </div> 
       </div>
     </div>
