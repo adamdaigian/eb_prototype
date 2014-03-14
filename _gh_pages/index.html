@@ -94,7 +94,7 @@
           <a class="hidden-sm hidden-xs" href="./login">Login</a>
         </li>
         <li>
-          <button type="button" href="#sign-up-modal" class="btn btn-danger navbar-btn" data-toggle="modal" data-target="#sign-up-modal">SIGN UP</button>
+          <button type="button" href="#sign-up-modal" class="btn btn-primary navbar-btn" data-toggle="modal" data-target="#sign-up-modal">SIGN UP</button>
         </li>
       </ul>
     </nav>
@@ -109,10 +109,10 @@
         <h2 class="home-lead">Cloud Applications. Simple. Boom. Done.</h2>
         <h3 class="home-sub">Easily develop, deploy and manage applications for any cloud.</h3>
         <div class="sign-up-container">
-          <button type="button" class="btn btn-danger btn-lg btn-home hidden-xs" href=""><span class="fa fa-github"></span>   SIGN UP WITH GITHUB</button>
+<!--           <button type="button" class="btn btn-danger btn-lg btn-home hidden-xs" href=""><span class="fa fa-github"></span>   SIGN UP WITH GITHUB</button>
           <span class="divider hidden-xs">Or</span>
-          <input class="form-control input-lg input-home" placeholder="Enter Email Address"></input>
-          <button class="btn btn-primary btn-lg btn-home">TRY FOR FREE</button>
+          <input class="form-control input-lg input-home" placeholder="Enter Email Address"></input> -->
+          <button class="btn btn-primary btn-lg btn-home" href="#sign-up-modal" data-toggle="modal" data-target="#sign-up-modal">TRY FOR FREE</button>
           <h5 class="sub text-center">No credit card required • No commitment</h5>
         </div>
       </div>
@@ -186,9 +186,8 @@
     <div class="container text-center">
       <h2 class="jumbo-not-convinced">Boom. Application Deployed.</h2>
       <h3 class="home-sub hidden-xs">DevOps At Your Fingertips.</h3>
-      <button type="button" class="btn btn-danger btn-lg btn-convinced" href="#sign-up-modal" data-toggle="modal" data-target="#sign-up-modal">TRY FOR YOURSELF</button>
+      <button type="button" class="btn btn-primary btn-lg btn-convinced" href="#sign-up-modal" data-toggle="modal" data-target="#sign-up-modal">TRY FOR YOURSELF</button>
       <div class="not-convinced-more">
-        <h4 class="sub hidden-xs" id="not-convinced-lead">Still not convinced?</h4>
         <h4 class="sub hidden-xs">Learn More Bellow.</h4>
         <span class="glyphicon glyphicon-chevron-down not-convinced-down"></span>
       </div>
@@ -214,12 +213,12 @@
           <a class="more" href="">Learn More</a>
         </div>
         <div class="col-lg-5 col-lg-offset-1 col-md-6 col-sm-6">
-          <img class="img-responsive" src="https://dl.dropboxusercontent.com/u/11221717/eb-special-dev-workflow.png"></img>
+          <img class="img-responsive" id="img-dev-workflow" src="https://dl.dropboxusercontent.com/u/11221717/eb-special-dev-workflow.png"></img>
         </div>
       </div>
       <div class="row padding-4x">
         <div class="col-lg-5 col-lg-offset-1 col-md-6 col-sm-6">
-          <img class="img-responsive" id="any-cloud-special" src="https://dl.dropboxusercontent.com/u/11221717/any-cloud-special.png"></img>
+          <img class="img-responsive" id="img-any-cloud" src="https://dl.dropboxusercontent.com/u/11221717/any-cloud-special.png"></img>
         </div>
         <div class="col-lg-5 col-lg-offset-1 col-md-6 col-sm-6">
           <h3 class="lead-color">Pick A Cloud. Any Cloud.</h3>
@@ -234,7 +233,7 @@
           <a class="more" href="">Learn More</a>
         </div>
         <div class="col-lg-5 col-lg-offset-1 col-md-6 col-sm-6">
-          <img class="img-responsive" src="https://dl.dropboxusercontent.com/u/11221717/eb-special-collaboration.png"></img>
+          <img class="img-responsive" id="img-colab-innovate" src="https://dl.dropboxusercontent.com/u/11221717/eb-special-collaboration.png"></img>
         </div>
       </div>
     </div>
@@ -376,11 +375,12 @@
             <label class="text-muted" for="exampleInputPassword1">Password <span class="required-form">*</span></label>
             <input type="password" class="form-control input-lg" id="exampleInputPassword1">
           </div>
-          <button class="btn btn-lg btn-primary btn-block" id="email-complete">Let's Go!</button>
+          <button class="btn btn-lg btn-primary btn-block" id="email-complete">LET'S GO!</button>
         </form>
       <!-- <div class="modal-footer">
         <button type="button" class="btn btn-block btn-primary">LETS GO!</button>
       </div> -->
+      <p class="tos text-muted text-center">By signing up you agree to ElasticBox's <br><a href="./terms-of-service">terms of service</a
 
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->

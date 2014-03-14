@@ -90,7 +90,7 @@
           <a class="hidden-sm hidden-xs" href="../login">Login</a>
         </li>
         <li>
-          <button type="button" href="#sign-up-modal" class="btn btn-danger navbar-btn" data-toggle="modal" data-target="#sign-up-modal">SIGN UP</button>
+          <button type="button" href="#sign-up-modal" class="btn btn-primary navbar-btn" data-toggle="modal" data-target="#sign-up-modal">SIGN UP</button>
         </li>
       </ul>
     </nav>
@@ -115,7 +115,7 @@
    		</div>
    	</div>
   </div>
-  <div class="container box-friends" id="box-overview">
+  <div class="container" id="box-overview">
     <div class="row padding-2x">
       <div class="text-center">
         <h2 class="lead-color">Boxes Are Your New Best Friend.</h2>
@@ -123,14 +123,26 @@
       </div>
     </div>
   </div>
+  <img class="img-responsive img-box-block" src="https://dl.dropboxusercontent.com/u/11221717/boxes-best-friend-illustration.png"></img>
   <div class="container"
     <div class="row">
-      <div class="col-lg-4 box-overview"><h3 style="float:left;" class="lead">Choose boxes from a service catalogue.</h3></div>
-      <div class="col-lg-4 box-overview"><h3 style="float:center;" class="lead">Customize boxes to fit the needs of your applications.</h3></div>
-      <div class="col-lg-4 box-overview"><h3 style="float:right;" class="lead">Stack Boxes to create any application architecture.</h3></div>
+      <div class="col-lg-4 box-overview">
+        <div class="box-overview-description" style="float:left;">
+          <h3 class="lead">Choose boxes from a service catalogue.</h3>
+        </div>
+      </div>
+      <div class="col-lg-4 box-overview">
+        <div class="box-overview-description" style="margin: 15px auto;">
+          <h3 class="lead">Customize boxes to fit the needs of your applications.</h3>
+        </div>
+      </div>
+      <div class="col-lg-4 box-overview">
+        <div class="box-overview-description" style="float:right;">
+          <h3 class="lead">Stack Boxes to create any application architecture.</h3>
+        </div>
+      </div>
     </div>
   </div>    
-  <img class="img-responsive img-story-block" src="https://dl.dropboxusercontent.com/u/11221717/boxes-best-friend-illustration.png"></img>
   <div class="deploy" id="deploy">
     <div class="container">
     	<div class="row padding-2x">
@@ -144,14 +156,16 @@
           <div class="col-lg-2 col-md-3 col-sm-3 col-xs-3"><a class="more btn-deploy">BASH</a></div>
         </div>
       <div class="row">
-        <div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-12 col-xs-12">
-          <div class="browser">
-            <div class="indicators">
-              <span class="circle"></span>
-              <span class="circle"></span>
-              <span class="circle"></span>
+        <div class="col-lg-8 col-lg-offset-2 col-md-12 col-sm-12 col-xs-12">
+          <div class="life-cycle-editor">
+            <div class="life-cycle-nav">
+              <button class="btn btn-md btn-lce">Events</button>
+              <button class="btn btn-md btn-lce">Variables</button>
+              <button class="btn btn-md btn-lce">Logs</button>
+              <button class="btn btn-md btn-lce"><span class="reconfigure-icon-container"><i class="fa fa-cog"></span></i>Reconfigue</button>
             </div>
-            <div class="browser-editor">
+            <div class="life-cycle-pad"></div>
+            <div class="life-cycle-inner">
               <code>
                 $ if ! [ $(lsb_release -cs|grep raring|wc -c) -gt 1 ]; then echo "UNSUPPORTED IMAGE/AMI: This Box only works with Ubuntu 13.04 (Raring Ringtail)"; fi
                 <br>
@@ -502,11 +516,12 @@
             <label class="text-muted" for="exampleInputPassword1">Password <span class="required-form">*</span></label>
             <input type="password" class="form-control input-lg" id="exampleInputPassword1">
           </div>
-          <button class="btn btn-lg btn-primary btn-block" id="email-complete">Let's Go!</button>
+          <button class="btn btn-lg btn-primary btn-block" id="email-complete">LET'S GO!</button>
         </form>
       <!-- <div class="modal-footer">
         <button type="button" class="btn btn-block btn-primary">LETS GO!</button>
       </div> -->
+      <p class="tos text-muted text-center">By signing up you agree to ElasticBox's <br><a href="../terms-of-service">terms of service</a
 
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->

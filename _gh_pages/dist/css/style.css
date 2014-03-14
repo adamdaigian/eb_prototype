@@ -439,16 +439,17 @@ input, .input-lg {
 }
 
 .hero {
+  height: 630px;
   top: 0;
   right: 0;
   left: 0;
   background:
-    linear-gradient(to bottom, rgba(160, 107, 213, .1) 0%, rgba(0, 124, 252, .1) 100%),
+    linear-gradient(to bottom, rgba(160, 107, 213, .1) 0%, rgba(0, 124, 252, .1) 10%),
     url('http://static.elasticbox.com.s3-us-west-1.amazonaws.com/home-hero-background-2.png') center bottom repeat no-repeat;
 }
 
 .home-lead {
-  padding-top: 70px;
+  padding-top: 120px;
   color: #fff;
   line-height: 1.6;
 }
@@ -549,13 +550,18 @@ input, .input-lg {
   margin-bottom: 0;
 }
 
-#any-cloud-special {
+#img-dev-workflow {
+  padding-top: 33px;
+}
+
+#img-any-cloud {
+  margin-top: -3px;
   position: relative;
   left: -18%;
 }
 
-.feature-img {
-  margin-top: 30px;
+#img-colab-innovate {
+  margin-top: 47px;
 }
 
 .box-feature {
@@ -581,8 +587,8 @@ h2.box-overview-lead {
   text-align: center;
 }
 
-.box-overview > h3 {
-  width: 70%;
+.box-overview-description {
+  width: 80%;
 }
 
 .box-overview h2 {
@@ -857,16 +863,12 @@ h2.box-overview-lead {
   height: 888px;
   background: 
     url('https://dl.dropboxusercontent.com/u/11221717/features-background.png') center bottom repeat-x, 
-    linear-gradient(to bottom, rgba(160, 107, 213, .1) 0%, rgba(0, 124, 252, .1) 100%);
+    linear-gradient(to bottom, rgba(160, 107, 213, .1) 0%, rgba(0, 124, 252, .1) 10%);
 }
 
 .jumbotron.hero-walkthrough h2 {
   color: #fff;
 }
-
-/*.jumbotron.hero-walkthrough h3 {
-  color: #3d4d5d;
-}*/
 
 .hero-screenshot-block {
   padding: 40px;
@@ -885,7 +887,7 @@ h2.box-overview-lead {
 }
 
 .hero-screenshot-base {
-  margin-top: -49px;
+  margin-top: -40px;
   height: 30px;
   width: 90%;
   left: 5%;
@@ -957,12 +959,57 @@ h2.box-overview-lead {
   overflow: hidden;
 }
 
+.life-cycle-editor {
+  margin-top: 60px;
+  height: 360px;
+  width: 100%;
+  background-color: #2B2F34;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.life-cycle-nav {
+  height: 51px;
+  padding: 8px 10px 0;
+  color: #fff;
+  background-color: #383c42;
+  background-image: -webkit-linear-gradient(top, #4d5258, #3b3f46);
+  border: 1px solid #1a1d20;
+}
+
+.life-cycle-pad {
+  height: 40px;
+  background-color: #1d2024;
+}
+
+.life-cycle-inner {
+  padding: 10px 5px 5px 10px;
+}
+
+.btn-lce {
+  height: 33px;
+  padding: 7px 15px 8px;
+  margin-right: 5px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 13px;
+  background-color: #383c42;
+  background-image: -webkit-linear-gradient(top, #4d5258, #3b3f46);
+  border: 1px solid #1a1d20;
+}
+
+.btn-lce > i.fa-cog {
+  margin-right: 5px;
+  font-size: 11px;
+}
+
 code {
   padding: 0px;
-  color: #4c4c4c;
+  color: #fff;
   line-height: 1em;
   background: none;
   font-size: 15px;
+  font-weight: 100;
 }
 
 code > br {
@@ -1190,10 +1237,10 @@ code {
   padding-bottom: 60px;
 }
 
-.img-story-block {
+.img-box-block {
   position: relative;
   margin: 0 auto;
-  left: -3%;
+  left: -25px;
   padding-bottom: 5em;
 }
 
@@ -1451,7 +1498,7 @@ thead > tr > th {
 .enterprise-background {
   min-height: 680px;
   background:
-    linear-gradient(to bottom, rgba(160, 107, 213, .1) 0%, rgba(0, 124, 252, .1) 100%),
+    linear-gradient(to bottom, rgba(160, 107, 213, .1) 0%, rgba(0, 124, 252, .1) 10%),
     url('https://dl.dropboxusercontent.com/u/11221717/enterprise-background.png') center 140% repeat-x, linear-gradient(to bottom, rgba(160, 107, 213, .1) 0%, rgba(0, 124, 252, .1) 10%);
 }
 
@@ -1494,6 +1541,14 @@ thead > tr > th {
 .persona-lead {
   padding-top: 40px;
   font-size: 34px;
+}
+
+.img-enterprise-block {
+  position: relative;
+  margin: 20px auto;
+  width: 1300px;
+  left: 5px;
+  padding-bottom: 1em;
 }
 
 .row-personas {
